@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Shirt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 28 32" style="enable-background:new 0 0 28 32;" xml:space="preserve">
+<g>
+	<path d="M27,13c-2.75,0-2.982-1.66-3-2.019V1c0-0.552-0.448-1-1-1h-4c-0.552,0-1,0.448-1,1c0,2.318-1.682,4-4,4s-4-1.682-4-4
+		c0-0.552-0.448-1-1-1H5C4.448,0,4,0.448,4,1v9.986C3.999,11.068,3.938,13,1,13c-0.552,0-1,0.448-1,1v17c0,0.552,0.448,1,1,1h26
+		c0.552,0,1-0.448,1-1V14C28,13.448,27.552,13,27,13z M6,11V2h2.076C8.525,4.911,10.922,7,14,7s5.475-2.089,5.924-5H22v9
+		c0,0.004,0,0.009,0,0.014c0.018,1.253,0.902,3.521,4,3.924V17H2v-2.062C5.098,14.535,5.982,12.266,6,11z M26,19v6H2v-6H26z M2,30
+		v-3h24v3H2z"/>
+	<rect x="13" y="21" width="2" height="2"/>
+	<rect x="17" y="21" width="2" height="2"/>
+	<rect x="21" y="21" width="2" height="2"/>
+	<rect x="9" y="21" width="2" height="2"/>
+	<rect x="5" y="21" width="2" height="2"/>
+</g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Forest" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 30" style="enable-background:new 0 0 32 30;" xml:space="preserve">
+<g>
+	<path d="M23,22c2.206,0,4-1.794,4-4V8c0-2.206-1.794-4-4-4h-2c-2.206,0-4,1.794-4,4v10c0,2.206,1.794,4,4,4v6H11V18
+		c2.206,0,4-1.794,4-4V4c0-2.206-1.794-4-4-4H9C6.794,0,5,1.794,5,4v10c0,2.206,1.794,4,4,4v10H0v2h32v-2h-9V22z M19,18V8
+		c0-1.103,0.897-2,2-2h2c1.103,0,2,0.897,2,2v10c0,1.103-0.897,2-2,2v-5h-2v5C19.897,20,19,19.103,19,18z M7,14V4
+		c0-1.103,0.897-2,2-2h2c1.103,0,2,0.897,2,2v10c0,1.103-0.897,2-2,2v-5H9v5C7.897,16,7,15.103,7,14z"/>
+	<rect y="24" width="7" height="2"/>
+	<rect x="25" y="24" width="7" height="2"/>
+	<rect x="13" y="24" width="6" height="2"/>
+</g>
+</svg>

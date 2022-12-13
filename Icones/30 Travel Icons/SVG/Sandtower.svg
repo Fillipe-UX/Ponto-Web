@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Sandtower" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 26 32" style="enable-background:new 0 0 26 32;" xml:space="preserve">
+<g>
+	<path d="M22,30V1c0-0.552-0.448-1-1-1h-5c-0.552,0-1,0.448-1,1v5h-4V1c0-0.552-0.448-1-1-1H5C4.448,0,4,0.448,4,1v29H0v2h26v-2H22z
+		 M16,30h-2v-8h1c0.551,0,1,0.449,1,1V30z M12,30h-2v-7c0-0.551,0.449-1,1-1h1V30z M18,30v-7c0-1.654-1.346-3-3-3h-4
+		c-1.654,0-3,1.346-3,3v7H6V12h11v-2H6V2h3v5c0,0.552,0.448,1,1,1h6c0.552,0,1-0.448,1-1V2h3v28H18z"/>
+	<rect x="8" y="14" width="2" height="2"/>
+	<rect x="12" y="14" width="2" height="2"/>
+	<rect x="16" y="14" width="2" height="2"/>
+</g>
+</svg>
