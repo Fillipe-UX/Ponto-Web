@@ -10,7 +10,9 @@ body {
 }
 
 /* Hero */
-
+.hero {
+  background-color: #F0E9FE;
+}
 
 /* Responsivo */
 @media (min-width: 1400px) {
