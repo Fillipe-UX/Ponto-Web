@@ -1,13 +1,277 @@
 <!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
-</html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design System para o PontoWeb</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://getbootstrap.com/docs/5.2/assets/js/docs.min.js"></script>
+        <link href="scss\custom.css" rel="stylesheet" >
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+        
+        <link href="https://getbootstrap.com//docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        
+        <link href="https://getbootstrap.com//docs/5.2/assets/css/docs.css" rel="stylesheet">
+<style>
+@media (min-width: 1400px) {
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: none;
+}
+}
+@media (min-width: 992px) {
+.bd-sidebar {
+    top: 1rem;
+}
+}
+/* Barra de Rolagem */
+
+  body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+   
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;              /* height of horizontal scrollbar ← You're missing this */
+    background-color: #DDC2EF;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 0px solid #E4E4E4;  /* creates padding around scroll thumb */
+}
+  body::-webkit-scrollbar-track {
+    background: #E4E4E4;        /* color of the tracking area */
+    border-radius: 20px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #DDC2EF;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 4px solid #E4E4E4;  /* creates padding around scroll thumb */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #E4E4E4;        /* color of the tracking area */
+    border-radius: 20px;
+    width: 8px;  
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #DDC2EF;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 0px solid #E4E4E4;  /* creates padding around scroll thumb */
+}
+
+
+
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+  body {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  .regular {
+    font-weight:400;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .bold {
+    font-weight:700;
+  }
+  .black {
+    font-weight:700;
+  }
+
+
+  .cls-1 {
+  fill: #ef8e2d;
+  }
+
+  .cls-2 {
+  fill: #363534;
+  }
+
+  .btn-clipboard {
+    transition: 0.1s;
+  }
+  .btn-clipboard:hover {
+    background-color: rgb(193, 224, 249);
+    transition: 0.1s;
+    border-radius: 10px;
+  }
+
+/* Modo Claro */
+
+.form-control {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3B3D3D;
+    background-color: #fff;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,
+    background-color .15s, color .15s,box-shadow .15s,background-size .15s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
+
+.form-control.invalid {
+    color: #3B3D3D;
+    background-color: #fff;
+    border: 1px solid #F24E52;
+    border-radius: 5px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,
+    background-color .15s, color .15s,box-shadow .15s,background-size .15s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: auto;
+}
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #818385;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #F5F5F5;
+    border: 1px solid #D9D9D9;
+    border-radius: 0.375rem;
+}
+
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-control, .input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-select, .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+    border-right-width: 0px;
+}
+            
+/* Modo escuro */
+.bg-escuro {
+  background-color: #272D39;
+  color: #fff;
+}
+
+.bg-escuro .form-control {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #FFF;
+    background-color: #333B4C;
+    border: 1px solid #4A5264;
+    border-radius: 5px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,
+    background-color .15s, color .15s,box-shadow .15s,background-size .15s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
+
+.bg-escuro .highlight {
+  color: #fff ;
+  background-color: #333B4C;
+  border: 1px solid #4A5264;
+}
+
+.bg-escuro .highlight-toolbar {
+  background-color: #333B4C;
+  border: 1px solid #4A5264;
+}
+
+.bg-escuro .bd-example-snippet {
+  border: 1px solid #4A5264;
+}
+
+</style>
+
+ </head>
+
+ <body>
+  <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
+    <aside class="bd-sidebar">
+      <svg class="logo" width="180px" viewBox="0 0 182 17">
+        <path class="cls-2" d="M9.44,3.44H5.05c-1.02,0-1.38,.35-1.38,1.5v1.98h5.61c.11,0,.22,.05,.3,.13,.08,.08,.13,.19,.13,.31v2.09c0,.12-.05,.23-.13,.31-.08,.08-.19,.13-.3,.13H3.67v6.43c0,.12-.05,.23-.13,.31-.08,.08-.19,.13-.3,.13H.43c-.11,0-.22-.05-.31-.13-.08-.08-.13-.19-.13-.31V4.94C0,.93,2.49,.22,5.28,.22c1.4-.03,2.79,.07,4.17,.29,.3,.04,.43,.15,.43,.44V2.99c0,.06,0,.12-.03,.17-.02,.06-.05,.11-.09,.15s-.09,.08-.14,.1c-.05,.02-.11,.03-.17,.03Z"/>
+        <path class="cls-2" d="M18.44,16.97c-3.57,0-6.4-1.96-6.4-7.07v-2.62C12.04,2.16,14.85,.2,18.44,.2s6.4,1.96,6.4,7.07v2.62c0,5.1-2.83,7.07-6.4,7.07Zm2.68-9.72c0-2.65-.86-3.77-2.68-3.77s-2.66,1.14-2.66,3.77v2.62c0,2.64,.84,3.77,2.66,3.77s2.68-1.14,2.68-3.77v-2.62Z"/>
+        <path class="cls-2" d="M39.6,16.77h-3.31c-.24,0-.32-.22-.43-.44l-2.9-5.58h-.24c-.45,0-1.12-.05-1.54-.05v5.6c0,.12-.05,.23-.13,.31-.08,.08-.19,.13-.3,.13h-2.81c-.11,0-.22-.05-.3-.13-.08-.08-.13-.19-.13-.31V1.54c0-.75,.3-.95,.98-1.06,1.46-.19,2.92-.29,4.39-.29,3.68,0,6.51,1.25,6.51,5.15v.29c.05,.94-.19,1.88-.69,2.67-.5,.79-1.25,1.4-2.11,1.74l3.27,6.21c.04,.08,.06,.16,.07,.25,.02,.16-.08,.27-.31,.27Zm-3.9-11.44c0-1.34-1.02-1.96-2.81-1.96-.3,0-1.43,.05-1.68,.07V7.67c.24,0,1.3,.04,1.54,.04,2.25,0,2.98-.57,2.98-2.09l-.03-.29Z"/>
+        <path class="cls-2" d="M51.72,3.51h-3.5v12.82c0,.12-.05,.23-.13,.31-.08,.08-.19,.13-.31,.13h-2.84c-.11,0-.22-.05-.3-.13-.08-.08-.13-.19-.13-.31V3.51h-3.53c-.06,0-.11,0-.16-.03-.05-.02-.1-.05-.14-.09-.04-.04-.07-.09-.09-.14-.02-.05-.03-.11-.03-.17V.79c0-.06,.01-.11,.03-.17,.02-.05,.05-.1,.09-.14,.04-.04,.09-.07,.14-.09,.05-.02,.11-.03,.16-.03h10.73c.06,0,.11,0,.17,.03,.05,.02,.1,.05,.15,.09s.08,.09,.1,.14c.02,.05,.04,.11,.04,.17V3.08c0,.06-.02,.12-.04,.17-.02,.05-.06,.1-.1,.14s-.09,.07-.15,.09c-.05,.02-.11,.03-.17,.03Z"/>
+        <path class="cls-2" d="M63.11,16.71c-1.39,.21-2.79,.31-4.2,.29-2.81,0-5.25-.73-5.25-4.74V4.91C53.65,.91,56.14,.2,58.93,.2c1.4-.02,2.79,.07,4.18,.29,.3,.05,.43,.15,.43,.44V2.99c0,.12-.05,.23-.13,.31-.08,.08-.19,.13-.31,.13h-4.39c-1.02,0-1.39,.35-1.39,1.5v2.01h5.61c.11,0,.22,.05,.3,.13,.08,.08,.13,.19,.13,.31v2.09c0,.12-.05,.23-.13,.31-.08,.08-.19,.13-.3,.13h-5.61v2.33c0,1.14,.36,1.5,1.39,1.5h4.39c.11,0,.22,.05,.3,.13,.08,.08,.13,.19,.13,.31v2.05c0,.27-.13,.41-.44,.48Z"/>
+        <path class="cls-2" d="M70.65,16.97c-1.38,.02-2.75-.15-4.09-.49-.22-.07-.43-.2-.43-.44v-2.16c0-.05,0-.11,.01-.16,.02-.05,.04-.1,.08-.14,.04-.04,.08-.07,.13-.09,.05-.02,.11-.03,.16-.02h.07c.89,.09,3.27,.26,4.11,.26,1.49,0,1.93-.48,1.93-1.54,0-.64-.3-1-1.43-1.68l-2.98-1.81c-2.02-1.21-2.55-2.6-2.55-4.21,0-2.42,1.34-4.3,5.54-4.3,1.54,0,3.08,.17,4.59,.49,.09,.01,.18,.06,.24,.13,.06,.07,.09,.17,.09,.26V3.31c0,.05,0,.1-.01,.15-.02,.05-.04,.09-.08,.13-.04,.04-.08,.06-.12,.08-.05,.02-.1,.02-.15,.02h-.05c-.61-.05-3.12-.25-4.59-.25-1.24,0-1.68,.38-1.68,1.14,0,.62,.28,.9,1.45,1.54l2.77,1.52c2.25,1.24,2.92,2.69,2.92,4.47,0,2.36-1.52,4.85-5.91,4.85Z"/>
+        <path class="cls-1" d="M87.48,10.67c-.56,0-1.43-.07-1.92-.09v5.75c0,.06,0,.11-.03,.17-.02,.05-.05,.1-.09,.14-.04,.04-.08,.07-.14,.1s-.11,.03-.16,.04h-2.16c-.11,0-.22-.05-.3-.13-.08-.08-.13-.19-.13-.31V1.17c0-.44,.26-.57,.69-.66,1.4-.2,2.82-.29,4.24-.29,3.33,0,6.23,1.19,6.23,5.09v.19c0,3.9-2.9,5.16-6.23,5.16Zm3.24-5.35c0-1.85-1.08-2.56-3.24-2.56-.45,0-1.53,.04-1.92,.09v5.24c.34,0,1.56,.07,1.92,.07,2.34,0,3.24-.88,3.24-2.65v-.19Z"/>
+        <path class="cls-1" d="M100.43,16.95c-3.37,0-5.17-2.33-5.17-5.48v-1.79c0-3.15,1.77-5.48,5.17-5.48s5.17,2.34,5.17,5.48v1.79c.01,3.15-1.77,5.48-5.17,5.48Zm2.31-7.27c0-1.8-.8-2.97-2.31-2.97s-2.31,1.14-2.31,2.97v1.79c0,1.81,.8,2.97,2.31,2.97s2.31-1.14,2.31-2.97v-1.79Z"/>
+        <path class="cls-1" d="M117.61,16.77h-1.99c-.12,0-.23-.06-.31-.14-.08-.09-.12-.2-.12-.32v-7.18c0-1.92-.17-2.46-1.84-2.46-.86,.07-1.7,.34-2.44,.79v8.86c0,.12-.04,.23-.12,.32-.08,.09-.19,.14-.31,.14h-1.99c-.12,0-.23-.06-.31-.14-.08-.09-.12-.2-.12-.32V4.78c0-.12,.05-.23,.13-.31,.08-.08,.19-.13,.3-.13h1.88c.11,0,.23,.05,.31,.13,.08,.08,.13,.19,.13,.31v.49c1.02-.74,2.25-1.12,3.5-1.06,3.11,0,3.74,2.14,3.74,4.94v7.18c0,.11-.05,.22-.13,.3-.08,.08-.19,.13-.3,.13Z"/>
+        <path class="cls-1" d="M126.82,16.79c-.49,.09-.98,.14-1.47,.15-2.44,0-3.44-.57-3.44-3.51V6.53l-2.03-.31c-.11,0-.22-.06-.3-.14-.08-.08-.13-.19-.14-.3v-1c0-.12,.05-.23,.13-.31,.08-.08,.19-.13,.31-.13h2.02v-1.81c0-.11,.06-.22,.13-.3,.08-.08,.19-.13,.3-.14l2.01-.35h.09s.09,0,.13,.02,.08,.04,.11,.07c.03,.03,.06,.07,.08,.11s.03,.09,.02,.13v2.29h1.95c.11,0,.22,.05,.3,.13,.08,.08,.13,.19,.13,.31v1.3c0,.12-.04,.23-.13,.31-.08,.08-.19,.13-.31,.13h-1.95v6.91c0,1.1,.07,1.24,.84,1.24h1.15c.28,0,.46,.11,.46,.33v1.39c.02,.2-.12,.33-.4,.38Z"/>
+        <path class="cls-1" d="M133.76,16.95c-3.37,0-5.17-2.33-5.17-5.48v-1.79c0-3.15,1.77-5.48,5.17-5.48s5.17,2.34,5.17,5.48v1.79c0,3.15-1.77,5.48-5.17,5.48Zm2.31-7.27c0-1.8-.8-2.97-2.31-2.97s-2.31,1.14-2.31,2.97v1.79c0,1.81,.8,2.97,2.31,2.97s2.31-1.14,2.31-2.97v-1.79Z"/>
+        <path class="cls-1" d="M158.1,.77l-2.03,14.39c-.2,1.39-.82,1.78-1.95,1.78h-1.17c-.97,0-1.49-.49-1.79-1.76l-1.68-7.27c-.05-.19-.05-.24-.13-.24s-.11,.05-.15,.24l-1.68,7.27c-.3,1.28-.83,1.76-1.8,1.76h-1.17c-1.12,0-1.75-.39-1.95-1.78l-2.03-14.39v-.07s.02-.09,.04-.13c.02-.04,.05-.08,.08-.1,.03-.03,.07-.05,.11-.06,.04-.01,.09-.02,.13-.01h2.3c.1,0,.19,.05,.26,.13,.07,.07,.11,.17,.11,.27l1.56,13.15c0,.2,0,.33,.11,.33s.09-.13,.13-.33l1.86-7.73c.05-.31,.23-.59,.48-.78,.25-.19,.57-.26,.88-.22h1.49c.31-.05,.63,.03,.88,.21,.26,.19,.43,.47,.48,.78l1.86,7.73c.04,.2,.04,.33,.13,.33s.09-.13,.11-.33l1.55-13.15c0-.1,.04-.2,.11-.27,.07-.07,.16-.12,.26-.13h2.3s.09,0,.13,.01c.04,.01,.08,.03,.12,.06,.03,.03,.06,.06,.08,.11,.02,.04,.03,.08,.03,.13l-.05,.07Z"/>
+        <path class="cls-1" d="M169,11.56h-7.05v.06c0,1.28,.52,2.8,2.59,2.8,1.58,0,3.07-.13,3.98-.22h.07c.21,0,.39,.11,.39,.33v1.45c0,.35-.06,.51-.46,.57-1.38,.28-2.79,.41-4.19,.38-2.16,0-5.24-1.19-5.24-5.53v-1.63c0-3.43,1.89-5.6,5.19-5.6s5.15,2.29,5.15,5.6v1.21c0,.38-.13,.57-.43,.57Zm-2.44-2.16c0-1.72-.93-2.71-2.25-2.71s-2.31,.97-2.31,2.71v.09h4.59l-.03-.09Z"/>
+        <path class="cls-1" d="M176.81,16.95c-1.47-.02-2.93-.21-4.35-.57-.49-.13-.56-.26-.56-.57V.44c0-.12,.05-.23,.13-.31,.08-.08,.19-.13,.3-.13h1.99c.11,0,.22,.05,.3,.13,.08,.08,.13,.19,.13,.31v3.9c.69-.1,1.38-.15,2.08-.15,3.48,0,5.17,2.09,5.17,5.53v1.72c-.03,3.42-1.72,5.51-5.19,5.51Zm2.31-7.23c0-1.81-.46-3.15-2.31-3.15-.7,.01-1.39,.06-2.08,.15v7.7c.69,.11,1.38,.16,2.08,.15,1.86,0,2.31-1.34,2.31-3.15v-1.71Z"/>
+      </svg>
+      <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">Browse docs</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <nav class="bd-links w-100" id="bd-docs-nav" aria-label="Docs navigation"><ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
+      <li class="bd-links-group py-2">
+        
+        <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+          Guia de Branding
+        </strong>
+
+        <ul class="list-unstyled fw-normal pb-2 small">
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Perfil do usuário (em breve)</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Voz (em breve</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Comunicação (em breve</a></li>
+        </ul>
+      </li>
+      <li class="bd-links-group py-2">
+        <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+            <svg class="bi me-2" style="color: var(--bs-pink);" aria-hidden="true"><use xlink:href="#palette2"></use></svg>
+          Para Devs
+        </strong>
+
+        <ul class="list-unstyled fw-normal pb-2 small">
+          <li><a href="\Fontes.html" class="bd-links-link d-inline-block rounded" >Fontes</a></li>
+          <li><a href="\Formulário.html" class="bd-links-link d-inline-block rounded">Formulário</a></li>
+          <li><a href="#" class="bd-links-link d-inline-block rounded">Botões</a></li>
+          <li><a href="#" class="bd-links-link d-inline-block rounded">Browsers &amp; devices</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Overview</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Sass</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Options</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Color</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Components</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">CSS variables</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Optimize</a></li>
+        </ul>
+      </li>
+    
+  </ul>
+</nav>
+
+        </div>
+      </div>
+    </aside>
+  <div id="bd-main order-1">
+    <div class="row">
+      <div class="content">
+        <div class="row">
+        <h1 class="pt-4"><strong>Projetar, desenvolver, entregar</strong></h1>
+        <p> Use a linguagem de design completa do Ponto web para criar experiências simples, intuitivas e bonitas.
+          <br>      
+      </div>
+</div>
+<script src="https://getbootstrap.com/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<script src="https://getbootstrap.com/docs/5.2/assets/js/docs.min.js"></script>
+
+
+ </body>
+  </html>
