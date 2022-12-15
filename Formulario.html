@@ -25,6 +25,7 @@
  <body>
   <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
     <aside class="bd-sidebar">
+      <div class="content topo-menu">
       <svg class="logo" width="180px" viewBox="0 0 182 17">
         <path class="cls-2" d="M9.44,3.44H5.05c-1.02,0-1.38,.35-1.38,1.5v1.98h5.61c.11,0,.22,.05,.3,.13,.08,.08,.13,.19,.13,.31v2.09c0,.12-.05,.23-.13,.31-.08,.08-.19,.13-.3,.13H3.67v6.43c0,.12-.05,.23-.13,.31-.08,.08-.19,.13-.3,.13H.43c-.11,0-.22-.05-.31-.13-.08-.08-.13-.19-.13-.31V4.94C0,.93,2.49,.22,5.28,.22c1.4-.03,2.79,.07,4.17,.29,.3,.04,.43,.15,.43,.44V2.99c0,.06,0,.12-.03,.17-.02,.06-.05,.11-.09,.15s-.09,.08-.14,.1c-.05,.02-.11,.03-.17,.03Z"/>
         <path class="cls-2" d="M18.44,16.97c-3.57,0-6.4-1.96-6.4-7.07v-2.62C12.04,2.16,14.85,.2,18.44,.2s6.4,1.96,6.4,7.07v2.62c0,5.1-2.83,7.07-6.4,7.07Zm2.68-9.72c0-2.65-.86-3.77-2.68-3.77s-2.66,1.14-2.66,3.77v2.62c0,2.64,.84,3.77,2.66,3.77s2.68-1.14,2.68-3.77v-2.62Z"/>
@@ -41,26 +42,29 @@
         <path class="cls-1" d="M169,11.56h-7.05v.06c0,1.28,.52,2.8,2.59,2.8,1.58,0,3.07-.13,3.98-.22h.07c.21,0,.39,.11,.39,.33v1.45c0,.35-.06,.51-.46,.57-1.38,.28-2.79,.41-4.19,.38-2.16,0-5.24-1.19-5.24-5.53v-1.63c0-3.43,1.89-5.6,5.19-5.6s5.15,2.29,5.15,5.6v1.21c0,.38-.13,.57-.43,.57Zm-2.44-2.16c0-1.72-.93-2.71-2.25-2.71s-2.31,.97-2.31,2.71v.09h4.59l-.03-.09Z"/>
         <path class="cls-1" d="M176.81,16.95c-1.47-.02-2.93-.21-4.35-.57-.49-.13-.56-.26-.56-.57V.44c0-.12,.05-.23,.13-.31,.08-.08,.19-.13,.3-.13h1.99c.11,0,.22,.05,.3,.13,.08,.08,.13,.19,.13,.31v3.9c.69-.1,1.38-.15,2.08-.15,3.48,0,5.17,2.09,5.17,5.53v1.72c-.03,3.42-1.72,5.51-5.19,5.51Zm2.31-7.23c0-1.81-.46-3.15-2.31-3.15-.7,.01-1.39,.06-2.08,.15v7.7c.69,.11,1.38,.16,2.08,.15,1.86,0,2.31-1.34,2.31-3.15v-1.71Z"/>
       </svg>
+      <div class="col d-flex justify-content-between">
+        <form class="d-flex">
+         <input class="form-control pesquisa-menu" type="search" placeholder="Pesquisa" aria-label="Search"> 
+         <button class="btn btn-pesquisa-menu" type="submit">
+            <svg class="pesquisa-claro" data-name="Camada 1" width="20px" viewBox="0 0 32 32.01">
+            <path class="pesquisa-claro" d="M0,13.54c0,3.59,1.43,7.03,3.97,9.57,2.54,2.54,5.98,3.97,9.57,3.97,3.17,0,6.23-1.11,8.66-3.13l7.7,7.7c.11,.12,.25,.21,.4,.27,.15,.06,.31,.09,.47,.09s.32-.03,.47-.09,.28-.15,.4-.27c.23-.24,.36-.55,.36-.88s-.13-.64-.36-.87l-7.7-7.75c2.02-2.43,3.13-5.5,3.13-8.66-.02-3.58-1.45-7.01-3.99-9.54C20.55,1.43,17.12,0,13.54,0S6.51,1.43,3.97,3.97C1.43,6.51,0,9.95,0,13.54Zm2.46,0c0-2.94,1.17-5.75,3.25-7.83s4.89-3.24,7.83-3.25c2.94,0,5.75,1.17,7.83,3.25s3.24,4.89,3.25,7.83c0,2.94-1.17,5.75-3.25,7.83s-4.89,3.24-7.83,3.25c-2.94,0-5.75-1.17-7.83-3.25-2.08-2.08-3.24-4.9-3.25-7.83Z"/>
+          </svg>
+        </button>
+       </form>
+       </div>
+    </div>
       <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel">
         <div class="offcanvas-header border-bottom">
           <h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">Browse docs</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button>
         </div>
-       
+      
         
         <div class="offcanvas-body">
-          <nav class="bd-links w-100" id="bd-docs-nav" aria-label="Docs navigation"><ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
+          <nav class="bd-links" id="bd-docs-nav" aria-label="Docs navigation"><ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
       <li class="bd-links-group py-2">
         
-        <div class="col d-flex justify-content-between">
-          <form class="d-flex">
-           <input class="form-control pesquisa-menu" type="search" placeholder="Pesquisa" aria-label="Search"> 
-           <button class="btn btn-pesquisa-menu" type="submit">
-              <svg class="pesquisa-claro" data-name="Camada 1" width="20px" viewBox="0 0 32 32.01">
-              <path class="pesquisa-claro" d="M0,13.54c0,3.59,1.43,7.03,3.97,9.57,2.54,2.54,5.98,3.97,9.57,3.97,3.17,0,6.23-1.11,8.66-3.13l7.7,7.7c.11,.12,.25,.21,.4,.27,.15,.06,.31,.09,.47,.09s.32-.03,.47-.09,.28-.15,.4-.27c.23-.24,.36-.55,.36-.88s-.13-.64-.36-.87l-7.7-7.75c2.02-2.43,3.13-5.5,3.13-8.66-.02-3.58-1.45-7.01-3.99-9.54C20.55,1.43,17.12,0,13.54,0S6.51,1.43,3.97,3.97C1.43,6.51,0,9.95,0,13.54Zm2.46,0c0-2.94,1.17-5.75,3.25-7.83s4.89-3.24,7.83-3.25c2.94,0,5.75,1.17,7.83,3.25s3.24,4.89,3.25,7.83c0,2.94-1.17,5.75-3.25,7.83s-4.89,3.24-7.83,3.25c-2.94,0-5.75-1.17-7.83-3.25-2.08-2.08-3.24-4.9-3.25-7.83Z"/>
-            </svg>         </button>
-         </form>
-         </div>
+        
         <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
           Guia de Branding
         </strong>
@@ -99,7 +103,7 @@
       </div>
     </aside>
   <div id="bd-main order-1">
-    <div class="row">
+    <div class="row mx-auto w-800">
       <div class="content">
         <div class="row">
         <h1 class="pt-4"><strong>Formulários</strong></h1>
