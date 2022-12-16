@@ -13,6 +13,9 @@ body {
 .hero {
   background-color: rgb(254, 238, 231, 0.4);
 }
+.navbar-light {
+  background-color: #fff;
+}
 
 .bd-layout{
   gap: 0.7rem;
@@ -29,6 +32,13 @@ body {
   .container-xxl {
     max-width: 1320px;
   }
+ 
+}
+
+@media (max-width: 740px) {
+#pesquisa-topo {
+  display: none !important;
+}
 }
 
 @media (min-width: 992px) {
@@ -184,15 +194,16 @@ body::-webkit-scrollbar-thumb {
   border-right-width: 0px;
 }
 
+
 /* Pesquisa */
 .form-control.pesquisa-menu {
   border-radius: 50px;
   border: 1px solid #818385;
   padding: 0.375rem 0.75rem 0.5rem 2.75rem;
-  position: absolute;
-  width: 280px;
-  top: 0.5rem;
-  left: 40%;
+  width: 300px;
+}
+.pesquisa-topo {
+  margin: 0 20%;
 }
 
 form.p-geral.d-flex {
@@ -207,7 +218,6 @@ form.p-geral.d-flex {
   border: none;
   position: absolute;
   align-self: center;
-  /* fill: #FB6B2B; */
 }
 
 .pesquisa-claro {
