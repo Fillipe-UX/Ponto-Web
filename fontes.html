@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tipografia</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://getbootstrap.com/docs/5.2/assets/js/docs.min.js"></script>
+        <link href="scss\custom.css" rel="stylesheet" >
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+        
+        <link href="https://getbootstrap.com//docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        
+        <link href="https://getbootstrap.com//docs/5.2/assets/css/docs.css" rel="stylesheet">
+        <link href="src\css\style.css" rel="stylesheet" >
+
+
+ </head>
+
+ <body>
+  <header class="navbar navbar-expand-lg navbar-light sticky-top">
+    <nav class="container-xxl flex-wrap flex-lg-nowrap " aria-label="Main navigation">
+      <div class="bd-navbar-toggle">
+        <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar" aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+  </svg>
+        </button>
+      </div>
+      <a class="navbar-brand " href="index.html" aria-label="Fortes Ponto Web"> <img src="src\img\pontoweb.svg" width="200px"> </a>
+      
+    <div id="pesquisa-topo" class="col d-flex justify-content-center">
+      <form class="d-flex" role="search">
+        <input class="form-control pesquisa-menu me-2" type="search" placeholder="Pesquisa" aria-label="Pesquisa">
+        <button class="btn btn-pesquisa-menu" type="submit">
+          <svg class="pesquisa-claro" data-name="Camada 1" width="20px" viewBox="0 0 32 32.01">
+          <path class="pesquisa-claro" d="M0,13.54c0,3.59,1.43,7.03,3.97,9.57,2.54,2.54,5.98,3.97,9.57,3.97,3.17,0,6.23-1.11,8.66-3.13l7.7,7.7c.11,.12,.25,.21,.4,.27,.15,.06,.31,.09,.47,.09s.32-.03,.47-.09,.28-.15,.4-.27c.23-.24,.36-.55,.36-.88s-.13-.64-.36-.87l-7.7-7.75c2.02-2.43,3.13-5.5,3.13-8.66-.02-3.58-1.45-7.01-3.99-9.54C20.55,1.43,17.12,0,13.54,0S6.51,1.43,3.97,3.97C1.43,6.51,0,9.95,0,13.54Zm2.46,0c0-2.94,1.17-5.75,3.25-7.83s4.89-3.24,7.83-3.25c2.94,0,5.75,1.17,7.83,3.25s3.24,4.89,3.25,7.83c0,2.94-1.17,5.75-3.25,7.83s-4.89,3.24-7.83,3.25c-2.94,0-5.75-1.17-7.83-3.25-2.08-2.08-3.24-4.9-3.25-7.83Z"/>
+        </svg>
+      </button>
+      </form>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckDefault">escuro</label>
+    </div>
+    
+    </nav>
+  </header>
+  <div class="container-xxl bd-layout">
+    
+    <aside class="bd-sidebar pt-3">
+      <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">Browse docs</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <nav class="bd-links w-100" id="bd-docs-nav" aria-label="Docs navigation"><ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
+      <li class="bd-links-group py-2">
+        
+        <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+          Guia de Branding
+        </strong>
+
+        <ul class="list-unstyled fw-normal pb-2 small">
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Perfil do usuário (em breve)</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Voz (em breve)</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Comunicação (em breve)</a></li>
+        </ul>
+      </li>
+      <li class="bd-links-group py-2">
+        <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+            <svg class="bi me-2" style="color: var(--bs-pink);" aria-hidden="true"><use xlink:href="#palette2"></use></svg>
+          Para Devs
+        </strong>
+
+        <ul class="list-unstyled fw-normal pb-2 small">
+          <li><a href="fontes.html" class="bd-links-link d-inline-block rounded active" aria-current="page">Tipografia</a></li>
+          <li><a href="formulario.html" class="bd-links-link d-inline-block rounded">Formulário</a></li>
+          <li><a href="#" class="bd-links-link d-inline-block rounded">Botões</a></li>
+          <li><a href="#" class="bd-links-link d-inline-block rounded">Browsers &amp; devices</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Overview</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Sass</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Options</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Color</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Components</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">CSS variables</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Optimize</a></li>
+        </ul>
+      </li>
+  </ul>
+</nav>
+ </div>
+  </div>
+    </aside>
+  <div id="bd-main order-1">
+    <div class="row mx-5 pt-5">
+      <div class="conteudo">
+        <h1 class="black mb-2" style="color: #FB6B2B;">Tipografia</h1>
+        <p>A fonte que compõe os textos da marca é a Lato e ela também deverá compor os nossos produtos Web. Essa família tipográfica sem serifa é bem balanceada. <br>
+          Composta por 2 versões de famílias tipográfica a Nunito e a Nunito Sans que proporciona uma comunicação com combinações flexíveis, sem perder sua objetividade.
+        </p>
+      </div>
+ </div>
+<div class="row mx-5">
+        <h3 class="pt-4 bold " style="color: #FB6B2B;"><strong>Nunito Sans</strong></h3>
+        <p> A fonte que compõe os textos da marca é a Lato e ela também deverá compor os nossos produtos Web. Essa família tipográfica sem serifa é bem balanceada.
+          <br>
+          Composta por 2 versões de famílias tipográfica a Nunito e a Nunito Sans que proporciona uma comunicação com combinações flexíveis, sem perder sua objetividade.
+          <br>
+<p> A Nunito Sans é uma fonte gratuita e toda a sua família tipográfica está disponível para download no Google Fontes no link: <a href="https://fonts.google.com/specimen/Nunito+Sans" target="_blank">https://fonts.google.com/specimen/Nunito+Sans</a></p>
+      </div>
+<div class="row mx-5 pt-3">
+<div class="col-6">
+          <p class="lead regular">Regular</p>
+          <div class="bd-clipboard">
+            <figure>
+              <blockquote class="blockquote">
+                <p class="regular"> Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</p>
+              </blockquote>
+              <figcaption class="blockquote-footer regular">
+                Gandalf <cite title="Source Title">O Senhor dos Anéis: A Sociedade do Anel</cite>
+              </figcaption>
+            </figure>
+            <div class="bd-code-snippet">
+              <div class="bd-clipboard"></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="nt">.regular</span> {
+  font-weight:400;
+  }</code></pre></div></div>
+        </div>
+        </div>
+<div class="col-6">
+          <p class="lead italic">Itálico</p>
+          <div class="bd-clipboard">
+            <figure>
+              <blockquote class="blockquote">
+                <p class="italic"> Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</p>
+              </blockquote>
+              <figcaption class="blockquote-footer italic">
+                Gandalf <cite title="Source Title">O Senhor dos Anéis: A Sociedade do Anel</cite>
+              </figcaption>
+            </figure>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="nt">.italic</span> {
+  font-style:italic;
+  }</code></pre></div></div>
+      </div>
+      </div>
+       
+<div class="row mx-5">
+<div class="col-6">
+        <p class="lead bold">Negrito</p>
+        <div class="bd-clipboard">
+          <figure>
+            <blockquote class="blockquote">
+              <p class="bold"> Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer bold">
+              Gandalf <cite title="Source Title">O Senhor dos Anéis: A Sociedade do Anel</cite>
+            </figcaption>
+          </figure>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="nt">.bold</span> {
+font-weight:700;
+}</code></pre></div></div>
+</div>
+<div class="col-6">
+  <p class="lead black">Black</p>
+  <div class="bd-clipboard">
+    <figure>
+      <blockquote class="blockquote">
+        <p class="black"> Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer black">
+        Gandalf <cite title="Source Title">O Senhor dos Anéis: A Sociedade do Anel</cite>
+      </figcaption>
+    </figure>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="nt">.black</span> {
+font-weight:900;
+}</span></code></pre></div></div>
+</div>
+</div>     
+</div>
+</div>
+</div>
+<script src="https://getbootstrap.com/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<script src="https://getbootstrap.com/docs/5.2/assets/js/docs.min.js"></script>
+
+
+ </body>
+  </html>
