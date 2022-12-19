@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Design Systemff para o PontoWeb</title>
+    <title>Tipografia</title>
     <!-- Bootstrap CSS -->
     <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     
@@ -36,7 +36,7 @@
       
     <div id="pesquisa-topo" class="col d-flex justify-content-center">
       <form class="d-flex" role="search">
-        <input class="form-control pesquisa-menu me-2" type="search" placeholder="Search" aria-label="Search">
+        <input class="form-control pesquisa-menu me-2" type="search" placeholder="Pesquisa" aria-label="Pesquisa">
         <button class="btn btn-pesquisa-menu" type="submit">
           <svg class="pesquisa-claro" data-name="Camada 1" width="20px" viewBox="0 0 32 32.01">
           <path class="pesquisa-claro" d="M0,13.54c0,3.59,1.43,7.03,3.97,9.57,2.54,2.54,5.98,3.97,9.57,3.97,3.17,0,6.23-1.11,8.66-3.13l7.7,7.7c.11,.12,.25,.21,.4,.27,.15,.06,.31,.09,.47,.09s.32-.03,.47-.09,.28-.15,.4-.27c.23-.24,.36-.55,.36-.88s-.13-.64-.36-.87l-7.7-7.75c2.02-2.43,3.13-5.5,3.13-8.66-.02-3.58-1.45-7.01-3.99-9.54C20.55,1.43,17.12,0,13.54,0S6.51,1.43,3.97,3.97C1.43,6.51,0,9.95,0,13.54Zm2.46,0c0-2.94,1.17-5.75,3.25-7.83s4.89-3.24,7.83-3.25c2.94,0,5.75,1.17,7.83,3.25s3.24,4.89,3.25,7.83c0,2.94-1.17,5.75-3.25,7.83s-4.89,3.24-7.83,3.25c-2.94,0-5.75-1.17-7.83-3.25-2.08-2.08-3.24-4.9-3.25-7.83Z"/>
@@ -44,7 +44,11 @@
       </button>
       </form>
     </div>
-
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckDefault">input</label>
+    </div>
+    
     </nav>
   </header>
   <div class="container-xxl bd-layout">
@@ -77,7 +81,7 @@
         </strong>
 
         <ul class="list-unstyled fw-normal pb-2 small">
-          <li><a href="fontes.html" class="bd-links-link d-inline-block rounded active" aria-current="page">Fontes</a></li>
+          <li><a href="fontes.html" class="bd-links-link d-inline-block rounded active" aria-current="page">Tipografia</a></li>
           <li><a href="formulario.html" class="bd-links-link d-inline-block rounded">Formulário</a></li>
           <li><a href="#" class="bd-links-link d-inline-block rounded">Botões</a></li>
           <li><a href="#" class="bd-links-link d-inline-block rounded">Browsers &amp; devices</a></li>
@@ -96,18 +100,23 @@
       </div>
     </aside>
   <div id="bd-main order-1">
-    <div class="row mx-auto w-800">
-      <div class="content">
-        <div class="row">
-        <h1 class="pt-4"><strong>Fontes</strong></h1>
+    <div class="row mx-5 pt-5">
+      <div class="conteudo">
+        <h1 class="black mb-2" style="color: #FB6B2B;">Tipografia</h1>
+        <p>A fonte que compõe os textos da marca é a Lato e ela também deverá compor os nossos produtos Web. Essa família tipográfica sem serifa é bem balanceada. <br>
+          Composta por 2 versões de famílias tipográfica a Nunito e a Nunito Sans que proporciona uma comunicação com combinações flexíveis, sem perder sua objetividade.
+        </p>
+      </div>
+    </div>
+<div class="row mx-5">
+        <h3 class="pt-4 bold " style="color: #FB6B2B;"><strong>Nunito Sans</strong></h3>
         <p> A fonte que compõe os textos da marca é a Lato e ela também deverá compor os nossos produtos Web. Essa família tipográfica sem serifa é bem balanceada.
           <br>
           Composta por 2 versões de famílias tipográfica a Nunito e a Nunito Sans que proporciona uma comunicação com combinações flexíveis, sem perder sua objetividade.
-          <br><br>
-          <h3 class="my-3"><strong>Nunito Sans</strong></h3>
+          <br>
 <p> A Nunito Sans é uma fonte gratuita e toda a sua família tipográfica está disponível para download no Google Fontes no link: <a href="https://fonts.google.com/specimen/Nunito+Sans" target="_blank">https://fonts.google.com/specimen/Nunito+Sans</a></p>
       </div>
-<div class="row pt-3">
+<div class="row mx-5 pt-3">
 <div class="col-6">
           <p class="lead regular">Regular</p>
           <div class="bd-clipboard">
@@ -143,7 +152,7 @@
       </div>
       </div>
        
-<div class="row">
+<div class="row mx-5">
 <div class="col-6">
         <p class="lead bold">Negrito</p>
         <div class="bd-clipboard">
@@ -175,8 +184,6 @@ font-weight:900;
 }</span></code></pre></div></div>
 </div>
 </div>     
-</div>
-    </div>
 </div>
 </div>
 </div>
