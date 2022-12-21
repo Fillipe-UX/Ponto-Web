@@ -255,6 +255,53 @@ form.p-geral.d-flex {
   color: #7A7A7A;
 }
 
+/* Estilos dos modos Claro e Escuro */
+
+body {
+      transition: background-color 0.3s;
+}
+
+body[light-mode="dark"] {
+    background-color: #272D39;
+    color: #fff;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+    background-color: #ced4e2;
+    color: #141516;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(2) {
+    left: 65px;
+    background-color: #272D39;
+}
+
+body[light-mode="dark"] a {
+    color: #fff;
+}
+
+.bd-links-link:hover, .bd-links-link:focus {
+  color: #353230;
+  background-color: #E9F3F8;
+}
+
+body[light-mode="dark"] .bd-links-link:hover, .bd-links-link:focus {
+  color: #fff;
+  background-color: #4A5264;
+}
+
+.bd-links-link.active {
+  color: #FB6B2B;
+  background-color: #E9F3F8;
+}
+
+body[light-mode="dark"] .bd-links-link.active {
+  color: #FB6B2B;
+  background-color: #4A5264;
+}
+
+  /* FIM */
+
 /* Modo escuro */
 .bg-escuro {
   background-color: #272D39;

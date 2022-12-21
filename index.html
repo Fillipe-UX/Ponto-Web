@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Design System para o Ponto Web</title>
+    <title>Empatia Design System</title>
     <!-- Bootstrap CSS -->
     <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     
@@ -18,7 +18,38 @@
         
         <link href="https://getbootstrap.com//docs/5.2/assets/css/docs.css" rel="stylesheet">
         <link href="src\css\style.css" rel="stylesheet" >
-
+        <script>
+          var app = document.getElementsByTagName("BODY")[0];
+          if (localStorage.lightMode == "dark") {
+          app.setAttribute("light-mode", "dark");
+          }
+      </script>
+      <script> /* Steps / article on my website: https://henryegloff.com/how-to-code-a-simple-dark-mode-toggle/*/
+      
+      function toggle_light_mode() {
+          var app = document.getElementsByTagName("BODY")[0];
+          if (localStorage.lightMode == "dark") {
+              localStorage.lightMode = "light";
+              app.setAttribute("light-mode", "light");
+          } else {
+              localStorage.lightMode = "dark";
+              app.setAttribute("light-mode", "dark");
+          }
+      }
+      
+      window.addEventListener(
+          "storage",
+          function () {
+              if (localStorage.lightMode == "dark") {
+                  app.setAttribute("light-mode", "dark");
+              } else {
+                  app.setAttribute("light-mode", "light");
+              }
+          },
+          false
+      );
+      
+          </script>
  </head>
 
  <body>
@@ -43,6 +74,12 @@
       </button>
       </form>
     </div>
+    <img src="src\icones\claro-mc.svg" width="16px">
+    <div class="form-check form-switch">
+      <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+      </div>
+    <img src="src\icones\escuro-mc.svg" width="16px">
     </nav>
   </header>
 

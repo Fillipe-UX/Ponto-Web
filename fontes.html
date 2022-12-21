@@ -18,7 +18,38 @@
         
         <link href="https://getbootstrap.com//docs/5.2/assets/css/docs.css" rel="stylesheet">
         <link href="src\css\style.css" rel="stylesheet" >
-
+        <script>
+          var app = document.getElementsByTagName("BODY")[0];
+          if (localStorage.lightMode == "dark") {
+          app.setAttribute("light-mode", "dark");
+          }
+      </script>
+      <script> /* Steps / article on my website: https://henryegloff.com/how-to-code-a-simple-dark-mode-toggle/*/
+      
+      function toggle_light_mode() {
+          var app = document.getElementsByTagName("BODY")[0];
+          if (localStorage.lightMode == "dark") {
+              localStorage.lightMode = "light";
+              app.setAttribute("light-mode", "light");
+          } else {
+              localStorage.lightMode = "dark";
+              app.setAttribute("light-mode", "dark");
+          }
+      }
+      
+      window.addEventListener(
+          "storage",
+          function () {
+              if (localStorage.lightMode == "dark") {
+                  app.setAttribute("light-mode", "dark");
+              } else {
+                  app.setAttribute("light-mode", "light");
+              }
+          },
+          false
+      );
+      
+          </script>
 
  </head>
 
@@ -46,13 +77,13 @@
     </div>
     <img src="src\icones\claro-mc.svg" width="16px">
     <div class="form-check form-switch">
-      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-      <label class="form-check-label" for="flexSwitchCheckDefault"></label></div>
+      <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+      </div>
     <img src="src\icones\escuro-mc.svg" width="16px">
     </nav>
   </header>
   <div class="container-xxl bd-layout">
-    
     <aside class="bd-sidebar pt-3">
       <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel">
         <div class="offcanvas-header border-bottom">
