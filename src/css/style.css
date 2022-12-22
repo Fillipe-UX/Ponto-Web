@@ -111,9 +111,15 @@ a {
 .btn-acao {
   padding: 0.375rem 1.5rem;
   width: auto;
+  font-size: 14px;
 }
 .btn-acao:hover{
-  background-color: #f5f5f5;
+  background-color: #e4e4e4;
+}
+
+#icone-botao {
+  width: 0.65rem;
+  margin-top: -0.2rem;
 }
 
 /* Tipografia */
