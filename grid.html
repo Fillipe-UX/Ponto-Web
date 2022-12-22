@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grid</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://getbootstrap.com/docs/5.2/assets/js/docs.min.js"></script>
+        <link href="scss\custom.css" rel="stylesheet" >
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+        
+        <link href="https://getbootstrap.com//docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        
+        <link href="https://getbootstrap.com//docs/5.2/assets/css/docs.css" rel="stylesheet">
+        <link href="src\css\style.css" rel="stylesheet" >
+        <script>
+          var app = document.getElementsByTagName("BODY")[0];
+          if (localStorage.lightMode == "dark") {
+          app.setAttribute("light-mode", "dark");
+          }
+      </script>
+      <script> /* Steps / article on my website: https://henryegloff.com/how-to-code-a-simple-dark-mode-toggle/*/
+      
+      function toggle_light_mode() {
+          var app = document.getElementsByTagName("BODY")[0];
+          if (localStorage.lightMode == "dark") {
+              localStorage.lightMode = "light";
+              app.setAttribute("light-mode", "light");
+          } else {
+              localStorage.lightMode = "dark";
+              app.setAttribute("light-mode", "dark");
+          }
+      }
+      
+      window.addEventListener(
+          "storage",
+          function () {
+              if (localStorage.lightMode == "dark") {
+                  app.setAttribute("light-mode", "dark");
+              } else {
+                  app.setAttribute("light-mode", "light");
+              }
+          },
+          false
+      );
+      
+          </script>
+
+ </head>
+
+ <body>
+  <header class="navbar navbar-expand-lg navbar-light sticky-top">
+    <nav class="container-xxl flex-wrap flex-lg-nowrap " aria-label="Main navigation">
+      <div class="bd-navbar-toggle">
+        <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar" aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+  </svg>
+        </button>
+      </div>
+      <a class="navbar-brand " href="index.html" aria-label="Fortes Ponto Web"> <img src="src\img\pontoweb.svg" width="200px"> </a>
+      
+    <div id="pesquisa-topo" class="col d-flex justify-content-center">
+      <form class="d-flex" role="search">
+        <input class="form-control pesquisa-menu me-2" type="search" placeholder="Pesquisa" aria-label="Pesquisa">
+        <button class="btn btn-pesquisa-menu" type="submit">
+          <svg class="pesquisa-claro" data-name="Camada 1" width="20px" viewBox="0 0 32 32.01">
+          <path class="pesquisa-claro" d="M0,13.54c0,3.59,1.43,7.03,3.97,9.57,2.54,2.54,5.98,3.97,9.57,3.97,3.17,0,6.23-1.11,8.66-3.13l7.7,7.7c.11,.12,.25,.21,.4,.27,.15,.06,.31,.09,.47,.09s.32-.03,.47-.09,.28-.15,.4-.27c.23-.24,.36-.55,.36-.88s-.13-.64-.36-.87l-7.7-7.75c2.02-2.43,3.13-5.5,3.13-8.66-.02-3.58-1.45-7.01-3.99-9.54C20.55,1.43,17.12,0,13.54,0S6.51,1.43,3.97,3.97C1.43,6.51,0,9.95,0,13.54Zm2.46,0c0-2.94,1.17-5.75,3.25-7.83s4.89-3.24,7.83-3.25c2.94,0,5.75,1.17,7.83,3.25s3.24,4.89,3.25,7.83c0,2.94-1.17,5.75-3.25,7.83s-4.89,3.24-7.83,3.25c-2.94,0-5.75-1.17-7.83-3.25-2.08-2.08-3.24-4.9-3.25-7.83Z"/>
+        </svg>
+      </button>
+      </form>
+    </div>
+    <svg class="sol-mc" data-name="sol" viewBox="0 0 31.8 31.8" width="18px" style="margin-right:10px"><defs>
+      <style>.sol-mc {fill: #353230;}</style></defs>
+    <path class="sol-mc" d="m15.9,6.6c-1.8,0-3.6.5-5.2,1.6s-2.7,2.5-3.4,4.2c-.7,1.6-.9,3.5-.6,5.3.4,1.8,1.2,3.5,2.6,4.8,1.3,1.3,3,2.2,4.8,2.6s3.7.2,5.4-.5,3.2-1.9,4.2-3.4c1-1.5,1.6-3.3,1.6-5.2,0-2.5-1-4.8-2.7-6.6-1.9-1.8-4.2-2.8-6.7-2.8Zm0,16.2c-1.4,0-2.7-.4-3.8-1.2-1.1-.8-2-1.8-2.5-3.1-.5-1.3-.7-2.6-.4-4,.3-1.3.9-2.6,1.9-3.5,1-1,2.2-1.6,3.5-1.9,1.3-.3,2.7-.1,4,.4,1.3.5,2.3,1.4,3.1,2.5.8,1.1,1.2,2.5,1.2,3.8,0,1.8-.7,3.6-2,4.9-1.4,1.4-3.2,2.1-5,2.1Zm0-17c.3,0,.6-.1.9-.4.2-.2.4-.5.4-.9V1.3c0-.3-.1-.6-.4-.9-.2-.2-.5-.4-.9-.4-.3,0-.6.1-.9.4-.2.3-.3.6-.3.9v3.2c0,.3.1.6.4.9.2.2.5.4.8.4Zm0,20.2c-.3,0-.6.1-.9.4-.2.2-.3.5-.3.9v3.2c0,.3.1.6.4.9.2.2.5.4.9.4.3,0,.6-.1.9-.4.2-.2.4-.5.4-.9v-3.2c0-.3-.1-.6-.4-.9s-.7-.4-1-.4Zm14.6-11.3h-3.2c-.3,0-.6.1-.9.4-.2.2-.4.5-.4.9,0,.3.1.6.4.9.2.2.5.4.9.4h3.2c.3,0,.6-.1.9-.4.2-.2.4-.5.4-.9,0-.3-.1-.6-.4-.9-.3-.3-.6-.4-.9-.4Zm-24.8,1.2c0-.3-.1-.6-.4-.9-.2-.2-.5-.4-.9-.4H1.3c-.3,0-.6.1-.9.4-.2.2-.4.5-.4.9,0,.3.1.6.4.9.2.2.5.4.9.4h3.2c.3,0,.6-.1.9-.4.2-.3.3-.6.3-.9Zm-.4-7.3c.2.3.5.4.8.4s.7-.1.9-.4c.2-.2.4-.5.4-.9s-.2-.5-.4-.8l-2.3-2.3c-.2-.2-.5-.3-.8-.3s-.6.1-.8.4c-.3.2-.4.5-.4.8s.1.6.3.9l2.3,2.2Zm20.3.4c.2,0,.3,0,.5-.1s.3-.2.4-.3l2.3-2.3c.2-.2.3-.5.3-.9,0-.3-.1-.6-.4-.8s-.5-.4-.8-.4-.6.1-.9.3l-2.2,2.4c-.2.2-.4.5-.4.9s.1.6.4.9c.1.1.2.2.3.2.2.1.4.1.5.1ZM5.3,23.2l-2.3,2.3c-.1.1-.2.2-.3.4-.1.1-.1.3-.1.5s0,.3.1.5c.1.1.2.3.3.4s.2.2.4.3c.1.1.3.1.5.1s.3,0,.5-.1c.1-.1.3-.2.4-.3l2.2-2.4c.2-.2.3-.5.3-.9,0-.3-.1-.6-.4-.8-.2-.2-.5-.4-.8-.4-.3,0-.6.1-.8.4Zm21.2,0c-.2-.2-.5-.3-.9-.3-.3,0-.6.1-.8.4-.2.2-.4.5-.4.8s.1.6.3.9l2.3,2.3c.1.1.2.2.4.3.1.1.3.1.5.1s.3,0,.5-.1c.1-.1.3-.2.4-.3.1-.1.2-.2.3-.4.1-.1.1-.3.1-.5s0-.3-.1-.5c-.1-.1-.2-.3-.3-.4l-2.3-2.3Z"/>
+  </svg>
+    <div class="form-check form-switch">
+      <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+      </div>
+      <svg data-name="lua" viewBox="0 0 30.41 32.01" width="16px"><defs>
+        <style>.lua-mc {fill: #353230;}</style></defs>
+        <path class="lua-mc" d="m.3,21.7c.2-.2.4-.3.6-.4s.5-.1.7,0c2.4.8,5,.8,7.5,0,2.4-.8,4.5-2.4,6-4.5,1.5-2.3,2.1-5,1.9-7.6-.3-2.7-1.5-5.2-3.4-7.1-.2-.2-.3-.4-.3-.6s0-.5.1-.7.3-.4.5-.6c0-.1.3-.2.5-.2,2.9,0,5.7.8,8.1,2.2,2.5,1.4,4.5,3.5,5.9,6s2.1,5.3,2,8.2-.9,5.6-2.4,8.1c-1.5,2.4-3.6,4.4-6.2,5.7-2.5,1.3-5.4,1.9-8.2,1.8-2.9-.1-5.6-1.1-8-2.6-2.4-1.6-4.3-3.8-5.5-6.4-.1-.2-.1-.5-.1-.7,0-.2.1-.4.3-.6Zm14.1,7.8c3.3,0,6.6-1.2,9-3.5,2.5-2.2,4-5.3,4.4-8.6.4-3.4-.5-6.7-2.5-9.4s-4.8-4.6-8.1-5.3c1.5,2.3,2.3,5,2.3,7.8s-.9,5.5-2.4,7.8c-1.5,2.1-3.5,3.8-5.8,4.9s-4.9,1.5-7.5,1.2c1.3,1.6,2.9,2.9,4.7,3.8,1.8.8,3.9,1.3,5.9,1.3Z"/>
+      </svg>
+    </nav>
+  </header>
+  <div class="container-xxl bd-layout">
+    <aside class="bd-sidebar pt-3">
+      <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">Browse docs</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <nav class="bd-links w-100" id="bd-docs-nav" aria-label="Docs navigation"><ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
+      <li class="bd-links-group py-2">
+        
+        <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+          Guia de Branding
+        </strong>
+
+        <ul class="list-unstyled fw-normal pb-2 small">
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Perfil do usuário (em breve)</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Voz (em breve)</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded">Comunicação (em breve)</a></li>
+        </ul>
+      </li>
+      <li class="bd-links-group py-2">
+        <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+            <svg class="bi me-2" style="color: var(--bs-pink);" aria-hidden="true"><use xlink:href="#palette2"></use></svg>
+          Para Devs
+        </strong>
+
+        <ul class="list-unstyled fw-normal pb-2 small">
+          <li><a href="fontes.html" class="bd-links-link d-inline-block rounded active" aria-current="page">Tipografia</a></li>
+          <li><a href="formulario.html" class="bd-links-link d-inline-block rounded">Formulário</a></li>
+          <li><a href="botoes.html" class="bd-links-link d-inline-block rounded">Botões</a></li>
+          <li><a href="grid.html" class="bd-links-link d-inline-block rounded">Grid</a></li>
+          <li><a href="#" class="bd-links-link d-inline-block rounded">Overview</a></li>
+          <li><a href="#" class="bd-links-link d-inline-block rounded">Sass</a></li>
+          <li><a href="#" class="bd-links-link d-inline-block rounded">Options</a></li>
+          <li><a href="#" class="bd-links-link d-inline-block rounded">Color</a></li>
+          <li><a href="#" class="bd-links-link d-inline-block rounded">Components</a></li>
+          <li><a href="#" class="bd-links-link d-inline-block rounded">CSS variables</a></li>
+          <li><a href="#" class="bd-links-link d-inline-block rounded">Optimize</a></li>
+        </ul>
+      </li>
+  </ul>
+</nav>
+ </div>
+  </div>
+    </aside>
+  <div id="bd-main order-1">
+    <div class="row hero py-3">
+      <div class="col-7 ps-5">
+      <h1 class="pt-5 black" style="color: #FB6B2B; font-size: 40px; ">Grid</h1>
+      <p>A grade é a base para posicionar os elementos na tela. Projetar para a grade ajuda a criar experiências perfeitas e fáceis de seguir.
+      </p>   
+    </div>
+    
+</div>
+
+<div class="row mx-4">
+          <p>  O uso consistente de um sistema de grid fornece a base para o posicionamento harmonioso e consistente dos elementos na tela. Projetar para a grade ajuda a criar uma experiência que facilita o entendimento e traz ordem para a página.
+          </p>
+          <br>
+<p> A Nunito Sans é uma fonte gratuita e toda a sua família tipográfica está disponível para download no Google Fontes no link: <a href="https://fonts.google.com/specimen/Nunito+Sans" target="_blank">https://fonts.google.com/specimen/Nunito+Sans</a></p>
+      </div>
+      <h3 class="pt-5 black" style="color: #FB6B2B;">Grid Baseline</h3>
+      <p>O tamanho de fonte base para o Ponto Web é 16px.
+      </p> 
+<div class="row mx-5 pt-3">
+<div class="col-6">
+          <p class="lead regular">Regular</p>
+          <div class="bd-clipboard">
+            <figure>
+              <blockquote class="blockquote">
+                <p class="regular"> Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</p>
+              </blockquote>
+              <figcaption class="blockquote-footer regular">
+                Gandalf <cite title="Source Title">O Senhor dos Anéis: A Sociedade do Anel</cite>
+              </figcaption>
+            </figure>
+            <div class="bd-code-snippet">
+              <div class="bd-clipboard"></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="nt">.regular</span> {
+  font-weight:400;
+  }</code></pre></div></div>
+        </div>
+        </div>
+<div class="col-6">
+          <p class="lead italic">Itálico</p>
+          <div class="bd-clipboard">
+            <figure>
+              <blockquote class="blockquote">
+                <p class="italic"> Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</p>
+              </blockquote>
+              <figcaption class="blockquote-footer italic">
+                Gandalf <cite title="Source Title">O Senhor dos Anéis: A Sociedade do Anel</cite>
+              </figcaption>
+            </figure>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="nt">.italic</span> {
+  font-style:italic;
+  }</code></pre></div></div>
+      </div>
+      </div>
+       
+<div class="row mx-5">
+<div class="col-6">
+        <p class="lead bold">Negrito</p>
+        <div class="bd-clipboard">
+          <figure>
+            <blockquote class="blockquote">
+              <p class="bold"> Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer bold">
+              Gandalf <cite title="Source Title">O Senhor dos Anéis: A Sociedade do Anel</cite>
+            </figcaption>
+          </figure>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="nt">.bold</span> {
+font-weight:700;
+}</code></pre></div></div>
+</div>
+<div class="col-6">
+  <p class="lead black">Black</p>
+  <div class="bd-clipboard">
+    <figure>
+      <blockquote class="blockquote">
+        <p class="black"> Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer black">
+        Gandalf <cite title="Source Title">O Senhor dos Anéis: A Sociedade do Anel</cite>
+      </figcaption>
+    </figure>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="nt">.black</span> {
+font-weight:900;
+}</span></code></pre></div></div>
+</div>
+</div>     
+</div>
+</div>
+</div>
+<script src="https://getbootstrap.com/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<script src="https://getbootstrap.com/docs/5.2/assets/js/docs.min.js"></script>
+
+
+ </body>
+  </html>

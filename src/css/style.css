@@ -106,6 +106,16 @@ body::-webkit-scrollbar-thumb {
 a {
   color: #9747FF;
 }
+
+/* Botões */
+.btn-acao {
+  padding: 0.375rem 1.5rem;
+  width: auto;
+}
+.btn-acao:hover{
+  background-color: #f5f5f5;
+}
+
 /* Tipografia */
 .regular {
   font-weight: 400;
