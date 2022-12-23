@@ -113,13 +113,52 @@ a {
   width: auto;
   font-size: 14px;
 }
-.btn-acao:hover{
-  background-color: #e4e4e4;
+.btn-acao:hover {
+  background-color: #FEF0E9;
+}
+
+:not(.btn-check)+.btn:active {
+  background-color: #FEF0E9;
+  border-color: transparent !important;
 }
 
 #icone-botao {
-  width: 0.65rem;
+  width: 0.75rem;
   margin-top: -0.2rem;
+  margin-right: 4px;
+}
+
+.btn-entrar {
+  width: auto;
+  padding: 0.375rem 1.5rem;
+  color: #fff;
+  background-color: #0089D6;
+  border: 1px solid #006EBE;
+}
+
+.btn-entrar:hover {
+  color: #fff;
+  background-color: #006EBE;
+  border: 1px solid #0060a5;
+}
+
+.btn-cancelar {
+  width: auto;
+  padding: 0.375rem 1.5rem;
+  background-color: #FFFFFF;
+  border: 1px solid #D9D9D9;
+}
+.btn-salvar {
+  width: auto;
+  padding: 0.375rem 1.5rem;
+  color: #fff;
+  background-color: #0ABF32;
+  border: 1px solid #00A624;
+}
+.btn-salvar:hover {
+  color: #fff;
+  background-color: #00A624;
+  border: 1px solid #008b1e;
 }
 
 /* Tipografia */
