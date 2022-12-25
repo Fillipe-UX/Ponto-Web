@@ -118,9 +118,9 @@
         </strong>
 
         <ul class="list-unstyled fw-normal pb-2 small">
-          <li><a href="fontes.html" class="bd-links-link d-inline-block rounded active" aria-current="page">Tipografia</a></li>
+          <li><a href="fontes.html" class="bd-links-link d-inline-block rounded">Tipografia</a></li>
           <li><a href="formulario.html" class="bd-links-link d-inline-block rounded">Formulário</a></li>
-          <li><a href="botoes.html" class="bd-links-link d-inline-block rounded">Botões</a></li>
+          <li><a href="botoes.html" class="bd-links-link d-inline-block rounded active"  aria-current="page">Botões</a></li>
           <li><a href="grid.html" class="bd-links-link d-inline-block rounded">Grid</a></li>
           <li><a href="#" class="bd-links-link d-inline-block rounded">Overview</a></li>
           <li><a href="#" class="bd-links-link d-inline-block rounded">Sass</a></li>
@@ -138,7 +138,7 @@
     </aside>
   <div id="bd-main order-1">
     <div class="row hero py-3">
-      <div class="col-7 ps-5">
+      <div class="col ps-5">
       <h1 class="pt-4 bold" style="color: #FB6B2B;">Botões</h1>
       <p>Os botões são elementos da interface do usuário que permitem aos usuários realizar ações ao longo do projeto. É importante que eles tenham amplo espaço para clicar e ajudem a comunicar a importância de suas ações.
       </p>   
@@ -147,17 +147,26 @@
 </div>
 
 <div class="row mx-4">
-        <h3 class="pt-4" style="color: #FB6B2B;"><strong>Estilos</strong></h3>
-          <p>Temos 3 estilos de botões diferentes</p>
-          <br>
-          <li>1. Ação</li>
-          <li>2. Primários</li>
-          <li>3. Silenciado</li>
-          <br>
+  <h3 class="pt-4" style="color: #FB6B2B;"><strong>Tamanhos</strong></h3>
+<p>Nesse primeiro momento possuimos 2 tamnnhos de botões:</p>
+<br>
+<li>Médio</li>
+<li>Pequeno</li>
+<br>
+<p> Eles serão utilizados para o estilos de botões diferentes. O médio será utilizado em botões primários. E os botões pequenos serão utilziados botões de ação.
+</p>
+
+<h3 class="pt-4" style="color: #FB6B2B;"><strong>Estilos</strong></h3>
+<p>Temos 3 estilos de botões diferentes</p>
+<br>
+<li>1. Ação</li>
+<li>2. Primários</li>
+<li>3. Silenciado</li>
+<br>
 <p> Cada estilo é explicado abaixo, detalhando como e onde usar esses estilos.</p>
 <h4 class="pt-4"><strong>Ação</strong></h4>
     <p> São botões que ajudam o usuário realizar ações recorrentes durante o dia a dia. Geralmente ficam localizados nas telas de listagem.</p>
-    <div class="d-flex">
+    <div class="d-flex gx-5">
     <button type="button" class="btn btn-acao"><svg id="icone-botao" viewBox="0 0 20 20">
         <path class="icn-mais" d="m8,12v6c0,1.1.9,2,2,2s2-.9,2-2v-6h6c1.1,0,2-.9,2-2s-.9-2-2-2h-6V2c0-1.1-.9-2-2-2s-2,.9-2,2v6H2c-1.1,0-2,.9-2,2s.9,2,2,2h6Z"/></svg> Novo</button>
       <button type="button" class="btn btn-acao"><svg id="icone-botao" viewBox="0 0 18.5 19.5">
@@ -176,15 +185,34 @@
       <button type="button" class="btn btn-acao"><svg id="icone-botao" viewBox="0 0 24.55 18">
         <path class="icn-visualizar" d="m6.82,9c0-1.02.32-2.01.92-2.86.6-.85,1.45-1.5,2.45-1.89,1-.39,2.09-.49,3.15-.29,1.06.2,2.03.69,2.79,1.41.76.72,1.28,1.64,1.49,2.63.21,1,.1,2.03-.31,2.97-.41.94-1.11,1.74-2.01,2.31-.9.57-1.95.87-3.03.87-1.45,0-2.83-.54-3.86-1.51-1.02-.96-1.6-2.27-1.6-3.64Zm5.45,3.21c.9,0,1.77-.34,2.41-.94.64-.6,1-1.42,1-2.27s-.36-1.67-1-2.27c-.64-.6-1.51-.94-2.41-.94h-.12c.09.2.13.42.12.64,0,.68-.29,1.34-.8,1.82-.51.48-1.2.75-1.93.75-.23,0-.47-.03-.68-.12v.08c0,1.81,1.53,3.25,3.41,3.25ZM4.07,3.24C6.07,1.48,8.83,0,12.27,0s6.2,1.48,8.21,3.24c1.99,1.74,3.33,3.8,3.96,5.27.07.16.11.32.11.49s-.04.34-.11.49c-.63,1.43-1.96,3.49-3.96,5.27-2.01,1.76-4.76,3.24-8.21,3.24s-6.2-1.48-8.21-3.24c-1.99-1.78-3.33-3.83-3.96-5.27-.07-.16-.1-.32-.1-.49s.04-.34.1-.49c.63-1.47,1.97-3.52,3.96-5.27Zm8.21-1.31c-2.78,0-5.06,1.19-6.81,2.72-1.64,1.44-2.77,3.11-3.35,4.35.58,1.21,1.71,2.91,3.35,4.35,1.75,1.53,4.04,2.72,6.81,2.72s5.06-1.19,6.81-2.72c1.64-1.44,2.74-3.15,3.35-4.35-.62-1.24-1.71-2.91-3.35-4.35-1.75-1.53-4.04-2.72-6.81-2.72Z"/></svg> Visualizar</button>
     </div>
+    <div class="table-responsive table-radius mt-2">
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Flexível</th>
+            <th scope="col">Tipo de Escala</th>
+            <th scope="col">Horário Noturno</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Horário Comercial</td>
+            <td>Não</td>
+            <td>Jornada com horário diário e folga fixa</td>
+            <td>Não</td>
+          </tr>
+          </tbody>
+      </table>
+    </div>
     <h4 class="pt-4"><strong>Primário</strong></h4>
-    <p> São botões utilizados para confirmação de ações e desistência de ações.</p>
+    <p> São botões utilizados para confirmar avanços ou desistetências durante uma tarefa, por exemplo: salvar, cancelar, entrar.</p>
     <div class="d-flex gx-5">
     <button type="button" class="btn btn-entrar me-4"> Entrar</button>
     <button type="button" class="btn btn-cancelar me-4"> Cancelar</button>
-    <button type="button" class="btn btn-salvar me-4"> Salvar</button>
-      
+    <button type="button" class="btn btn-salvar me-4"> Salvar</button>      
     </div>
-
+    
       </div>
 </div>
 </div>
@@ -195,4 +223,5 @@
 
 
  </body>
+ <footer></footer>
   </html>

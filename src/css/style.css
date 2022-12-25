@@ -4,16 +4,28 @@ body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+footer {height: 80px;}
+
 .w-800 {
   max-width: 900px;
   min-width: 900px;
 }
 
-/* Hero */
-.hero {
-  background-color: rgb(254, 238, 231, 0.4);
+.bi {
+  fill: #141516;
 }
 
+/* Hero */
+.hero {
+  background-color: #fff2ca;
+}
+
+.hero-img {
+  background-image: url('../img/hero-img.png') ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+}
 
 .bd-layout{
   gap: 0.7rem;
@@ -37,6 +49,11 @@ body {
 #pesquisa-topo {
   display: none !important;
 }
+
+.hero-img {
+  background-image: none;
+}
+
 }
 
 @media (min-width: 992px) {
@@ -117,9 +134,13 @@ a {
   background-color: #FEF0E9;
 }
 
-:not(.btn-check)+.btn:active {
+:not(.btn-check)+.btn-acao:active {
   background-color: #FEF0E9;
   border-color: transparent !important;
+}
+:not(.btn-check)+.btn:active {
+  background-color: unset;
+  border-color: unset;
 }
 
 #icone-botao {
@@ -147,6 +168,12 @@ a {
   padding: 0.375rem 1.5rem;
   background-color: #FFFFFF;
   border: 1px solid #D9D9D9;
+}
+.btn-cancelar:hover {
+  width: auto;
+  padding: 0.375rem 1.5rem;
+  background-color: #f6f6f6;
+  border: 1px solid #B3B3B3;
 }
 .btn-salvar {
   width: auto;
@@ -203,12 +230,13 @@ a {
 
 .btn-clipboard {
   transition: 0.1s;
+  border-radius: 8px;
 }
 
 .btn-clipboard:hover {
-  background-color: rgb(193, 224, 249);
+  background-color: #e6e6e6;
   transition: 0.1s;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 /* Modo Claro */
@@ -266,6 +294,21 @@ a {
   border-right-width: 0px;
 }
 
+/* Tabela */
+.table {
+  font-size: 14px;
+}
+
+.table-responsive {
+  overflow: auto;
+}
+
+.table-radius {
+  border: 1px solid #E4E4E4;
+  border-radius: 10px;
+  padding: 0;
+}
+
 /* Estilos dos modos Claro e Escuro */
 .navbar {
   padding: 0.9rem 0;
@@ -295,10 +338,16 @@ body[light-mode="dark"] a {
 color: #fff;
 }
 
+
+.bd-links-link {
+  width: 80%;
+}
+
 .bd-links-link:hover, .bd-links-link:focus {
 color: #353230;
 background-color: #E9F3F8;
 }
+
 
 body[light-mode="dark"] .sol-mc {
 fill: #fff;
