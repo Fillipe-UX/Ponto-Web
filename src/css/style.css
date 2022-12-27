@@ -14,7 +14,10 @@ footer {height: 80px;}
 .bi {
   fill: #141516;
 }
-
+.navbar-logo {
+  background-image: url(../img/pontoweb.svg);
+  width: 200px;
+}
 /* Hero */
 .hero {
   background-color: #fff2ca;
