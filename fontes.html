@@ -12,10 +12,8 @@
     <script src="https://getbootstrap.com/docs/5.2/assets/js/docs.min.js"></script>
         <link href="scss\custom.css" rel="stylesheet" >
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">     
         <link href="https://getbootstrap.com//docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        
         <link href="https://getbootstrap.com//docs/5.2/assets/css/docs.css" rel="stylesheet">
         <link href="src\css\style.css" rel="stylesheet" >
         <script>
@@ -148,78 +146,68 @@
 
 <div class="row mx-4">
         <h3 class="pt-4 bold " style="color: #FB6B2B;"><strong>Nunito Sans</strong></h3>
-          <p>  Composta por 2 versões de famílias tipográfica a Nunito e a Nunito Sans que proporciona uma comunicação com combinações flexíveis, sem perder a objetividade.</p>
+          <p>  Composta por 2 versões de famílias tipográficas a Nunito e a Nunito Sans que proporcionam uma comunicação com combinações flexíveis, sem perder a objetividade.</p>
           <br>
 <p> A Nunito Sans é uma fonte gratuita e toda a sua família tipográfica está disponível para download no Google Fontes no link: <a href="https://fonts.google.com/specimen/Nunito+Sans" target="_blank">https://fonts.google.com/specimen/Nunito+Sans</a></p>
-      </div>
-<div class="row mx-5 pt-3">
-<div class="col-6">
-          <p class="lead regular">Regular</p>
-          <div class="bd-clipboard">
-            <figure>
-              <blockquote class="blockquote">
-                <p class="regular"> Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</p>
-              </blockquote>
-              <figcaption class="blockquote-footer regular">
-                Gandalf <cite title="Source Title">O Senhor dos Anéis: A Sociedade do Anel</cite>
-              </figcaption>
-            </figure>
-            <div class="bd-code-snippet">
-              <div class="bd-clipboard"></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="nt">.regular</span> {
-  font-weight:400;
-  }</code></pre></div></div>
-        </div>
-        </div>
-<div class="col-6">
-          <p class="lead italic">Itálico</p>
-          <div class="bd-clipboard">
-            <figure>
-              <blockquote class="blockquote">
-                <p class="italic"> Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</p>
-              </blockquote>
-              <figcaption class="blockquote-footer italic">
-                Gandalf <cite title="Source Title">O Senhor dos Anéis: A Sociedade do Anel</cite>
-              </figcaption>
-            </figure>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="nt">.italic</span> {
-  font-style:italic;
-  }</code></pre></div></div>
-      </div>
-      </div>
-       
-<div class="row mx-5">
-<div class="col-6">
-        <p class="lead bold">Negrito</p>
-        <div class="bd-clipboard">
-          <figure>
-            <blockquote class="blockquote">
-              <p class="bold"> Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</p>
-            </blockquote>
-            <figcaption class="blockquote-footer bold">
-              Gandalf <cite title="Source Title">O Senhor dos Anéis: A Sociedade do Anel</cite>
-            </figcaption>
-          </figure>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="nt">.bold</span> {
-font-weight:700;
-}</code></pre></div></div>
+      
+<h4 class="pt-4 bold " style="color: #FB6B2B;"><strong>Parágrafos</strong></h4>
+<p>Devemos utilizar o componente paragraph para textos que não sejam headings, respeitando o entrelinhamento de 20px e tamanho 14px de fonte. Devemos utilizar o componente heading para títulos, sendo o H1 para títulos de páginas, H2 para subtítulos dentro da página e H3 para subtítulos contidos dentro do subtítulo H2.
+  </p>
+
+  <div class="table-responsive table-radius mt-2">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Classe</th>
+          <th scope="col">Estilo</th>
+          <th scope="col">Descrição</th>
+          <th scope="col">Exemplo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>.normal</td>
+          <td>font-weight: 400;</td>
+          <td>Muda o peso da fonte para 400.</td>
+          <td><span class="normal">Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</span></td>
+        </tr>
+        <tr>
+          <td>.bold</td>
+          <td>font-weight: 600;</td>
+          <td>Muda o peso da fonte para 600.</td>
+          <td><span class="bold">Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</span></td>
+        </tr>
+        <tr>
+          <td>.italic</td>
+          <td>font-style: Italic;</td>
+          <td>Muda o estilo da fonte para itálico.</td>
+          <td><span class=" italic">Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</span></td>
+        </tr>
+        <tr>
+          <td>.tt-capitalize	</td>
+          <td>text-transform: capitalize;</td>
+          <td>O primeiro caractere de cada palavra é maiúsculo, independentemente da marcação.</td>
+          <td><span class="tt-capitalize">Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</span></td>
+        </tr>
+        <tr>
+          <td>.tt-uppercase</td>
+          <td>text-transform: uppercase;</td>
+          <td>Todos os caracteres são maiúsculos, independentemente da marcação.</td>
+          <td><span class="tt-uppercase">Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</span></td>
+        </tr>
+        <tr>
+          <td>.italic</td>
+          <td>font-style: Italic;</td>
+          <td>Muda o estilo da fonte para itálico.</td>
+          <td><span class=" italic">Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</span></td>
+        </tr>
+        </tbody>
+    </table>
+  </div>
 </div>
-<div class="col-6">
-  <p class="lead black">Black</p>
-  <div class="bd-clipboard">
-    <figure>
-      <blockquote class="blockquote">
-        <p class="black"> Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.</p>
-      </blockquote>
-      <figcaption class="blockquote-footer black">
-        Gandalf <cite title="Source Title">O Senhor dos Anéis: A Sociedade do Anel</cite>
-      </figcaption>
-    </figure>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="nt">.black</span> {
-font-weight:900;
-}</span></code></pre></div></div>
-</div>
-</div>     
+
+
+          
 </div>
 </div>
 
