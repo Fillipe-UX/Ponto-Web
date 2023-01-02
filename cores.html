@@ -7,15 +7,16 @@
     <title>Cores</title>
     <!-- Bootstrap CSS -->
     <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="https://getbootstrap.com//docs/5.2/assets/css/docs.css" rel="stylesheet">
     
+    <link href="src\css\style.css" rel="stylesheet" >
+    <link href="src\css\custom.css" rel="stylesheet" >
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://getbootstrap.com/docs/5.2/assets/js/docs.min.js"></script>
-        <link href="scss\custom.css" rel="stylesheet" >
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">     
-        <link href="https://getbootstrap.com//docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link href="https://getbootstrap.com//docs/5.2/assets/css/docs.css" rel="stylesheet">
-        <link href="src\css\style.css" rel="stylesheet" >
+
         <script>
           var app = document.getElementsByTagName("BODY")[0];
           if (localStorage.lightMode == "dark") {
@@ -102,9 +103,9 @@
         </strong>
 
         <ul class="list-unstyled fw-normal pb-2 small">
-            <li><a href="#" class="bd-links-link d-inline-block rounded">Perfil do usuário (em breve)</a></li>
-            <li><a href="#" class="bd-links-link d-inline-block rounded">Voz (em breve)</a></li>
-            <li><a href="#" class="bd-links-link d-inline-block rounded">Comunicação (em breve)</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded inativo">Perfil do usuário (em breve)</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded inativo">Voz (em breve)</a></li>
+            <li><a href="#" class="bd-links-link d-inline-block rounded inativo">Comunicação (em breve)</a></li>
         </ul>
       </li>
       <li class="bd-links-group py-2">
@@ -112,9 +113,10 @@
           Base
         </strong>
         <ul class="list-unstyled fw-normal pb-2 small">
-          <li><a href="fontes.html" class="bd-links-link d-inline-block rounded" aria-current="page">Tipografia</a></li>
+          <li><a href="fontes.html" class="bd-links-link d-inline-block rounded">Tipografia</a></li>
           <li><a href="formulario.html" class="bd-links-link d-inline-block rounded">Formulário</a></li>
-          <li><a href="fontes.html" class="bd-links-link d-inline-block rounded" aria-current="page">Border</a></li>
+          <li><a href="botoes.html" class="bd-links-link d-inline-block rounded">Botões</a></li>
+          <li><a href="grid.html" class="bd-links-link d-inline-block rounded">Grid</a></li>
         </ul>
       </li>
       <li class="bd-links-group py-2">
@@ -123,7 +125,7 @@
           </strong>
           <ul class="list-unstyled fw-normal pb-2 small">
             <li><a href="#" class="bd-links-link d-inline-block rounded">Avatares</a></li>
-            <li><a href="cores.html" class="bd-links-link d-inline-block rounded active">Cores</a></li>
+            <li><a href="cores.html" class="bd-links-link d-inline-block rounded active"  aria-current="page">Cores</a></li>
             <li><a href="#" class="bd-links-link d-inline-block rounded">Navegação</a></li>
             <li><a href="#" class="bd-links-link d-inline-block rounded">Menus</a></li>
             <li><a href="#" class="bd-links-link d-inline-block rounded">Paginação</a></li>
@@ -147,17 +149,50 @@
         <h3 class="pt-4 black">Cores saturadas</h3>
           <p> As cores saturadas infundem mais significado a experiência, destacam a UI, ajudam a criar associações com cores semelhantes. </p>
           <br>
-<p> A Nunito Sans é uma fonte gratuita e toda a sua família tipográfica está disponível para download no Google Fontes no link: <a href="https://fonts.google.com/specimen/Nunito+Sans" target="_blank">https://fonts.google.com/specimen/Nunito+Sans</a></p>
       
-<h4 class="pt-4">Básico</h4>
-<p>Esses estilos devem ser usados apenas como substituições.</p>
+<h4 class="pt-4">Cores e suas funções</h4>
+<p>Os papéis das cores descrevem a intenção por trás da cor. Por exemplo, funções de cores são aplicadas a botões para diferenciar entre ações primárias, secundárias, de aviso ou perigosas. </p>
 
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col" width="20%">Cor e Função</th>
+        <th scope="col" width="80%">Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Neutros <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#C9C9C9"> </div><div class="ms-1" style="width: 20px; height: 20px; border-radius:50px; background-color:#5B6A86"> </div></div></td>
+        <td>Use para texto padrão e elementos secundários da interface do usuário, como botões secundários ou elementos de navegação.<td>
+      </tr>
+      <tr>
+        <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Marca <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#FB6B2B"> </div></div></td>
+        <td>Use para ações ou elementos principais que comunicam a marca do produto Ponto Web.</td>
+      </tr>
+      <tr>
+        <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Sucesso <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#00A624"> </div></div></td>
+        <td>Use para comunicar um resultado favorável, como uma mensagem de sucesso.</td>
+      </tr>
+      <tr>
+        <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Atenção <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#6B2BFB"> </div></div></td>
+        <td>Use para interface do usuário que comunica cuidado para evitar a ocorrência de um erro ou engano.</td>
+      </tr>
+      <tr>
+        <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Perigo <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#FD9B9E"> </div></div></td>
+        <td>Use para interface do usuário que comunica perigo ou estados de erro grave.</td>
+      </tr>
+      <tr>
+        <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Descoberta <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#6B2BFB"> </div></div></td>
+        <td>Use para interface do usuário que comunica algo novo, como integração ou informações sobre novos recursos.</td>
+      </tr>
+      <tr>
+        <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Informação <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#0089D6"> </div></div></td>
+        <td>Use para interface do usuário informativa, como um ícone de informações ou interface do usuário que comunica que algo está em andamento.</td>
+      </tr>
+      </tbody>
+  </table>
    
-<h4 class="pt-4">Layout</h4>
-<p>Classes para layout. 
-  </p>
 
- 
 </div>
 
 
