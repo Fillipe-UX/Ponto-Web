@@ -99,6 +99,7 @@ body::-webkit-scrollbar-thumb {
 }
 /* Fim Barra de Rolagem */
 
+.disabled {color: var(--bs-gray-400);}
 
 a {
   color: #9747FF;
