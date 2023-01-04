@@ -324,7 +324,6 @@ body[light-mode="dark"] a {
 color: var(--pw-brand);
 }
 
-
 .bd-links-link.active {
 color: #FB6B2B;
 background-color: #E9F3F8;
@@ -345,10 +344,13 @@ background-color: #4A5264;
 }
 
 body[light-mode="dark"].bd-links-link:focus {
-  color: #fff;
-  background-color: #4A5264;
-  }
+color: #fff;
+background-color: #4A5264;
+}
       
+body[light-mode="dark"] .bg-neutro100 {
+background-color: #C6AFFE;
+}
 
 /* Tipografia */
 body[light-mode="dark"] p { color: var(--pw-neutro) /*se for utilizado bootstraap alterar diretamente na variável base */ }

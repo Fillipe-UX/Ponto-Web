@@ -272,14 +272,9 @@ left: 65px;
 background-color: #272D39;
 }
 
-body[light-mode="dark"] a {
-color: #fff;
-}
 
 /* Tipografia */
-body[light-mode="dark"] p, h1, h2, h3, h4, h5, h6 {
-  color: #FFFFFF; /*se for utilizado bootstraap alterar diretamente na variável base */
-}
+
 
 /* Tabela */
 body[light-mode="dark"] table {
@@ -297,7 +292,9 @@ body[light-mode="dark"] table {
 body[light-mode="dark"] .table-radius {
   border-color: #4A5264;
 }
-
+body[light-mode="dark"] .brand100 {
+  background-color: #C6AFFE;
+}
 
 /* FIM */
 
