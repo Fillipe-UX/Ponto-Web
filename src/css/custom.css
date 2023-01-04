@@ -307,6 +307,7 @@ body[light-mode="dark"] .navbar-logo {
 
 body[light-mode="dark"] {
 background-color: #272D39;
+color: var(--pw-neutro);
 }
 
 body[light-mode="dark"] .light-mode-button span:nth-child(1) {
@@ -320,7 +321,7 @@ background-color: #272D39;
 }
 
 body[light-mode="dark"] a {
-color: #ffffff;
+color: var(--pw-brand);
 }
 
 
