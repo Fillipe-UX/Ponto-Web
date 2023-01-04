@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Formulario</title>
+    <title>Tipografia</title>
     <!-- Bootstrap CSS -->
     <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -15,44 +15,17 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://getbootstrap.com/docs/5.2/assets/js/docs.min.js"></script>
+     
 
-
-
-<script>
-    var app = document.getElementsByTagName("BODY")[0];
-    if (localStorage.lightMode == "dark") {
-    app.setAttribute("light-mode", "dark");
-    }
-</script>
-<script> /* Steps / article on my website: https://henryegloff.com/how-to-code-a-simple-dark-mode-toggle/*/
-
-function toggle_light_mode() {
-    var app = document.getElementsByTagName("BODY")[0];
-    if (localStorage.lightMode == "dark") {
-        localStorage.lightMode = "light";
-        app.setAttribute("light-mode", "light");
-    } else {
-        localStorage.lightMode = "dark";
-        app.setAttribute("light-mode", "dark");
-    }
-}
-
-window.addEventListener(
-    "storage",
-    function () {
-        if (localStorage.lightMode == "dark") {
-            app.setAttribute("light-mode", "dark");
-        } else {
-            app.setAttribute("light-mode", "light");
-        }
-    },
-    false
-);
-
-    </script>
  </head>
 
  <body>
+  <script>
+    var app = document.getElementsByTagName("BODY")[0];
+    if (localStorage.lightMode == "dark") {
+        app.setAttribute("light-mode", "dark");
+    }
+</script>
   <header class="navbar navbar-expand-lg navbar-light sticky-top">
     <nav class="container-xxl flex-wrap flex-lg-nowrap " aria-label="Main navigation">
       <div class="bd-navbar-toggle">
