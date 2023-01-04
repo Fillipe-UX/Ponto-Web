@@ -103,9 +103,9 @@
         </strong>
 
         <ul class="list-unstyled fw-normal pb-2 small">
-            <li><a href="#" class="bd-links-link d-inline-block rounded inativo">Perfil do usuário (em breve)</a></li>
-            <li><a href="#" class="bd-links-link d-inline-block rounded inativo">Voz (em breve)</a></li>
-            <li><a href="#" class="bd-links-link d-inline-block rounded inativo">Comunicação (em breve)</a></li>
+          <li><div class="disabled">Perfil do usuário (em breve)</div></li>
+          <li><div class="disabled">Voz (em breve)</div></li>
+          <li><div class="disabled">Comunicação (em breve)</div></li>
         </ul>
       </li>
       <li class="bd-links-group py-2">
@@ -137,7 +137,7 @@
   </div>
     </aside>
   <div id="bd-main order-1">
-    <div class="row hero py-3">
+    <div class="row py-3 bg-neutro100">
       <div class="col ps-5">
       <h1 class="pt-5 black" style="color: #FB6B2B; font-size: 40px; ">Cor</h1>
       <p>A cor distingue nosso produto e nos ajuda a criar experiências consistentes em todos os produtos.</p>   
@@ -156,43 +156,94 @@
   <table class="table">
     <thead>
       <tr>
-        <th scope="col" width="20%">Cor e Função</th>
+        <th scope="col" width="20%">Função e Cor</th>
         <th scope="col" width="80%">Descrição</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Neutros <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#C9C9C9"> </div><div class="ms-1" style="width: 20px; height: 20px; border-radius:50px; background-color:#5B6A86"> </div></div></td>
-        <td>Use para texto padrão e elementos secundários da interface do usuário, como botões secundários ou elementos de navegação.<td>
+        <td>Use para texto padrão e elementos secundários da interface do usuário, como botões secundários ou elementos de navegação.   </td>
       </tr>
       <tr>
-        <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Marca <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#FB6B2B"> </div></div></td>
+        <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Marca <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#FB6B2B"></div></div></td>
         <td>Use para ações ou elementos principais que comunicam a marca do produto Ponto Web.</td>
-      </tr>
-      <tr>
-        <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Sucesso <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#00A624"> </div></div></td>
-        <td>Use para comunicar um resultado favorável, como uma mensagem de sucesso.</td>
-      </tr>
-      <tr>
-        <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Atenção <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#6B2BFB"> </div></div></td>
-        <td>Use para interface do usuário que comunica cuidado para evitar a ocorrência de um erro ou engano.</td>
-      </tr>
-      <tr>
-        <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Perigo <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#FD9B9E"> </div></div></td>
-        <td>Use para interface do usuário que comunica perigo ou estados de erro grave.</td>
       </tr>
       <tr>
         <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Descoberta <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#6B2BFB"> </div></div></td>
         <td>Use para interface do usuário que comunica algo novo, como integração ou informações sobre novos recursos.</td>
       </tr>
       <tr>
+        <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Sucesso <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#00A624"> </div></div></td>
+        <td>Use para comunicar um resultado favorável, como uma mensagem de sucesso e botões de confirmação.</td>
+      </tr>
+      <tr>
+        <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Atenção <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#FFD413"> </div></div></td>
+        <td>Use para interface do usuário que comunica cuidado para evitar a ocorrência de um erro ou engano.</td>
+      </tr>
+      <tr>
+        <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Perigo <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#CC0409"> </div></div></td>
+        <td>Use para interface do usuário que comunica perigo ou estados de erro grave.</td>
+      </tr>
+      <!-- <tr>
         <td><div class="px-3 py-1" style="display:flex; border-radius:50px; background-color:#F5F5F5; width:fit-content;">Informação <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#0089D6"> </div></div></td>
         <td>Use para interface do usuário informativa, como um ícone de informações ou interface do usuário que comunica que algo está em andamento.</td>
-      </tr>
+      </tr> -->
       </tbody>
   </table>
-   
+  
+  <h4 class="pt-4">Paleta</h4>
+  <p>Segue as cores com suas classes e texto contrastantes. </p>
 
+  <div class="col-3 my-2"><p class="bold">Produto</p>
+  <div class="bg-brand100 p-2"> brand100</div>
+  <div class="bg-brand300 p-2"> brand200</div>
+  <div class="bg-brand500 p-2"> brand500</div>
+  <div class="bg-brand700 p-2"> brand700</div>
+  <div class="bg-brand1000 p-2"> brand1000</div>
+  </div>
+
+  <div class="col-3 my-2"><p class="bold">Sucesso</p>
+  <div class="bg-sucesso100 p-2"> sucesso100</div>
+  <div class="bg-sucesso300 p-2"> sucesso200</div>
+  <div class="bg-sucesso500 p-2"> sucesso500</div>
+  <div class="bg-sucesso700 p-2"> sucesso700</div>
+  <div class="bg-sucesso1000 p-2"> sucesso1000</div>
+  </div>
+
+  <div class="col-3 my-2"><p class="bold">Perigo</p>
+  <div class="bg-perigo100 p-2"> perigo100</div>
+  <div class="bg-perigo300 p-2"> perigo200</div>
+  <div class="bg-perigo500 p-2"> perigo500</div>
+  <div class="bg-perigo700 p-2"> perigo700</div>
+  <div class="bg-perigo1000 p-2"> perigo1000</div>
+  </div>
+
+  <div class="col-3 my-2"><p class="bold">Atenção</p>
+  <div class="bg-atencao100 p-2"> atencao100</div>
+  <div class="bg-atencao300 p-2"> atencao200</div>
+  <div class="bg-atencao500 p-2"> atencao500</div>
+  <div class="bg-atencao700 p-2"> atencao700</div>
+  <div class="bg-atencao1000 p-2"> atencao1000</div>
+  </div>
+
+  <div class="col-3 my-2"><p class="bold">Neutro</p>
+  <div class="bg-neutro100 p-2"> neutro0</div>
+  <div class="bg-neutro100 p-2"> neutro100</div>
+  <div class="bg-neutro300 p-2"> neutro200</div>
+  <div class="bg-neutro500 p-2"> neutro500</div>
+  <div class="bg-neutro700 p-2"> neutro700</div>
+  <div class="bg-neutro1000 p-2"> neutro1000</div>
+  </div>
+
+  <div class="col-3 my-2"><p class="bold">Neutro modo escuro</p>
+  <div class="bg-neutro-dark0 p-2"> neutro-dark0</div>
+  <div class="bg-neutro-dark100 p-2"> neutro-dark100</div>
+  <div class="bg-neutro-dark300 p-2"> neutro-dark200</div>
+  <div class="bg-neutro-dark500 p-2"> neutro-dark500</div>
+  <div class="bg-neutro-dark700 p-2"> neutro-dark700</div>
+  <div class="bg-neutro-dark1000 p-2"> neutro-dark1000</div>
+  </div>
 </div>
 
 

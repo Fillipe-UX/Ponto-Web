@@ -1,3 +1,50 @@
+@charset "UTF-8";
+/*!
+ * Bootstrap  v5.2.0 (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6B2BFB;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #FB6B2B;
+  --bs-yellow: #F5C800;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #FECE08;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --pw-orange: #FB6B2B;
+  --pw-orange-700: #FB804B;
+  --pw-orange-500: #FC9C73;
+  --pw-orange-300: #FDB89B;
+  --pw-orange-100: #FED5C3;
+  --pw-neutro: #ffffff;
+}
+
 @import url('https://fonts.cdnfonts.com/css/nunito-sans');
 @import url('https://fonts.cdnfonts.com/css/nunito');
             
@@ -112,7 +159,72 @@ h1, h2, h3, h4, h5, h6 {
 .ow-break-word {overflow-wrap: break-word;}
 
 
-/* Tipografia Fim*/
+/*Tipografia Fim*/
+
+/*Cores*/
+.bg-neutro0 {background-color:#ffffff;}
+.bg-neutro100 {background-color:#F5F5F5;}
+.bg-neutro300 {background-color:#E4E4E4;}
+.bg-neutro500 {background-color:#C9C9C9;}
+.bg-neutro700 {background-color:#B8B8B8;}
+.bg-neutro1000 {background-color:#999999;}
+
+.bg-neutro-dark0 {background-color:#272D39;}
+.bg-neutro-dark100 {background-color:#333B4C;}
+.bg-neutro-dark300 {background-color:#4A5264;}
+.bg-neutro-dark500 {background-color:#5B6A86;}
+.bg-neutro-dark700 {background-color:#6D7E9C;}
+.bg-neutro-dark1000 {background-color:#8694AC;}
+
+/* .bg-brand100 {background-color:#FED5C3;}
+.bg-brand300 {background-color:#FDB89B;}
+.bg-brand500 {background-color:#FC9C73;}
+.bg-brand700 {background-color:#FB804B;}
+.bg-brand1000 {background-color:#FB6B2B;} */
+
+.bg-brand100 {background-color: var(--pw-orange-100); color: var(--pw-neutro)}
+.bg-brand300 {background-color: var(--pw-orange-300); color: var(--pw-neutro)}
+.bg-brand500 {background-color: var(--pw-orange-500); color: var(--pw-neutro)}
+.bg-brand700 {background-color: var(--pw-orange-700); color: var(--pw-neutro)}
+.bg-brand1000 {background-color: var(--pw-orange); color: var(--pw-neutro)}
+
+.bg-brand100a {background-color:rgba(254, 213, 195, 0.5);}
+.bg-brand300a {background-color:rgba(253, 184, 155, 0.5);}
+.bg-brand500a {background-color:rgba(252, 156, 115, 0.5);}
+.bg-brand700a {background-color:rgba(251, 128, 75, 0.5);}
+.bg-brand1000a {background-color:rgba(251, 107, 43, 0.5);}
+
+.bg-sucesso100 {background-color:#ADFFBF; color: #3B3D3D;}
+.bg-sucesso300 {background-color:#8CE39F; color: #3B3D3D;}
+.bg-sucesso500 {background-color:#62D97C; color: #3B3D3D;}
+.bg-sucesso700 {background-color:#0ABF32; color: #FFFFFF;}
+.bg-sucesso1000 {background-color:#00A624; color: #FFFFFF;}
+
+.bg-perigo100 {background-color:#FEC3C5; color: #3B3D3D;}
+.bg-perigo300 {background-color:#FD9B9E; color: #3B3D3D;}
+.bg-perigo500 {background-color:#F24E52; color: #FFFFFF;}
+.bg-perigo700 {background-color:#E6262B; color: #FFFFFF;}
+.bg-perigo1000 {background-color:#CC0409; color: #FFFFFF;}
+
+.bg-atencao100 {background-color:#FFEC99; color: #3B3D3D;}
+.bg-atencao300 {background-color:#FFE570; color: #3B3D3D;}
+.bg-atencao500 {background-color:#FFDD47; color: #3B3D3D;}
+.bg-atencao700 {background-color:#FFD413; color: #3B3D3D;}
+.bg-atencao1000 {background-color:#F5C800; color: #3B3D3D;}
+
+.bg-neutro0 {background-color:#FFFFFF; color: #3B3D3D;}
+.bg-neutro100 {background-color:#F5F5F5; color: #3B3D3D;}
+.bg-neutro300 {background-color:#E4E4E4; color: #3B3D3D;}
+.bg-neutro500 {background-color:#C9C9C9; color: #3B3D3D;}
+.bg-neutro700 {background-color:#B8B8B8; color: #3B3D3D;}
+.bg-neutro1000 {background-color:#999999; color: #3B3D3D;}
+
+.bg-neutro-dark0 {background-color:#272D39; color: #FFFFFF;}
+.bg-neutro-dark100 {background-color:#333B4C; color: #FFFFFF;}
+.bg-neutro-dark300 {background-color:#4A5264; color: #FFFFFF;}
+.bg-neutro-dark500 {background-color:#5B6A86; color: #FFFFFF;}
+.bg-neutro-dark700 {background-color:#6D7E9C; color: #FFFFFF;}
+.bg-neutro-dark1000 {background-color:#8694AC; color: #FFFFFF;}
 
 /* Botões */
 .btn {
@@ -211,11 +323,40 @@ body[light-mode="dark"] a {
 color: #ffffff;
 }
 
-/* Tipografia */
-body[light-mode="dark"] p, h1, h2, h3, h4, h5, h6 {
-  color: #ffffff; /*se for utilizado bootstraap alterar diretamente na variável base */
+
+.bd-links-link.active {
+color: #FB6B2B;
+background-color: #E9F3F8;
+}
+  
+body[light-mode="dark"] .bd-links-link.active {
+color: #FB6B2B;
+background-color: #4A5264;
+}
+  
+body[light-mode="dark"] .form-control.pesquisa-menu {
+background-color: #4A5264;
 }
 
+body[light-mode="dark"] .bd-links-link:hover{
+color: #fff;
+background-color: #4A5264;
+}
+
+body[light-mode="dark"].bd-links-link:focus {
+  color: #fff;
+  background-color: #4A5264;
+  }
+      
+
+/* Tipografia */
+body[light-mode="dark"] p { color: var(--pw-neutro) /*se for utilizado bootstraap alterar diretamente na variável base */ }
+body[light-mode="dark"] h1 { color: var(--pw-neutro) /*se for utilizado bootstraap alterar diretamente na variável base */ }
+body[light-mode="dark"] h2 { color: var(--pw-neutro) /*se for utilizado bootstraap alterar diretamente na variável base */ }
+body[light-mode="dark"] h3 { color: var(--pw-neutro) /*se for utilizado bootstraap alterar diretamente na variável base */ }
+body[light-mode="dark"] h4 { color: var(--pw-neutro) /*se for utilizado bootstraap alterar diretamente na variável base */ }
+body[light-mode="dark"] h5 { color: var(--pw-neutro) /*se for utilizado bootstraap alterar diretamente na variável base */ }
+body[light-mode="dark"] h6 { color: var(--pw-neutro) /*se for utilizado bootstraap alterar diretamente na variável base */ }
 /* Tabela */
 
 
@@ -242,10 +383,15 @@ body[light-mode="dark"] .lua-mc {
 fill: #fff;
 }
 
-body[light-mode="dark"] .bd-links-link:hover, .bd-links-link:focus {
+body[light-mode="dark"] .bd-links-link:hover {
 color: #fff;
 background-color: #4A5264;
 }
+
+body[light-mode="dark"].bd-links-link:focus {
+  color: #fff;
+  background-color: #4A5264;
+  }
 
 .bd-links-link.active {
 color: #FB6B2B;

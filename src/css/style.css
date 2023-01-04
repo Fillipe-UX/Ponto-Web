@@ -16,12 +16,14 @@
 		.form-switch .form-check-input span:nth-child(2) {
 			position: absolute;
 		}
-
+   
+    
 body {
   font-family: 'Nunito Sans', sans-serif;
   color: #5F6162;
   transition: background-color 0.3s;
 }
+
 
 footer {height: 80px;}
 
@@ -46,10 +48,8 @@ footer {height: 80px;}
   height: 20px;
   background-repeat: no-repeat;
 }
+
 /* Hero */
-.hero {
-  background-color: #fff2ca;
-}
 
 .hero-img {
   background-image: url('../img/hero-img.png') ;
@@ -297,47 +297,6 @@ body[light-mode="dark"] table {
 body[light-mode="dark"] .table-radius {
   border-color: #4A5264;
 }
-
-
-/* Tabela Fim*/
-.bd-links-link {
-  width: 80%;
-  margin-left: 0;
-}
-
-.bd-links-link:hover, .bd-links-link:focus {
-color: #353230;
-background-color: #E9F3F8;
-}
-
-
-body[light-mode="dark"] .sol-mc {
-fill: #fff;
-}
-
-body[light-mode="dark"] .lua-mc {
-fill: #fff;
-}
-
-body[light-mode="dark"] .bd-links-link:hover, .bd-links-link:focus {
-color: #fff;
-background-color: #4A5264;
-}
-
-.bd-links-link.active {
-color: #FB6B2B;
-background-color: #E9F3F8;
-}
-
-body[light-mode="dark"] .bd-links-link.active {
-color: #FB6B2B;
-background-color: #4A5264;
-}
-
-body[light-mode="dark"] .form-control.pesquisa-menu {
-  background-color: #4A5264;
-}
-
 
 
 /* FIM */
