@@ -20,7 +20,7 @@
     
 body {
   font-family: 'Nunito Sans', sans-serif;
-  color: #5F6162;
+  color: var(--pw-neutro-1000);
   transition: background-color 0.3s;
 }
 
@@ -231,6 +231,21 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 0px;
   border-radius: 10px;
 }
+.table {
+  --bs-table-accent-bg: var(--pw-neutro-100);
+  --bs-table-accent-color: #000;
+  --bs-table-bg: var(--pw-neutro);
+  --bs-table-color: #000; /*se for utilizado bootstraap alterar diretamente na variável base */
+  --bs-table-hover-color: #000;
+  --bs-table-striped-color: #000;
+  --bs-table-striped-bg: var(--pw-neutro);
+  --bs-table-hover-bg: var(--pw-brand-a-100);
+  background-color: var(--pw-neutro);
+  border-color: var(--pw-neutro-300);
+ 
+  
+ 
+}
 
 .table-responsive {
   overflow: auto;
@@ -277,17 +292,17 @@ background-color: #272D39;
 
 
 /* Tabela */
-body[light-mode="dark"] table {
-  --bs-table-color: #FFFFFF; /*se for utilizado bootstraap alterar diretamente na variável base */
-  --bs-table-hover-color: #fff;
+/* body[light-mode="dark"] table {
+  --bs-table-color: var(--pw-neutro); 
+  --bs-table-hover-color: var(--pw-neutro);
   background-color: #4A5264;
   border-color: #4A5264;
   --bs-table-bg: transparent;
   --bs-table-accent-bg: #676E7F;
-  --bs-table-striped-color: #FFFFFF;
+  --bs-table-striped-color: var(--pw-neutro);
   --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
   --bs-table-hover-bg: rgba(195, 170, 253, 0.5);
-}
+} */
 
 body[light-mode="dark"] .table-radius {
   border-color: #4A5264;
