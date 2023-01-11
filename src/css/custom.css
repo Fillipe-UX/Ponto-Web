@@ -38,11 +38,11 @@
   --pw-brand300: #FF9933;
   --pw-brand200: #FF8F1F;
   --pw-brand100: #FF850A;
-  --pw-brand90-a: rgba(255, 133, 10, 0.1);
-  --pw-brand70-a: rgba(255, 133, 10, 0.3);
+  --pw-brand90-a: rgba(255, 133, 10, 0.9);
+  --pw-brand70-a: rgba(255, 133, 10, 0.7);
   --pw-brand50-a: rgba(255, 133, 10, 0.5);
-  --pw-brand30-a: rgba(255, 133, 10, 0.7);
-  --pw-brand10-a: rgba(255, 133, 10, 0.9);
+  --pw-brand30-a: rgba(255, 133, 10, 0.3);
+  --pw-brand10-a: rgba(255, 133, 10, 0.1);
   --pw-perigo1000: #F3B9C0;
   --pw-perigo900: #F0A8B0;
   --pw-perigo800: #ED96A0;
@@ -224,13 +224,6 @@ h1, h2, h3, h4, h5, h6 {
 .bg-neutro800 {background-color: var(--pw-neutro800);}
 .bg-neutro900 {background-color: var(--pw-neutro900);}
 
-.bg-neutroD0 {background-color:#272D39;}
-.bg-neutroD100 {background-color:#333B4C;}
-.bg-neutroD300 {background-color:#4A5264;}
-.bg-neutroD500 {background-color:#5B6A86;}
-.bg-neutroD700 {background-color:#6D7E9C;}
-.bg-neutroD900 {background-color:#8694AC;}
-
 /* .bg-brand100 {background-color:#FED5C3;}
 .bg-brand300 {background-color:#FDB89B;}
 .bg-brand500 {background-color:#FC9C73;}
@@ -248,11 +241,11 @@ h1, h2, h3, h4, h5, h6 {
 .bg-brand900 {background-color: var(--pw-brand900); color: var(--pw-neutro900);}
 .bg-brand1000 {background-color: var(--pw-brand1000); color: var(--pw-neutro900);}
 
-.bg-brand100a {background-color:rgba(254, 213, 195, 0.5);}
-.bg-brand300a {background-color:rgba(253, 184, 155, 0.5);}
-.bg-brand500a {background-color:rgba(252, 156, 115, 0.5);}
-.bg-brand700a {background-color:rgba(251, 128, 75, 0.5);}
-.bg-brand1000a {background-color:rgba(251, 107, 43, 0.5);}
+.bg-brand10-a {background-color: var(--pw-brand10-a)}
+.bg-brand30-a {background-color: var(--pw-brand20-a);}
+.bg-brand50-a {background-color: var(--pw-brand50-a);}
+.bg-brand70-a {background-color: var(--pw-brand70-a);}
+.bg-brand90-a {background-color: var(--pw-brand90-a);}
 
 .bg-sucesso100 {background-color: var( --pw-sucesso100); color: var(--pw-neutro0);}
 .bg-sucesso200 {background-color: var( --pw-sucesso200); color: var(--pw-neutro0);}
