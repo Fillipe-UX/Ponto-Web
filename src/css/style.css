@@ -186,7 +186,7 @@ body::-webkit-scrollbar-thumb {
   color: #3B3D3D;
   background-color: #fff;
   border: 1px solid #D9D9D9;
-  border-radius: 5px;
+  border-radius: 8px;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out,
     background-color .15s, color .15s, box-shadow .15s, background-size .15s cubic-bezier(0.64, 0.09, 0.08, 1);
 }
