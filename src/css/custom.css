@@ -6,17 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6B2BFB;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #FB6B2B;
-  --bs-yellow: #F5C800;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-black: #000;
+    --bs-black: #000;
   --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
@@ -38,16 +28,21 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --pw-brandfor: #E6262B;
-  --pw-brand1000: #FFDDAD;
-  --pw-brand900: #FFD599;
-  --pw-brand800: #FFCC85;
-  --pw-brand700: #FFC370;
-  --pw-brand600: #FFBB5C;
-  --pw-brand500: #FFB347;
+  --pw-brand1000: #FFE0C2;
+  --pw-brand900: #FFD6AD;
+  --pw-brand800: #FFCC99;
+  --pw-brand700: #FFC285;
+  --pw-brand600: #FFB870;
+  --pw-brand500: #FFAD5C;
   --pw-brand400: #FFA347;
   --pw-brand300: #FF9933;
   --pw-brand200: #FF8F1F;
   --pw-brand100: #FF850A;
+  --pw-brand90-a: rgba(255, 133, 10, 0.1);
+  --pw-brand70-a: rgba(255, 133, 10, 0.3);
+  --pw-brand50-a: rgba(255, 133, 10, 0.5);
+  --pw-brand30-a: rgba(255, 133, 10, 0.7);
+  --pw-brand10-a: rgba(255, 133, 10, 0.9);
   --pw-perigo1000: #F3B9C0;
   --pw-perigo900: #F0A8B0;
   --pw-perigo800: #ED96A0;
@@ -58,11 +53,26 @@
   --pw-perigo300: #DE3F52;
   --pw-perigo200: #DC2E42;
   --pw-perigo100: #CC2336;
-  /* --pw-brand-a-900: rgba(251, 107, 43, 0.9);
-  --pw-brand-a-700: rgba(251, 107, 43, 0.7);
-  --pw-brand-a-500: rgba(251, 107, 43, 0.5);
-  --pw-brand-a-300: rgba(251, 107, 43, 0.3);
-  --pw-brand-a-100: rgba(251, 107, 43, 0.1); */
+  --pw-sucesso1000: #8EF5BE;
+  --pw-sucesso900: #7CF4B4;
+  --pw-sucesso800: #69F2A9;
+  --pw-sucesso700: #56F09E;
+  --pw-sucesso600: #43EF93;
+  --pw-sucesso500: #1EEB7E;
+  --pw-sucesso400: #14E174;
+  --pw-sucesso300: #12CE6A;
+  --pw-sucesso200: #10BC60;
+  --pw-sucesso100: #0E9D51;
+  --pw-atencao1000: #FFF4C2;
+  --pw-atencao900: #FFF0AD;
+  --pw-atencao800: #FFEC99;
+  --pw-atencao700: #FFE985;
+  --pw-atencao600: #FFE570;
+  --pw-atencao500: #FFE15C;
+  --pw-atencao400: #FFDD47;
+  --pw-atencao300: #FFDA33;
+  --pw-atencao200: #FFD61F;
+  --pw-atencao100: #F5C800;
   --pw-neutro0: #ffffff;
   --pw-neutro100: #F7F8F9;
   --pw-neutro200: #F1F2F4;
@@ -139,7 +149,7 @@ body::-webkit-scrollbar-thumb {
 }
 /* Fim Barra de Rolagem */
 
-.disabled {color: var(--pw-neutro500);}
+.disabled {color: var(--pw-neutro400);}
 
 a {
   color: #9747FF;
@@ -244,11 +254,16 @@ h1, h2, h3, h4, h5, h6 {
 .bg-brand700a {background-color:rgba(251, 128, 75, 0.5);}
 .bg-brand1000a {background-color:rgba(251, 107, 43, 0.5);}
 
-.bg-sucesso100 {background-color:#ADFFBF; color: #3B3D3D;}
-.bg-sucesso300 {background-color:#8CE39F; color: #3B3D3D;}
-.bg-sucesso500 {background-color:#62D97C; color: #3B3D3D;}
-.bg-sucesso700 {background-color:#0ABF32; color: #FFFFFF;}
-.bg-sucesso1000 {background-color:#00A624; color: #FFFFFF;}
+.bg-sucesso100 {background-color: var( --pw-sucesso100); color: var(--pw-neutro0);}
+.bg-sucesso200 {background-color: var( --pw-sucesso200); color: var(--pw-neutro0);}
+.bg-sucesso300 {background-color: var( --pw-sucesso300); color: var(--pw-neutro0);}
+.bg-sucesso400 {background-color: var( --pw-sucesso400); color: var(--pw-neutro900);}
+.bg-sucesso500 {background-color: var( --pw-sucesso500); color: var(--pw-neutro900);}
+.bg-sucesso600 {background-color: var( --pw-sucesso600); color: var(--pw-neutro900);}
+.bg-sucesso700 {background-color: var( --pw-sucesso700); color: var(--pw-neutro900);}
+.bg-sucesso800 {background-color: var( --pw-sucesso800); color: var(--pw-neutro900);}
+.bg-sucesso900 {background-color: var( --pw-sucesso900); color: var(--pw-neutro900);}
+.bg-sucesso1000 {background-color: var( --pw-sucesso1000); color: var(--pw-neutro900);}
 
 .bg-perigo100 {background-color: var(--pw-perigo100); color: var(--pw-neutro0);}
 .bg-perigo200 {background-color: var(--pw-perigo200); color: var(--pw-neutro0);}
@@ -298,10 +313,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.375rem 1.5rem;
   width: auto;
   font-size: 14px;
+  color: var(--pw-neutro900);
 }
 
 .btn-acao:hover {
-  background-color: #FEF0E9;
+  color: var(--pw-neutro900);
+  background-color: var(--pw-brand1000)
 }
 
 .btn:first-child:active {
@@ -319,39 +336,37 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
   padding: 0.375rem 1.5rem;
   color: var(--pw-neutro0);
-  background-color: #0089D6;
-  border: 1px solid #006EBE;
+  background-color: var(--pw-brand300);
 }
 
 .btn-entrar:hover {
-  color: #ffffff;
-  background-color: #006EBE;
-  border: 1px solid #0060a5;
+  color: var(--pw-neutro0);
+  background-color: var(--pw-brand100);
 }
 
 .btn-cancelar {
   width: auto;
   padding: 0.375rem 1.5rem;
-  background-color: #FFFFFF;
-  border: 1px solid #D9D9D9;
+  color: var(--pw-neutro900);
+  background-color: var(--pw-neutro100);
+  border: 1px solid var(--pw-neutro400);
 }
 .btn-cancelar:hover {
   width: auto;
   padding: 0.375rem 1.5rem;
-  background-color: #f6f6f6;
-  border: 1px solid #B3B3B3;
+  color: var(--pw-neutro900);
+  background-color: var(--pw-neutro300);
+  border: 1px solid var(--pw-neutro500);
 }
 .btn-salvar {
   width: auto;
   padding: 0.375rem 1.5rem;
   color: #fff;
-  background-color: #0ABF32;
-  border: 1px solid #00A624;
+  background-color: var(--pw-sucesso200);
 }
 .btn-salvar:hover {
   color: #fff;
-  background-color: #00A624;
-  border: 1px solid #008b1e;
+  background-color: var(--pw-sucesso100);
 }
 
 /*Modo Escuro */
@@ -437,21 +452,23 @@ body[light-mode="dark"] tbody {
   body[light-mode="dark"] th {
     color: var(--pw-neutro0);
     }
-  
 
-
-  .label-tcolor {
-    display:flex; 
-    border-radius:50px; 
-    background-color:var(--pw-neutro200); 
-    width:fit-content;
-  }  
-
-  body[light-mode="dark"] .label-tcolor {
-    background-color:var(--pw-neutroD200); 
-    }
 
 /* Tabela Fim*/
+
+/* Botoes */
+body[light-mode="dark"] .btn-acao {
+  color: var(--pw-neutro0);
+  fill: var(--pw-neutro0);
+}
+
+body[light-mode="dark"] .btn-acao:hover {
+  color: var(--pw-neutro900);
+  fill: var(--pw-neutro900);
+}
+
+/* Botoes Fim*/
+
 .bd-links-link {
   width: 80%;
   margin-left: 0;
