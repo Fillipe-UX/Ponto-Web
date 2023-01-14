@@ -308,11 +308,7 @@ form.p-geral.d-flex {
   width: 100%;
 }
 
-.btn.btn-pesquisa-menu {
-  border: none;
-  position: absolute;
-  align-self: center;
-}
+
 
 .pesquisa-claro {
   fill: #FB6B2B;
