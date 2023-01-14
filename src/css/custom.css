@@ -504,11 +504,32 @@ body[light-mode="dark"] tbody {
   border-radius: 0.5rem;
 }
 
+.form-control.pesquisa-menu {
+  border-radius: 50px;
+  border: none;
+  padding: 0.375rem 0.75rem 0.5rem 2.75rem;
+  width: 300px;
+  background-color: var(--pw-neutro100);
+  color: var(--pw-neutrod300);
+}
+
+body[light-mode="dark"] .btn.btn-pesquisa-menu {
+  border: none;
+  position: absolute;
+  align-self: center;
+
+}
+.btn.btn-pesquisa-menu {
+  border: none;
+  position: absolute;
+  align-self: center;
+}
+
 body[light-mode="dark"] .form-control.pesquisa-menu {
-  background-color: #4A5264;
-  }
-body[light-mode="dark"] .form-control.pesquisa-menu {
- background-color: #4A5264;
+  border-radius: 50px;
+  border: none;
+  padding: 0.375rem 0.75rem 0.5rem 2.75rem;
+  background-color: var(--pw-neutrod100);
   }
 
 body[light-mode="dark"]  .form-control {  

@@ -174,39 +174,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Modo Claro */
-.form-control {
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #3B3D3D;
-  background-color: #fff;
-  border: 1px solid #D9D9D9;
-  border-radius: 8px;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out,
-    background-color .15s, color .15s, box-shadow .15s, background-size .15s cubic-bezier(0.64, 0.09, 0.08, 1);
-}
 
-.form-select {
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #3B3D3D;
-  background-color: #fff;
-  border: 1px solid #D9D9D9;
-  border-radius: 8px;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out,
-    background-color .15s, color .15s, box-shadow .15s, background-size .15s cubic-bezier(0.64, 0.09, 0.08, 1);
-}
-
-.form-control.invalid {
-  color: #3B3D3D;
-  background-color: #fff;
-  border: 1px solid #F24E52;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out,
-    background-color .15s, color .15s, box-shadow .15s, background-size .15s cubic-bezier(0.64, 0.09, 0.08, 1);
-}
 
 .input-group {
   position: relative;
@@ -216,20 +184,7 @@ body::-webkit-scrollbar-thumb {
   width: auto;
 }
 
-.input-group-text {
-  display: flex;
-  align-items: center;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: var(--pw-neutro500);
-  text-align: center;
-  white-space: nowrap;
-  background-color: var(--pw-neutro200);
-  border: 1px solid #D9D9D9;
-  border-radius: 0.5rem;
-}
+
 
 .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3),
 .input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-control,
@@ -339,14 +294,7 @@ body[light-mode="dark"] .label-tcolor {
 /* FIM */
 
 /* Pesquisa */
-.form-control.pesquisa-menu {
-  border-radius: 50px;
-  border: none;
-  padding: 0.375rem 0.75rem 0.5rem 2.75rem;
-  width: 300px;
-  background-color: #F5F5F5;
-  color: #B3B3B3;
-}
+
 
 .pesquisa-topo {
   margin: 0 20%;
