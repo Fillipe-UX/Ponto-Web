@@ -1755,7 +1755,7 @@ progress {
   border-color: var(--bs-table-border-color);
 }
 .table > :not(caption) > * > * {
-  padding: 0.5rem 0.5rem;
+  padding: 0.75rem 0.75rem;
   background-color: var(--bs-table-bg);
   border-bottom-width: 1px;
   box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
@@ -2845,19 +2845,19 @@ textarea.form-control-lg {
 .btn:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
-  border-color: var(--bs-btn-hover-border-color);
+  /* border-color: var(--bs-btn-hover-border-color); */
 }
-.btn-check:focus + .btn, .btn:focus {
+/* .btn-check:focus + .btn, .btn:focus {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
-}
+} */
 .btn-check:checked + .btn, .btn-check:active + .btn, .btn:active, .btn.active, .btn.show {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
-  border-color: var(--bs-btn-active-border-color);
+  /* border-color: var(--bs-btn-active-border-color); */
 }
 .btn-check:checked + .btn:focus, .btn-check:active + .btn:focus, .btn:active:focus, .btn.active:focus, .btn.show:focus {
   box-shadow: var(--bs-btn-focus-box-shadow);

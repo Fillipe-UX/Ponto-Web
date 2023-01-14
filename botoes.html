@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Botões - Empatia | Design System</title>
     <!-- Bootstrap CSS -->
-    <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link href="https://getbootstrap.com//docs/5.2/assets/css/docs.css" rel="stylesheet">
-    
+    <link href="src/css/bootstrap.css" rel="stylesheet" >
+
     <link href="src/css/style.css" rel="stylesheet" >
     <link href="src/css/custom.css" rel="stylesheet" >
 
@@ -77,29 +78,29 @@
         </strong>
 
         <ul class="list-unstyled fw-normal pb-2 small">
-          <li><div class="disabled">Perfil do usuário (em breve)</div></li>
-          <li><div class="disabled">Voz (em breve)</div></li>
-          <li><div class="disabled">Comunicação (em breve)</div></li>
-        </ul>
-      </li>
-      <li class="bd-links-group py-2">
-        <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">Base</strong>
-          <ul class="list-unstyled fw-normal pb-2 small">
-            <li><a href="fontes.html" class="bd-links-link d-inline-block rounded">Tipografia</a></li>
-            <li><a href="formulario.html" class="bd-links-link d-inline-block rounded">Formulário</a></li>
-            <li><a href="botoes.html" class="bd-links-link d-inline-block rounded active">Botões</a></li>
-            <li><a href="grid.html" class="bd-links-link d-inline-block rounded">Grid</a></li>
-          </ul>
-        </li>
-        <li class="bd-links-group py-2">
-          <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">Componentes</strong>
-            <ul class="list-unstyled fw-normal pb-2 small">
-              <li><a href="#" class="bd-links-link d-inline-block rounded">Avatares</a></li>
-              <li><a href="cores.html" class="bd-links-link d-inline-block rounded">Cores</a></li>
-              <li><a href="#" class="bd-links-link d-inline-block rounded">Navegação</a></li>
-              <li><a href="#" class="bd-links-link d-inline-block rounded">Menus</a></li>
-              <li><a href="#" class="bd-links-link d-inline-block rounded">Paginação</a></li>
-        </ul>
+          <li><a href="#" class="bd-links-link d-inline-block rounded disabled">Perfil do usuário (em breve)</a></li>
+          <li><a href="#" class="bd-links-link d-inline-block rounded disabled">Voz (em breve)</a></li>
+          <li><a href="#" class="bd-links-link d-inline-block rounded disabled">Comunicação (em breve)</a></li>
+      </ul>
+    </li>
+    <li class="bd-links-group py-2">
+      <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">Base</strong>
+      <ul class="list-unstyled fw-normal pb-2 small">
+        <li><a href="cores.html" class="bd-links-link d-inline-block rounded">Cores</a></li>
+        <li><a href="fontes.html" class="bd-links-link d-inline-block rounded">Tipografia</a></li>
+        <li><a href="grid.html" class="bd-links-link d-inline-block rounded">Grid</a></li>
+      </ul>
+    </li>
+    <li class="bd-links-group py-2">
+      <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">Componentes </strong>
+        <ul class="list-unstyled fw-normal pb-2 small">
+          <li><a href="#" class="bd-links-link d-inline-block rounded disabled">Avatares</a></li>
+          <li><a href="botoes.html" class="bd-links-link d-inline-block rounded active">Botões</a></li>
+          <li><a href="formulario.html" class="bd-links-link d-inline-block rounded">Formulário</a></li>
+          <li><a href="#" class="bd-links-link d-inline-block rounded disabled">Navegação</a></li>
+          <li><a href="#" class="bd-links-link d-inline-block rounded disabled">Menus</a></li>
+          <li><a href="#" class="bd-links-link d-inline-block rounded disabled">Paginação</a></li>
+      </ul>
       </li>
   </ul>
 </nav>
@@ -107,16 +108,16 @@
   </div>
     </aside>
   <div id="bd-main order-1">
-    <div class="row hero py-3">
-      <div class="col ps-5">
-      <h1 class="pt-4" style="color: #FB6B2B;">Botões</h1>
+    <div class="row hero bg-neutro100">
+      <div class="col py-3 ">
+      <h1 class="pt-4 black" style="color: #FB6B2B;">Botões</h1>
       <p>Os botões são elementos da interface do usuário que permitem aos usuários realizar ações ao longo do projeto. É importante que eles tenham amplo espaço para clicar e ajudem a comunicar a importância de suas ações.
       </p>   
     </div>
     
 </div>
 
-<div class="row mx-4">
+<div class="row">
   <h3 class="pt-4">Tamanhos</h3>
 <p>Nesse primeiro momento possuimos 2 tamnnhos de botões:</p>
 <br>
@@ -131,12 +132,12 @@
 <br>
 <li>1. Ação</li>
 <li>2. Primários</li>
-<li>3. Silenciado</li>
+<li>3. Inativos</li>
 <br>
 <p> Cada estilo é explicado abaixo, detalhando como e onde usar esses estilos.</p>
 <h4 class="pt-4 mt-3">Ação</h4>
     <p> São botões que ajudam o usuário realizar ações recorrentes durante o dia a dia. Geralmente ficam localizados nas telas de listagem.</p>
-    <div class="d-flex ge-5">
+    <div class="d-flex">
     <button type="button" class="btn btn-acao"><svg id="icone-botao" viewBox="0 0 20 20">
         <path class="icn-mais" d="m8,12v6c0,1.1.9,2,2,2s2-.9,2-2v-6h6c1.1,0,2-.9,2-2s-.9-2-2-2h-6V2c0-1.1-.9-2-2-2s-2,.9-2,2v6H2c-1.1,0-2,.9-2,2s.9,2,2,2h6Z"/></svg> Novo</button>
       <button type="button" class="btn btn-acao"><svg id="icone-botao" viewBox="0 0 18.5 19.5">
@@ -183,13 +184,13 @@
     </div>
     <h4 class="pt-4 mt-3">Primário</h4>
     <p> São botões utilizados para confirmar avanços ou desistetências durante uma tarefa, por exemplo: salvar, cancelar, entrar.</p>
-    <div class="d-flex gx-5">
+    <div class="d-flex">
     <button type="button" class="btn btn-entrar me-4"> Entrar</button>
     <button type="button" class="btn btn-cancelar me-4"> Cancelar</button>
     <button type="button" class="btn btn-salvar me-4"> Salvar</button>      
     </div>
     
-      </div>
+</div>
 </div>
 </div>
 
