@@ -51,6 +51,10 @@ footer {height: 80px;}
 }
 
 /* Hero */
+.hero {
+  background-color: var(--pw-neutro100);
+  transition: background-color 0.2s;
+}
 
 .hero-img {
   background-image: url('../img/hero-img.png');
@@ -234,11 +238,30 @@ body::-webkit-scrollbar-thumb {
 }  
 
 /*Modo Escuro */
+body[light-mode="dark"] .hero {
+  background-color: var(--pw-neutrod100);
+  transition: background-color 0.3s;
+}
+
 body[light-mode="dark"] .navbar {
-  color: #fff;
+  color: var(--pw-neutrod100);
   background-color: #272D39;
   }
   
+body[light-mode="dark"] .bi {
+  fill: var(--pw-neutro0);
+}
+
+body[light-mode="dark"] .navbar-toggler {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: var(--bs-navbar-color);
+  background-color: transparent;
+  border: var(--bs-border-width) solid var(--pw-neutrod200);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
+}
 
 body[light-mode="dark"] .navbar-logo {
   background-image: url(../img/pontoweb-dm.svg);
@@ -246,6 +269,13 @@ body[light-mode="dark"] .navbar-logo {
   height: 20px;
   background-repeat: no-repeat;
 }
+
+body[light-mode="dark"] .offcanvas-lg {
+
+  background-color: var(--pw-neutrod0);
+
+}
+
 
 
 body[light-mode="dark"] {
@@ -278,10 +308,12 @@ body[light-mode="dark"] .table {
   --bs-table-hover-bg: var(--pw-brand70-a);
   background-color: var(--pw-neutrod0);
   border-color: var(--pw-neutrod300);
+  transition: background-color 0.3s;
 }
 
 body[light-mode="dark"] .table-radius {
   border-color: #4A5264;
+  transition: background-color 0.3s;
 }
 
  

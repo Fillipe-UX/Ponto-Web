@@ -429,9 +429,6 @@ color: #fff;
 background-color: #4A5264;
 }
       
-body[light-mode="dark"] .bg-neutro100 {
-background-color: var(--pw-neutrod100);
-}
 
 /* Tipografia */
 /*se for utilizado bootstraap alterar diretamente na variável da folha de estilo base */
