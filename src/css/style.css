@@ -233,7 +233,7 @@ body::-webkit-scrollbar-thumb {
 .label-tcolor {
   display:flex; 
   border-radius:50px; 
-  background-color:var(--pw-neutro200); 
+  /* background-color:var(--pw-neutro300);  */
   width:fit-content;
 }  
 
