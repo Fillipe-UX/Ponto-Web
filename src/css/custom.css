@@ -220,6 +220,30 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Tipografia Fim*/
 
+/* Avatar */
+.card-body {
+  font-size: 16px;
+}
+
+.avatar-md {
+  --debug: 16px;
+  width: calc(var(--debug)*3.5);
+  height: calc(var(--debug)*3.5);
+  border-radius: 50px;
+  border: solid 2px var(--pw-brand100);
+  margin-right: 0.5rem;
+}
+
+
+.avatar-sm {
+  width: 25px;
+  height: ;
+  border-radius: 50px;
+  border: solid 2px var(--pw-brand100);
+  margin: 4px;
+}
+
+/* Avatar Fim*/
 /*Cores*/
 .bg-neutro0 {background-color: var(--pw-neutro0);}
 .bg-neutro100 {background-color:var(--pw-neutro100);}
