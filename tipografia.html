@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cores - Empatia | Design System</title>
+    <title>Tipografia - Empatia | Design System</title>
     <!-- Bootstrap CSS -->
     <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -13,6 +13,7 @@
     <link href="src/css/style.css" rel="stylesheet" >
     <link href="src/css/custom.css" rel="stylesheet" >
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://getbootstrap.com/docs/5.2/assets/js/docs.min.js"></script>
      
 
@@ -25,6 +26,7 @@
         app.setAttribute("light-mode", "dark");
     }
 </script>
+
   <header class="navbar navbar-expand-lg navbar-light sticky-top">
     <nav class="container-xxl flex-wrap flex-lg-nowrap " aria-label="Main navigation">
       <div class="bd-navbar-toggle">
@@ -83,8 +85,8 @@
     <li class="bd-links-group py-2">
       <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">Base</strong>
       <ul class="list-unstyled fw-normal pb-2 small">
-        <li><a href="cores.html" class="bd-links-link d-inline-block rounded active">Cores</a></li>
-        <li><a href="tipografia.html" class="bd-links-link d-inline-block rounded">Tipografia</a></li>
+        <li><a href="cores.html" class="bd-links-link d-inline-block rounded">Cores</a></li>
+        <li><a href="tipografia.html" class="bd-links-link d-inline-block rounded active">Tipografia</a></li>
         <li><a href="grid.html" class="bd-links-link d-inline-block rounded">Grid</a></li>
       </ul>
     </li>
@@ -105,150 +107,145 @@
  </div>
   </div>
     </aside>
-  <div clas="container-fluid">
+  <div id="bd-main order-1">
     <div class="row hero">
       <div class="col py-3">
-      <h1 class="pt-5 black" style="color: #FB6B2B; font-size: 40px; ">Cores</h1>
-      <p>A cor distingue nosso produto e nos ajuda a criar experiências consistentes em todos os produtos.</p>   
+      <h1 class="pt-5 black" style="color: #FB6B2B; font-size: 40px; ">Tipografia</h1>
+      <p>Tipografia é o nosso sistema de fontes. Cada fonte transmite o sentimento apropriado para ajudar nossos usuários em cada estágio de sua jornada.
+      </p>   
     </div>
     
 </div>
-  <div class="row px-2">
-  <h4 class="mt-4">Cores saturadas</h3>
-  <p> As cores saturadas infundem mais significado a experiência, destacam a UI, ajudam a criar associações com cores semelhantes. </p>
-  <br>
+
+<div class="row px-2">
+        <h3 class="pt-4" style="color: #FB6B2B;"><strong>Nunito Sans</strong></h3>
+          <p>  Composta por 2 versões de famílias tipográficas a Nunito e a Nunito Sans que proporcionam uma comunicação com combinações flexíveis, sem perder a objetividade.</p>
+          <br>
+<p> A Nunito Sans é uma fonte gratuita e toda a sua família tipográfica está disponível para download no Google Fontes no link: <a href="https://fonts.google.com/specimen/Nunito+Sans" target="_blank">https://fonts.google.com/specimen/Nunito+Sans</a></p>
       
-<h4 class="mt-4">Cores e suas funções</h4>
-<p>Os papéis das cores descrevem a intenção por trás da cor. Por exemplo, funções de cores são aplicadas a botões para diferenciar entre ações primárias, secundárias, de aviso ou perigosas. </p>
+<h4 class="pt-4">Básico</h4>
+<p>Esses estilos devem ser usados apenas como substituições.</p>
 
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col" width="30%">Função e Cor</th>
-        <th scope="col" width="70%">Descrição</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><div class="px-1 py-1 label-tcolor">Neutros <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:var(--pw-neutro400)"> </div><div class="ms-1" style="width: 20px; height: 20px; border-radius:50px; background-color:var(--pw-neutrod100)"> </div></div></td>
-        <td>Use para texto padrão e elementos secundários da interface do usuário, como botões secundários ou elementos de navegação.   </td>
-      </tr>
-      <tr>
-        <td><div class="px-1 py-1 label-tcolor">Institucional Gestão</br>de Pessoas <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:var(--pw-brand100)"></div></div></td>
-        <td>Use para ações ou elementos principais que comunicam a marca do produto Ponto Web.</td>
-      </tr>
-      <tr>
-        <td><div class="px-1 py-1 label-tcolor">Institucional Fortes <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:var(--pw-brandfor);"> </div></div></td>
-        <td>Esse tom de vermelho é utilizado no logo da Fortes, ele será utilizado exclusicamente para ícones e links relacionados a Fortes Tecnologia.</td>
-      </tr>
-      <!-- <tr>
-        <td><div class="px-3 py-1 label-tcolor">Descoberta <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:#6B2BFB"> </div></div></td>
-        <td>Use para interface do usuário que comunica algo novo, como integração ou informações sobre novos recursos.</td>
-      </tr> -->
-      <tr>
-        <td><div class="px-1 py-1 label-tcolor">Sucesso <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:var(--pw-sucesso100)"> </div></div></td>
-        <td>Use para comunicar um resultado favorável, como uma mensagem de sucesso e botões de confirmação.</td>
-      </tr>
-      <tr>
-        <td><div class="px-1 py-1 label-tcolor">Atenção <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:var(--pw-atencao100)"> </div></div></td>
-        <td>Use para interface do usuário que comunica cuidado para evitar a ocorrência de um erro ou engano.</td>
-      </tr>
-      <tr>
-        <td><div class="px-1 py-1 label-tcolor">Perigo <div class="ms-2" style="width: 20px; height: 20px; border-radius:50px; background-color:var(--pw-perigo100);"> </div></div></td>
-        <td>Use para interface do usuário que comunica perigo ou estados de erro grave.</td>
-      </tr>
-      </tbody>
-  </table>
-  <h4 class="mt-4">Paleta</h4>
-  <p>Segue as cores com suas classes e texto contrastantes. </p>
-
-  <div class="col-6 col-md-3 my-2"><p class="bold">Produto</p>
-  <div class="bg-brand100 p-2 rounded-top"> brand100</div>
-  <div class="bg-brand200 p-2"> brand200</div>
-  <div class="bg-brand300 p-2"> brand300</div>
-  <div class="bg-brand400 p-2"> brand400</div>
-  <div class="bg-brand500 p-2"> brand500</div>
-  <div class="bg-brand600 p-2"> brand600</div>
-  <div class="bg-brand700 p-2"> brand700</div>
-  <div class="bg-brand800 p-2"> brand800</div>
-  <div class="bg-brand900 p-2"> brand900</div>
-  <div class="bg-brand1000 p-2 rounded-bottom"> brand1000</div>
+  <div class="table-responsive table-radius mt-2">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col" width="10%">Classe</th>
+          <th scope="col" width="20%">Estilo</th>
+          <th scope="col" width="40%">Descrição</th>
+          <th scope="col" width="20%">Exemplo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>.fw-normal</td>
+          <td>font-weight: 400;</td>
+          <td>Muda o peso da fonte para 400.</td>
+          <td><span class="normal">Texto de exemplo.</span></td>
+        </tr>
+        <tr>
+          <td>.fw-bold</td>
+          <td>font-weight: 600;</td>
+          <td>Muda o peso da fonte para 600.</td>
+          <td><span class="bold">Texto de exemplo.</span></td>
+        </tr>
+        <tr>
+          <td>.fw-italic</td>
+          <td>font-style: Italic;</td>
+          <td>Muda o estilo da fonte para itálico.</td>
+          <td><span class=" italic">Texto de exemplo.</span></td>
+        </tr>
+        <tr>
+          <td>.tt-capitalize</td>
+          <td>text-transform: capitalize;</td>
+          <td>O primeiro caractere de cada palavra é maiúsculo, independentemente da marcação.</td>
+          <td><span class="tt-capitalize">Texto de exemplo.</span></td>
+        </tr>
+        <tr>
+          <td>.tt-lowercase</td>
+          <td>text-transform: lowercase;</td>
+          <td>Todos os caracteres são minúsculos, independentemente da marcação.</td>
+          <td><span class="tt-lowercase">Texto de exemplo.</span></td>
+        </tr>
+        <tr>
+          <td>.tt-uppercase</td>
+          <td>text-transform: uppercase;</td>
+          <td>Todos os caracteres são maiúsculos, independentemente da marcação.</td>
+          <td><span class="tt-uppercase">Texto de exemplo.</span></td>
+        </tr>
+        <tr>
+          <td>.italic</td>
+          <td>font-style: Italic;</td>
+          <td>Muda o estilo da fonte para itálico.</td>
+          <td><span class=" italic">Texto de exemplo.</span></td>
+        </tr>
+        </tbody>
+    </table>
   </div>
 
-  <div class="col-6 col-md-3 my-2"><p class="bold">Sucesso</p>
-  <div class="bg-sucesso100 p-2 rounded-top"> sucesso100</div>
-  <div class="bg-sucesso200 p-2"> sucesso200</div>
-  <div class="bg-sucesso300 p-2"> sucesso300</div>
-  <div class="bg-sucesso400 p-2"> sucesso400</div>
-  <div class="bg-sucesso500 p-2"> sucesso500</div>
-  <div class="bg-sucesso600 p-2"> sucesso600</div>
-  <div class="bg-sucesso700 p-2"> sucesso700</div>
-  <div class="bg-sucesso800 p-2"> sucesso800</div>
-  <div class="bg-sucesso900 p-2"> sucesso900</div>
-  <div class="bg-sucesso1000 p-2 rounded-bottom"> sucesso1000</div>
+   
+<h4 class="pt-4">Layout</h4>
+<p>Classes para layout. 
+  </p>
+
+  <div class="table-responsive table-radius mt-2">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col" width="10%">Classe</th>
+          <th scope="col" width="20%">Estilo</th>
+          <th scope="col" width="40%">Descrição</th>
+          <th scope="col" width="20%">Exemplo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>.ta-left</td>
+          <td>text-align: left;</td>
+          <td>Os conteúdos são alinhados à margem esquerda.</td>
+          <td><p class="ta-left">Texto de exemplo.</p></td>
+        </tr>
+        <tr>
+          <td>.ta-center</td>
+          <td>text-align: center;</td>
+          <td>Os conteúdos são alinhados ao centro.</td>
+          <td><p class="ta-center">Texto de exemplo.</p></td>
+        </tr>
+        <tr>
+          <td>.ta-right</td>
+          <td>text-align: right;</td>
+          <td>Os conteúdos são alinhados à margem direita.</td>
+          <td><p class="ta-right">Texto de exemplo.</p></td>
+        </tr>
+        <tr>
+          <td>.ta-justify</td>
+          <td>text-align: justify;</td>
+          <td>Os conteúdos inline são justificados, exceto na última linha.</td>
+          <td><p class="ta-justify">Texto com mais palavras para servir de exemplo.</p></td>
+        </tr>
+        <tr>
+          <td>.ws-nowrap</td>
+          <td>white-space: nowrap;</td>
+          <td>A quebra automática de texto está desativada.</td>
+          <td><p class="ws-nowrap">Não é possível exemplificar aqui.</p></td>
+        </tr>
+        <tr>
+          <td>.ow-normal</td>
+          <td>word-break: normal;</td>
+          <td>Restaura o comportamento de quebra de palavra.</td>
+          <td><p class="ow-normal">Não é possível exemplificar aqui.</p></td>
+        </tr>
+        <tr>
+          <td>.ow-break-word</td>
+          <td>overflow-wrap: break-word;</td>
+          <td>Quebra uma palavra em uma nova linha somente se a palavra inteira não puder ser colocada em sua própria linha sem transbordar.</td>
+          <td><p class="ow-break-word">Não é possível exemplificar aqui.</p></td>
+        </tr>
+        </tbody>
+    </table>
   </div>
-
-  <div class="col-6 col-md-3 my-2"><p class="bold">Perigo</p>
-  <div class="bg-perigo100 p-2 rounded-top"> perigo100</div>
-  <div class="bg-perigo200 p-2"> perigo200</div>
-  <div class="bg-perigo300 p-2"> perigo300</div>
-  <div class="bg-perigo400 p-2"> perigo400</div>
-  <div class="bg-perigo500 p-2"> perigo500</div>
-  <div class="bg-perigo600 p-2"> perigo600</div>
-  <div class="bg-perigo700 p-2"> perigo700</div>
-  <div class="bg-perigo800 p-2"> perigo800</div>
-  <div class="bg-perigo900 p-2"> perigo900</div>
-  <div class="bg-perigo1000 p-2 rounded-bottom"> perigo1000</div>
-  </div>
-
-  <div class="col-6 col-md-3 my-2"><p class="bold">Atenção</p>
-  <div class="bg-atencao100 p-2 rounded-top"> atencao100</div>
-  <div class="bg-atencao200 p-2"> atencao200</div>
-  <div class="bg-atencao300 p-2"> atencao300</div>
-  <div class="bg-atencao400 p-2"> atencao400</div>
-  <div class="bg-atencao500 p-2"> atencao500</div>
-  <div class="bg-atencao600 p-2"> atencao600</div>
-  <div class="bg-atencao700 p-2"> atencao700</div>
-  <div class="bg-atencao800 p-2"> atencao800</div>
-  <div class="bg-atencao900 p-2"> atencao900</div>
-  <div class="bg-atencao1000 p-2 rounded-bottom"> atencao1000</div>
-  </div>
-
-  <div class="col-6 col-md-3 my-2"><p class="bold">Neutro</p>
-  <div class="bg-neutro0 p-2 rounded-top"> neutro0</div>
-  <div class="bg-neutro100 p-2"> neutro100</div>
-  <div class="bg-neutro200 p-2"> neutro200</div>
-  <div class="bg-neutro300 p-2"> neutro300</div>
-  <div class="bg-neutro400 p-2"> neutro400</div>
-  <div class="bg-neutro500 p-2"> neutro500</div>
-  <div class="bg-neutro600 p-2"> neutro600</div>
-  <div class="bg-neutro700 p-2"> neutro700</div>
-  <div class="bg-neutro800 p-2"> neutro800</div>
-  <div class="bg-neutro900 p-2 rounded-bottom"> neutro900</div>
-  </div>
-
-  <div class="col-6 col-md-3 my-2"><p class="bold">Neutro modo escuro</p>
-  <div class="bg-neutrod0 p-2 rounded-top"> neutrod0</div>
-  <div class="bg-neutrod100 p-2"> neutrod100</div>
-  <div class="bg-neutrod200 p-2"> neutrod200</div>
-  <div class="bg-neutrod300 p-2"> neutrod300</div>
-  <div class="bg-neutrod400 p-2"> neutrod400</div>
-  <div class="bg-neutrod500 p-2"> neutrod500</div>
-  <div class="bg-neutrod600 p-2"> neutrod600</div>
-  <div class="bg-neutrod700 p-2"> neutrod700</div>
-  <div class="bg-neutrod800 p-2"> neutrod800</div>
-  <div class="bg-neutrod900 p-2 rounded-bottom"> neutrod900</div>
-  </div>
-
-  <h4 class="mt-5">Escolhendo cores para o modo escuro</h4>
-  <p>As cores neutras são configuradas de forma a facilitar a conversão de um tema claro em um tema escuro. Para cada cor neutra clara existe neutra escura equivalente. Para o Neutro100 claro deve ser igual a NeutroDark100.</p>
-  <img class="mb-4" src="src\img\contraste-coresneutras.png" alt="" style=" max-width:600px; margin:auto; border:solid 1px var(--pw-neutro600);">
-
-  <p>Cores saturadas também são fáceis de converter de um tema claro para um tema escuro usando simetria. Atualmente, temos 10 amostras configuradas em cada paleta. Se as amostras forem divididas ao meio, cada metade se tornará um espelho.</p>
-  <img src="src\img\sistema-tons-opostos.png" alt="" style="align-self: center; max-width:700px; margin:auto; border:solid 1px var(--pw-neutro600);">
-
-
 </div>
+
 
           
 </div>
@@ -270,8 +267,7 @@
       }		
   }
   </script>
-
-
+  
  </body>
  <footer>
   <div class="col my-5 d-flex justify-content-center">
