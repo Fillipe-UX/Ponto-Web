@@ -524,7 +524,6 @@ body[light-mode="dark"] .titulo-card-usuario {
   background-color: var(--pw-brand100);
   text-decoration: none;
   margin-top: 0.3rem;
-  margin-bottom: ;
   border-radius: 8px;
 }
 
