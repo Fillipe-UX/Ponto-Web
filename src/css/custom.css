@@ -163,6 +163,11 @@ a {
   color: #9747FF;
 }
 
+hr {
+  margin: 0.35rem 0;
+  color: var(--pw-neutro400);
+}
+
 /* Espaçamentos */
 .mb-1 {
   margin-bottom: 8px;
@@ -224,10 +229,21 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid var(--pw-neutro200);
   background-color: var(--pw-neutro100);
   border-radius: 0.5rem;
-  font-family: Nunito;
+  font-family: 'Nunito Sans', sans-serif;
   max-width: 240px;
   margin: 0.5rem 0;
 }
+
+.dados-dash-p {
+  font-size: 2.5rem;
+  margin-top: -1.5rem;
+  font-weight: 800;
+  color: var(--pw-neutro600);
+  text-align: right;
+  margin-right: 0.5rem;
+  margin-bottom: -1rem;
+}
+
 .card-content {
   margin: 0.8rem;
 }
@@ -410,12 +426,6 @@ body[light-mode="dark"] .titulo-card-usuario {
 .bg-neutro800 {background-color: var(--pw-neutro800);}
 .bg-neutro900 {background-color: var(--pw-neutro900);}
 
-/* .bg-brand100 {background-color:#FED5C3;}
-.bg-brand300 {background-color:#FDB89B;}
-.bg-brand500 {background-color:#FC9C73;}
-.bg-brand700 {background-color:#FB804B;}
-.bg-brand1000 {background-color:#FB6B2B;} */
-
 .bg-brand100 {background-color: var(--pw-brand100); color: var(--pw-neutro900);}
 .bg-brand200 {background-color: var(--pw-brand200); color: var(--pw-neutro900);}
 .bg-brand300 {background-color: var(--pw-brand300); color: var(--pw-neutro900);}
@@ -508,14 +518,26 @@ body[light-mode="dark"] .titulo-card-usuario {
   background-color: var(--pw-brand1000)
 }
 
-.btn.detalhar {
-  padding: 0.25rem 1rem;
+.btn-detalhar {
+  padding: 0.2rem 1rem;
   width: auto;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
-  color: var(--pw-neutro900);
+  color: var(--pw-neutro0);
   margin-right: 0.5rem;
   align-self: right;
+  background-color: var(--pw-brand100);
+  text-decoration: none;
+  margin-top: 0.3rem;
+  margin-bottom: ;
+  border-radius: 50px;
+}
+
+.btn-detalhar:hover {background-color: var(--pw-brand400);}
+
+.btn-detalhar a{
+  text-decoration: none;
+  color: var(--pw-neutro0);
 }
 
 #icone-botao {
@@ -555,6 +577,29 @@ body[light-mode="dark"] .titulo-card-usuario {
   color: #fff;
   background-color: var(--pw-sucesso100);
 }
+/* Botões fim */
+/* Grid */
+/* .d-grid {
+  display: grid !important;
+}
+
+.grid__1	{grid-template-columns: repeat(1, minmax(0, 1fr))	}
+.grid__2	{grid-template-columns: repeat(2, minmax(0, 2fr))	}
+.grid__3	{grid-template-columns: repeat(3, minmax(0, 3fr))	}
+.grid__4	{grid-template-columns: repeat(4, minmax(0, 4fr))	}
+.grid__5	{grid-template-columns: repeat(5, minmax(0, 5fr))	}
+.grid__6	{grid-template-columns: repeat(6, minmax(0, 6fr))	}
+.grid__7	{grid-template-columns: repeat(7, minmax(0, 7fr))	}
+.grid__8	{grid-template-columns: repeat(8, minmax(0, 8fr))	}
+.grid__9	{grid-template-columns: repeat(9, minmax(0, 9fr))	}
+.grid__10	{grid-template-columns: repeat(10, minmax(0, 10fr))	}
+.grid__11 {grid-template-columns: repeat(11, minmax(0, 11fr))	}
+.grid__12	{grid-template-columns: repeat(12, minmax(0, 12fr))	}
+
+
+.gap16 {
+  gap: 16px;
+} */
 
 /*Modo Escuro */
 
