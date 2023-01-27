@@ -75,7 +75,7 @@ footer {height: 100px; background-color: var(--pw-neutro200); padding: 2rem 0; m
   .container-sm,
   .container-xl,
   .container-xxl {
-  max-width: 1320px;
+  max-width: 1520px;
   }
 }
 
