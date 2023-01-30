@@ -301,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--pw-neutro0);
   border-radius: 0.5rem;
   font-family: 'Nunito';
-  max-width: 380px;
+  max-width: 320px;
   margin: 0.5rem 0;
 }
 .titulo-card-usuario {
@@ -368,7 +368,6 @@ body[light-mode="dark"] .card-usuario {
   background-color: var(--pw-neutrod0);
   border-radius: 0.5rem;
   font-family: 'Nunito';
-  max-width: 240px;
   margin: 0.5rem 0;
 }
 
