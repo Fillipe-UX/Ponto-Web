@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--pw-neutro100);
   border-radius: 0.5rem;
   font-family: 'Nunito Sans', sans-serif;
-  max-width: 320px;
+  max-width: 520px;
   margin: 0.5rem 0;
   margin-bottom: 1rem;
 }
@@ -238,7 +238,7 @@ h1, h2, h3, h4, h5, h6 {
 .dados-dash-p {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--pw-neutro800);
+  color: var(--pw-neutro900);
   text-align: left;
   margin-bottom: -0.5rem;
 }
@@ -259,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
 .dados-dash {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--pw-neutro800);
+  color: var(--pw-neutro900);
 }
 .horas, .minutos {color: var(--pw-brand100); font-size: 2rem;}
 
@@ -301,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--pw-neutro0);
   border-radius: 0.5rem;
   font-family: 'Nunito';
-  max-width: 240px;
+  max-width: 480px;
   margin: 0.5rem 0;
 }
 .titulo-card-usuario {
@@ -381,7 +381,9 @@ body[light-mode="dark"] .label-cargo {
 body[light-mode="dark"] .titulo-card-usuario {
   color: var(--pw-neutro0)
 }
-
+body[light-mode="dark"] .dados-dash-p {
+  color: var(--pw-neutrod900);
+}
 /* Card Modo Escuro Fim */
 /* Card Fim */
 
