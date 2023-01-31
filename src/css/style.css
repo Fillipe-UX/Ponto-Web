@@ -205,13 +205,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .table {
-  --bs-table-accent-bg: var(--pw-neutro200);
+  --bs-table-accent-bg: var(--pw-neutro100);
   --bs-table-accent-color: var(--pw-neutro900);
   --bs-table-bg: var(--pw-neutro0);
   --bs-table-color: var(--pw-neutro900); /*se for utilizado bootstraap alterar diretamente na variável base */
   --bs-table-hover-color: var(--pw-neutro900);
   --bs-table-striped-color: var(--pw-neutro900);
-  --bs-table-striped-bg: var(--pw-neutro100);
+  --bs-table-striped-bg: var(--pw-neutro10-a);
   --bs-table-hover-bg: var(--pw-brand10-a);
   background-color: var(--pw-neutro0);
   border-color: var(--pw-neutro300); 
