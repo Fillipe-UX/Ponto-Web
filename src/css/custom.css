@@ -68,11 +68,21 @@
   --pw-atencao800: #FFFAD6;
   --pw-atencao700: #FFF0B2;
   --pw-atencao600: #FFE98F;
-  --pw-atencao500: #FFDB4D;
-  --pw-atencao400: #FFE14D;
+  --pw-atencao500: #FFE270;
+  --pw-atencao400: #FFDB4D;
   --pw-atencao300: #FFC400;
   --pw-atencao200: #E5B000;
   --pw-atencao100: #CC9900;
+  --pw-info1000: #EEF5FF;
+  --pw-info900: #D6E7FF;
+  --pw-info800: #B4E0F8;
+  --pw-info700: #8FD1F5;
+  --pw-info600: #6AC2F1;
+  --pw-info500: #3DAFED;
+  --pw-info400: #1EA3EB;
+  --pw-info300: #128CCE;
+  --pw-info200: #1080BC;
+  --pw-info100: #0D6696;
   --pw-neutro0: #ffffff;
   --pw-neutro90-a: rgba(180, 186, 196, 0.9);
   --pw-neutro70-a: rgba(180, 186, 196, 0.7);
@@ -230,6 +240,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Tipografia Fim*/
 /* Card */
+.saudacao {color: var(--pw-neutro900);}
+
 .card-dash {
   border: 2px solid var(--pw-neutro200);
   background-color: var(--pw-neutro100);
@@ -333,6 +345,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Card Modo Escuro*/
+
+body[light-mode="dark"] .saudacao {color: var(--pw-neutrod900);}
+
 body[light-mode="dark"] .card-dash {
   border: 2px solid var(--pw-neutrod200);
   background-color: var(--pw-neutrod100);
@@ -477,6 +492,16 @@ body[light-mode="dark"] .dados-dash-p {
 .bg-atencao900 {background-color: var(--pw-atencao900); color: var(--pw-neutro900);}
 .bg-atencao1000 {background-color: var(--pw-atencao1000); color: var(--pw-neutro900);}
 
+.bg-info100 {background-color: var(--pw-info100); color: var(--pw-neutro0);}
+.bg-info200 {background-color: var(--pw-info200); color: var(--pw-neutro0);}
+.bg-info300 {background-color: var(--pw-info300); color: var(--pw-neutro0);}
+.bg-info400 {background-color: var(--pw-info400); color: var(--pw-neutro0);}
+.bg-info500 {background-color: var(--pw-info500); color: var(--pw-neutro0);}
+.bg-info600 {background-color: var(--pw-info600); color: var(--pw-neutro900);}
+.bg-info700 {background-color: var(--pw-info700); color: var(--pw-neutro900);}
+.bg-info800 {background-color: var(--pw-info800); color: var(--pw-neutro900);}
+.bg-info900 {background-color: var(--pw-info900); color: var(--pw-neutro900);}
+.bg-info1000 {background-color: var(--pw-info1000); color: var(--pw-neutro900);}
 
 .bg-neutro0 {background-color: var(--pw-neutro0); color: var(--pw-neutro900);}
 .bg-neutro100 {background-color: var(--pw-neutro100); color: var(--pw-neutro900);}
