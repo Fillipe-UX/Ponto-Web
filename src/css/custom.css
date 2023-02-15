@@ -28,21 +28,21 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --pw-brandfor: #E6262B;
-  --pw-brand1000: #FFEBD6;
-  --pw-brand900: #FFE0C2;
-  --pw-brand800: #FFD6AD;
-  --pw-brand700: #FFCC99;
-  --pw-brand600: #FFC285;
-  --pw-brand500: #FFB870;
-  --pw-brand400: #FFAD5C;
-  --pw-brand300: #FFA347;
-  --pw-brand200: #FF9933;
-  --pw-brand100: #FF850A;
-  --pw-brand90-a: rgba(255, 133, 10, 0.9);
-  --pw-brand70-a: rgba(255, 133, 10, 0.7);
-  --pw-brand50-a: rgba(255, 133, 10, 0.5);
-  --pw-brand30-a: rgba(255, 133, 10, 0.3);
-  --pw-brand10-a: rgba(255, 133, 10, 0.1);
+  --pw-brand1000: #FFEBEB;
+  --pw-brand900: #FFC2C2;
+  --pw-brand800: #FFADAD;
+  --pw-brand700: #FF9999;
+  --pw-brand600: #FF7070;
+  --pw-brand500: #FF4747;
+  --pw-brand400: #FF1F1F;
+  --pw-brand300: #EC0000;
+  --pw-brand200: #CC0000;
+  --pw-brand100: #A30000;
+  --pw-brand90-a: rgba(230, 0, 0, 0.9);
+  --pw-brand70-a: rgba(230, 0, 0, 0.7);
+  --pw-brand50-a: rgba(230, 0, 0, 0.5);
+  --pw-brand30-a: rgba(230, 0, 0, 0.3);
+  --pw-brand10-a: rgba(230, 0, 0, 0.1);
   --pw-perigo1000: #FCEEEF;
   --pw-perigo900: #F6CBCE;
   --pw-perigo800: #F0A8AD;
@@ -661,28 +661,17 @@ background-color: #272D39;
 
 body[light-mode="dark"] a {
 color: var(--pw-brand-900);
-}
-
-.bd-links-link.active {
-color: #FB6B2B;
-background-color: #E9F3F8;
-}
-  
-body[light-mode="dark"] .bd-links-link.active {
-color: #FB6B2B;
-background-color: #4A5264;
-}
-  
+} 
 
 
 body[light-mode="dark"] .bd-links-link:hover{
-color: #fff;
-background-color: #4A5264;
+color: var(--pw-neutro0);
+background-color: var(--pw-neutrod100);
 }
 
 body[light-mode="dark"].bd-links-link:focus {
-color: #fff;
-background-color: #4A5264;
+  color: var(--pw-neutro0);
+  background-color: var(--pw-neutrod100);
 }
       
 
@@ -845,36 +834,36 @@ body[light-mode="dark"] .btn-acao:hover {
 }
 
 .bd-links-link:hover, .bd-links-link:focus {
-color: #353230;
-background-color: #E9F3F8;
+color: var(--pw-neutro900);
+background-color: var(--pw-brand1000);
 }
 
 
 body[light-mode="dark"] .sol-mc {
-fill: #fff;
+fill: var(--pw-neutro0);
 }
 
 body[light-mode="dark"] .lua-mc {
-fill: #fff;
+fill: var(--pw-neutro0);
 }
 
 body[light-mode="dark"] .bd-links-link:hover {
-color: #fff;
-background-color: #4A5264;
+color: var(--pw-neutro0);
+background-color: var(--pw-neutrod100);
 }
 
 body[light-mode="dark"].bd-links-link:focus {
-  color: #fff;
-  background-color: #4A5264;
-  }
+  color: var(--pw-neutro0);
+  background-color: var(--pw-neutrod100);
+}
 
 .bd-links-link.active {
-color: #FB6B2B;
+color: var(--pw-brand300);
 background-color: var(--pw-brand1000);
 }
 
 body[light-mode="dark"] .bd-links-link.active {
-color: #FB6B2B;
+color: var(--pw-brand700);
 background-color: var(--pw-neutrod100);;
 }
 
