@@ -595,11 +595,11 @@ body[light-mode="dark"] .dados-dash-p {
 }
 .btn-salvar {
   width: auto;
-  color: #fff;
+  color: var(--pw-neutro0);
   background-color: var(--pw-sucesso200);
 }
 .btn-salvar:hover {
-  color: #fff;
+  color: var(--pw-neutro0);
   background-color: var(--pw-sucesso100);
 }
 /* Botões fim */
@@ -631,7 +631,7 @@ body[light-mode="dark"] .dados-dash-p {
 body[light-mode="dark"] .disabled {color: var(--pw-neutrod500);}
 
 body[light-mode="dark"] .navbar {
-  color: #fff;
+  color: var(--pw-neutro0);
   background-color: #272D39;
 }
   
@@ -644,23 +644,23 @@ body[light-mode="dark"] .navbar-logo {
 }
 
 body[light-mode="dark"] {
-background-color: #272D39;
+background-color: var(--pw-neutrod0);
 color: var(--pw-neutro0);
 }
 
 
 body[light-mode="dark"] .light-mode-button span:nth-child(1) {
-background-color: #ced4e2;
-color: #141516;
+background-color: var(--pw-neutro200);
+color: var(--pw-neutrod0);
 }
 
 body[light-mode="dark"] .light-mode-button span:nth-child(2) {
 left: 65px;
-background-color: #272D39;
+background-color: var(--pw-neutro900);
 }
 
 body[light-mode="dark"] a {
-color: var(--pw-brand-900);
+color: var(--pw-neutro0);
 } 
 
 
