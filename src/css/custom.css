@@ -80,9 +80,9 @@
   --pw-info600: #6AC2F1;
   --pw-info500: #3DAFED;
   --pw-info400: #1EA3EB;
-  --pw-info300: #128CCE;
-  --pw-info200: #1080BC;
-  --pw-info100: #0D6696;
+  --pw-info300: #008BD6;
+  --pw-info200: #007ABC;
+  --pw-info100: #008BD6;
   --pw-neutro0: #ffffff;
   --pw-neutro90-a: rgba(180, 186, 196, 0.9);
   --pw-neutro70-a: rgba(180, 186, 196, 0.7);
@@ -175,7 +175,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 a {
-  color: #9747FF;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 hr {
@@ -283,11 +289,11 @@ h1, h2, h3, h4, h5, h6 {
 .progress {
   --bs-progress-height: .5rem;
   --bs-progress-font-size: 0.75rem;
-  --bs-progress-bg: var(--pw-neutro300);
+  --bs-progress-bg: var(--pw-info900);
   --bs-progress-border-radius: 0.375rem;
-  --bs-progress-box-shadow: inset 0 1px 2pxrgba(0, 0, 0, 0.075);
+  --bs-progress-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   --bs-progress-bar-color: var(--pw-neutro0);
-  --bs-progress-bar-bg: var(--pw-brand300);
+  --bs-progress-bar-bg: var(--pw-info400);
   --bs-progress-bar-transition: width 0.6s ease;
   display: flex;
   height: var(--bs-progress-height);
@@ -548,22 +554,40 @@ body[light-mode="dark"] .dados-dash-p {
   padding: 0.2rem 1rem;
   width: auto;
   font-size: 12px;
-  font-weight: 600;
-  color: var(--pw-neutro0);
+  font-weight: 700;
+  color: var(--pw-neutro500);
   margin-right: 0.5rem;
   align-self: right;
-  background-color: var(--pw-brand100);
+  background-color: var(--pw-neutro200);
   text-decoration: none;
   margin-top: 0.3rem;
   border-radius: 8px;
 }
 
-.btn-detalhar:hover {background-color: var(--pw-brand400);}
 
-.btn-detalhar a{
-  text-decoration: none;
-  color: var(--pw-neutro0);
-}
+.btn-detalhar:hover {
+  background-color: var(--pw-brand1000);
+  color: var(--pw-brand300) !important;}
+
+.btn-icone-relatorio {
+    padding: 0.04rem 0.04rem;
+    width: 24px;
+    font-weight: 700;
+    margin-right: 0.5rem;
+    align-self: center;
+    background-color: var(--pw-neutro200);
+    text-decoration: none;
+    margin-top: 0.3rem;
+    border-radius: 8px;
+  }
+
+  .btn-icone-relatorio .relatorio{
+    fill: var(--pw-neutro500) !important;
+  }
+
+.btn-icone-relatorio:hover {
+background-color: var(--pw-brand1000);
+fill: var(--pw-brand300) !important; }
 
 #icone-botao {
   width: 0.75rem;

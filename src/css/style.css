@@ -343,12 +343,9 @@ form.p-geral.d-flex {
 
 
 .pesquisa-claro {
-  fill: #FB6B2B;
+  fill: var(--pw-brand300);
 }
 
-.pesquisa-claro:hover {
-  fill: #000;
-}
 
 .icon-sidebar {
   padding-right: 10px;
