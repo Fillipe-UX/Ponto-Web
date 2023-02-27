@@ -249,9 +249,9 @@ h1, h2, h3, h4, h5, h6 {
 .saudacao {color: var(--pw-neutro900);}
 
 .card-dash {
-  border: 2px solid var(--pw-neutro200);
-  background-color: var(--pw-neutro100);
-  border-radius: 0.5rem;
+  border: 1px solid var(--pw-neutro300);
+  background-color: var(--pw-neutro0);
+  border-radius: 0.6rem;
   font-family: 'Nunito Sans', sans-serif;
   max-width: 520px;
   margin: 0.5rem 0;
@@ -277,7 +277,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.3em;
-  color: var(--pw-neutro500);
+  color: var(--pw-neutro900);
 }
 .dados-dash {
   font-size: 2.5rem;
@@ -448,12 +448,12 @@ body[light-mode="dark"] .dados-dash-p {
 .bg-neutro800 {background-color: var(--pw-neutro800);}
 .bg-neutro900 {background-color: var(--pw-neutro900);}
 
-.bg-brand100 {background-color: var(--pw-brand100); color: var(--pw-neutro900);}
-.bg-brand200 {background-color: var(--pw-brand200); color: var(--pw-neutro900);}
-.bg-brand300 {background-color: var(--pw-brand300); color: var(--pw-neutro900);}
-.bg-brand400 {background-color: var(--pw-brand400); color: var(--pw-neutro900);}
-.bg-brand500 {background-color: var(--pw-brand500); color: var(--pw-neutro900);}
-.bg-brand600 {background-color: var(--pw-brand600); color: var(--pw-neutro900);}
+.bg-brand100 {background-color: var(--pw-brand100); color: var(--pw-neutro0);}
+.bg-brand200 {background-color: var(--pw-brand200); color: var(--pw-neutro0);}
+.bg-brand300 {background-color: var(--pw-brand300); color: var(--pw-neutro0);}
+.bg-brand400 {background-color: var(--pw-brand400); color: var(--pw-neutro0);}
+.bg-brand500 {background-color: var(--pw-brand500); color: var(--pw-neutro0);}
+.bg-brand600 {background-color: var(--pw-brand600); color: var(--pw-neutro0);}
 .bg-brand700 {background-color: var(--pw-brand700); color: var(--pw-neutro900);}
 .bg-brand800 {background-color: var(--pw-brand800); color: var(--pw-neutro900);}
 .bg-brand900 {background-color: var(--pw-brand900); color: var(--pw-neutro900);}
@@ -569,9 +569,13 @@ body[light-mode="dark"] .dados-dash-p {
   background-color: var(--pw-brand1000);
   color: var(--pw-brand300) !important;}
 
+  .btn:active  {
+    background-color: inherit;
+    color: inherit}
+
 .btn-icone-relatorio {
     padding: 0.04rem 0.04rem;
-    width: 24px;
+    width: 28px;
     font-weight: 700;
     margin-right: 0.5rem;
     align-self: center;
@@ -581,9 +585,13 @@ body[light-mode="dark"] .dados-dash-p {
     border-radius: 8px;
   }
 
-  .btn-icone-relatorio .relatorio{
-    fill: var(--pw-neutro500) !important;
-  }
+.btn-icone-relatorio .relatorio{
+  fill: var(--pw-neutro500) !important;
+}
+
+.btn-icone-relatorio .relatorio:hover{
+  fill: var(--pw-neutro500) !important;
+}
 
 .btn-icone-relatorio:hover {
 background-color: var(--pw-brand1000);
