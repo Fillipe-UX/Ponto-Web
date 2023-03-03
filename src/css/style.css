@@ -46,7 +46,7 @@ footer {height: 100px; background-color: var(--pw-neutro200); padding: 2rem 0; m
 .navbar-logo {
   background-image: url(../img/pontoweb.svg);
   width: 200px;
-  height: 20px;
+  height: 28px;
   background-repeat: no-repeat;
 }
 
@@ -266,7 +266,7 @@ body[light-mode="dark"] .navbar-toggler {
 body[light-mode="dark"] .navbar-logo {
   background-image: url(../img/pontoweb-dm.svg);
   width: 200px;
-  height: 20px;
+  height: 28px;
   background-repeat: no-repeat;
 }
 
