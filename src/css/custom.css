@@ -668,13 +668,6 @@ body[light-mode="dark"] .navbar {
 }
   
 
-body[light-mode="dark"] .navbar-logo {
-  background-image: url(../img/pontoweb-dm.svg);
-  width: 200px;
-  height: 20px;
-  background-repeat: no-repeat;
-}
-
 body[light-mode="dark"] {
 background-color: var(--pw-neutrod0);
 color: var(--pw-neutro0);
