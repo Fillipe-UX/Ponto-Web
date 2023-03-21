@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Glossário - Empatia | Design System</title>
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Bootstrap CSS -->
     <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -15,103 +19,147 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://getbootstrap.com/docs/5.2/assets/js/docs.min.js"></script>
-     
+     <style>
 
- </head>
 
- <body>
+
+    </style>
+
+   </head>
+
+
+
+<body>
   <script>
     var app = document.getElementsByTagName("BODY")[0];
     if (localStorage.lightMode == "dark") {
         app.setAttribute("light-mode", "dark");
     }
 </script>
+  <div class="sidebar">
+    <div class="logo-details">
+      <img class="p-3 picto" src="src/img/empatia-picto.svg" alt="Empatia" width="80px;" >
 
-  <header class="navbar navbar-expand-lg navbar-light sticky-top">
-    <nav class="container-xxl flex-wrap flex-lg-nowrap " aria-label="Main navigation">
-      <div class="bd-navbar-toggle">
-        <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar" aria-controls="bdSidebar" aria-label="Toggle docs navigation">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
-  </svg>
-        </button>
-      </div>
-      <a class="navbar-brand navbar-logo" href="index.html" aria-label="Fortes Ponto Web"> </a>      
-    <div id="pesquisa-topo" class="col d-flex justify-content-center">
-      <form class="d-flex" role="search">
-        <input class="form-control pesquisa-menu me-2" type="search" placeholder="Pesquisa" aria-label="Pesquisa">
-        <button class="btn btn-pesquisa-menu" type="submit">
-          <svg class="pesquisa-claro" data-name="Camada 1" width="20px" viewBox="0 0 32 32.01">
-          <path class="pesquisa-claro" d="M0,13.54c0,3.59,1.43,7.03,3.97,9.57,2.54,2.54,5.98,3.97,9.57,3.97,3.17,0,6.23-1.11,8.66-3.13l7.7,7.7c.11,.12,.25,.21,.4,.27,.15,.06,.31,.09,.47,.09s.32-.03,.47-.09,.28-.15,.4-.27c.23-.24,.36-.55,.36-.88s-.13-.64-.36-.87l-7.7-7.75c2.02-2.43,3.13-5.5,3.13-8.66-.02-3.58-1.45-7.01-3.99-9.54C20.55,1.43,17.12,0,13.54,0S6.51,1.43,3.97,3.97C1.43,6.51,0,9.95,0,13.54Zm2.46,0c0-2.94,1.17-5.75,3.25-7.83s4.89-3.24,7.83-3.25c2.94,0,5.75,1.17,7.83,3.25s3.24,4.89,3.25,7.83c0,2.94-1.17,5.75-3.25,7.83s-4.89,3.24-7.83,3.25c-2.94,0-5.75-1.17-7.83-3.25-2.08-2.08-3.24-4.9-3.25-7.83Z"/>
-        </svg>
-      </button>
-      </form>
+    <a class="navbar-brand navbar-logo" href="index.html" aria-label="Empatia">    </a>
     </div>
-    <svg class="sol-mc" data-name="sol" viewBox="0 0 31.8 31.8" width="18px" style="margin-right:10px"><defs>
-      <style>.sol-mc {fill: #353230;}</style></defs>
-    <path class="sol-mc" d="m15.9,6.6c-1.8,0-3.6.5-5.2,1.6s-2.7,2.5-3.4,4.2c-.7,1.6-.9,3.5-.6,5.3.4,1.8,1.2,3.5,2.6,4.8,1.3,1.3,3,2.2,4.8,2.6s3.7.2,5.4-.5,3.2-1.9,4.2-3.4c1-1.5,1.6-3.3,1.6-5.2,0-2.5-1-4.8-2.7-6.6-1.9-1.8-4.2-2.8-6.7-2.8Zm0,16.2c-1.4,0-2.7-.4-3.8-1.2-1.1-.8-2-1.8-2.5-3.1-.5-1.3-.7-2.6-.4-4,.3-1.3.9-2.6,1.9-3.5,1-1,2.2-1.6,3.5-1.9,1.3-.3,2.7-.1,4,.4,1.3.5,2.3,1.4,3.1,2.5.8,1.1,1.2,2.5,1.2,3.8,0,1.8-.7,3.6-2,4.9-1.4,1.4-3.2,2.1-5,2.1Zm0-17c.3,0,.6-.1.9-.4.2-.2.4-.5.4-.9V1.3c0-.3-.1-.6-.4-.9-.2-.2-.5-.4-.9-.4-.3,0-.6.1-.9.4-.2.3-.3.6-.3.9v3.2c0,.3.1.6.4.9.2.2.5.4.8.4Zm0,20.2c-.3,0-.6.1-.9.4-.2.2-.3.5-.3.9v3.2c0,.3.1.6.4.9.2.2.5.4.9.4.3,0,.6-.1.9-.4.2-.2.4-.5.4-.9v-3.2c0-.3-.1-.6-.4-.9s-.7-.4-1-.4Zm14.6-11.3h-3.2c-.3,0-.6.1-.9.4-.2.2-.4.5-.4.9,0,.3.1.6.4.9.2.2.5.4.9.4h3.2c.3,0,.6-.1.9-.4.2-.2.4-.5.4-.9,0-.3-.1-.6-.4-.9-.3-.3-.6-.4-.9-.4Zm-24.8,1.2c0-.3-.1-.6-.4-.9-.2-.2-.5-.4-.9-.4H1.3c-.3,0-.6.1-.9.4-.2.2-.4.5-.4.9,0,.3.1.6.4.9.2.2.5.4.9.4h3.2c.3,0,.6-.1.9-.4.2-.3.3-.6.3-.9Zm-.4-7.3c.2.3.5.4.8.4s.7-.1.9-.4c.2-.2.4-.5.4-.9s-.2-.5-.4-.8l-2.3-2.3c-.2-.2-.5-.3-.8-.3s-.6.1-.8.4c-.3.2-.4.5-.4.8s.1.6.3.9l2.3,2.2Zm20.3.4c.2,0,.3,0,.5-.1s.3-.2.4-.3l2.3-2.3c.2-.2.3-.5.3-.9,0-.3-.1-.6-.4-.8s-.5-.4-.8-.4-.6.1-.9.3l-2.2,2.4c-.2.2-.4.5-.4.9s.1.6.4.9c.1.1.2.2.3.2.2.1.4.1.5.1ZM5.3,23.2l-2.3,2.3c-.1.1-.2.2-.3.4-.1.1-.1.3-.1.5s0,.3.1.5c.1.1.2.3.3.4s.2.2.4.3c.1.1.3.1.5.1s.3,0,.5-.1c.1-.1.3-.2.4-.3l2.2-2.4c.2-.2.3-.5.3-.9,0-.3-.1-.6-.4-.8-.2-.2-.5-.4-.8-.4-.3,0-.6.1-.8.4Zm21.2,0c-.2-.2-.5-.3-.9-.3-.3,0-.6.1-.8.4-.2.2-.4.5-.4.8s.1.6.3.9l2.3,2.3c.1.1.2.2.4.3.1.1.3.1.5.1s.3,0,.5-.1c.1-.1.3-.2.4-.3.1-.1.2-.2.3-.4.1-.1.1-.3.1-.5s0-.3-.1-.5c-.1-.1-.2-.3-.3-.4l-2.3-2.3Z"/>
-  </svg>
-    <div class="form-check form-switch">
-      <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
-      </div>
-      <svg data-name="lua" viewBox="0 0 30.41 32.01" width="16px"><defs>
-        <style>.lua-mc {fill: #353230;}</style></defs>
-        <path class="lua-mc" d="m.3,21.7c.2-.2.4-.3.6-.4s.5-.1.7,0c2.4.8,5,.8,7.5,0,2.4-.8,4.5-2.4,6-4.5,1.5-2.3,2.1-5,1.9-7.6-.3-2.7-1.5-5.2-3.4-7.1-.2-.2-.3-.4-.3-.6s0-.5.1-.7.3-.4.5-.6c0-.1.3-.2.5-.2,2.9,0,5.7.8,8.1,2.2,2.5,1.4,4.5,3.5,5.9,6s2.1,5.3,2,8.2-.9,5.6-2.4,8.1c-1.5,2.4-3.6,4.4-6.2,5.7-2.5,1.3-5.4,1.9-8.2,1.8-2.9-.1-5.6-1.1-8-2.6-2.4-1.6-4.3-3.8-5.5-6.4-.1-.2-.1-.5-.1-.7,0-.2.1-.4.3-.6Zm14.1,7.8c3.3,0,6.6-1.2,9-3.5,2.5-2.2,4-5.3,4.4-8.6.4-3.4-.5-6.7-2.5-9.4s-4.8-4.6-8.1-5.3c1.5,2.3,2.3,5,2.3,7.8s-.9,5.5-2.4,7.8c-1.5,2.1-3.5,3.8-5.8,4.9s-4.9,1.5-7.5,1.2c1.3,1.6,2.9,2.9,4.7,3.8,1.8.8,3.9,1.3,5.9,1.3Z"/>
-      </svg>
-    </nav>
-  </header>
-  <div class="container-xxl bd-layout">
-    <aside class="bd-sidebar pt-3">
-      <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel">
-        <div class="offcanvas-header border-bottom">
-          <h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel"><img src="src\img\empatia-color.svg" width="160px" style="margin-left: 10px;"></h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button>
-        </div>
-
-        <div class="offcanvas-body">
-          <nav class="bd-links w-100" id="bd-docs-nav" aria-label="Docs navigation"><ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
-      <li class="bd-links-group py-2">
-        <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
-          Guia de Branding
-        </strong>
-
-        <ul class="list-unstyled fw-normal pb-2 small">
-          <li><a href="personas.html" class="bd-links-link d-inline-block rounded">Perfil do usuário</a></li>
-          <li><a href="#" class="bd-links-link d-inline-block rounded disabled">Voz (em breve)</a></li>
-          <li><a href="#" class="bd-links-link d-inline-block rounded disabled">Comunicação (em breve)</a></li>
-          <li><a href="glossario.html" class="bd-links-link d-inline-block rounded active">Glossário</a></li>
-      </ul>
-    </li>
-    <li class="bd-links-group py-2">
-      <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">Base</strong>
-      <ul class="list-unstyled fw-normal pb-2 small">
-        <li><a href="cores.html" class="bd-links-link d-inline-block rounded">Cores</a></li>
-        <li><a href="tipografia.html" class="bd-links-link d-inline-block rounded">Tipografia</a></li>
-        <li><a href="grid.html" class="bd-links-link d-inline-block rounded">Grid</a></li>
-      </ul>
-    </li>
-    <li class="bd-links-group py-2">
-      <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">Componentes </strong>
-        <ul class="list-unstyled fw-normal pb-2 small">
-          <li><a href="avatar.html" class="bd-links-link d-inline-block rounded">Avatares</a></li>
-          <li><a href="card.html" class="bd-links-link d-inline-block rounded">Cards</a></li>
-          <li><a href="botoes.html" class="bd-links-link d-inline-block rounded">Botões</a></li>
-          <li><a href="formulario.html" class="bd-links-link d-inline-block rounded">Formulário</a></li>
-          <li><a href="#" class="bd-links-link d-inline-block rounded disabled">Navegação</a></li>
-          <li><a href="#" class="bd-links-link d-inline-block rounded disabled">Menus</a></li>
-          <li><a href="#" class="bd-links-link d-inline-block rounded disabled">Paginação</a></li>
-      </ul>
+    <div class="home-content">
+      <i class='bx bx-chevron-right toggle'></i>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <!-- <a href="#">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Dashboard</span>
+        </a> -->
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Dashboard</a></li>
+        </ul>
       </li>
-  </ul>
-</nav>
- </div>
+
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <svg class="icon" viewBox="0 0 15.5 19.56" width="16px">
+              <style>.cls-1 {fill: var(--pw-produto300);}</style>
+              <path class="cls-1" d="m11.75,0H3.75C1.68,0,0,1.68,0,3.75v14.06c0,.66.36,1.25.95,1.56.25.13.53.2.8.2.36,0,.71-.11,1.02-.33l4.26-3.04c.43-.31,1.02-.31,1.45,0l4.26,3.04c.54.38,1.23.43,1.82.13.59-.3.95-.9.95-1.56V3.75c0-2.07-1.68-3.75-3.75-3.75Zm2.25,17.81c0,.13-.08.2-.14.22-.05.03-.15.06-.26-.02l-4.26-3.04c-.96-.68-2.24-.68-3.2,0l-4.26,3.04c-.11.08-.21.04-.26.02-.05-.03-.14-.09-.14-.22V3.75c0-1.24,1.01-2.25,2.25-2.25h8c1.24,0,2.25,1.01,2.25,2.25v14.06Z"/>
+          </svg>
+            <span class="link_name">Guia de Branding</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <span class="link_name">Guia de Branding</span>
+          <li><a href="personas.html">Perfil do usuário</a></li>
+          <li><a href="#" class="disabled">Voz (em breve)</a></li>
+          <li><a href="#" class="disabled">Comunicação (em breve)</a></li>
+          <li><a href="glossario.html">Glossário</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <svg class="icon" viewBox="0 0 15.5 19.56" width="16px">
+              <style>.cls-1 {fill: var(--pw-produto300);}</style>
+              <path class="cls-1" d="m11.75,0H3.75C1.68,0,0,1.68,0,3.75v14.06c0,.66.36,1.25.95,1.56.25.13.53.2.8.2.36,0,.71-.11,1.02-.33l4.26-3.04c.43-.31,1.02-.31,1.45,0l4.26,3.04c.54.38,1.23.43,1.82.13.59-.3.95-.9.95-1.56V3.75c0-2.07-1.68-3.75-3.75-3.75Zm2.25,17.81c0,.13-.08.2-.14.22-.05.03-.15.06-.26-.02l-4.26-3.04c-.96-.68-2.24-.68-3.2,0l-4.26,3.04c-.11.08-.21.04-.26.02-.05-.03-.14-.09-.14-.22V3.75c0-1.24,1.01-2.25,2.25-2.25h8c1.24,0,2.25,1.01,2.25,2.25v14.06Z"/>
+          </svg>
+            <span class="link_name">Base </span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <span class="link_name">Base</span>
+          <li><a href="cores.html">Cores</a></li>
+          <li><a href="tipografia.html">Tipografia</a></li>
+          <li><a href="grid.html">Grid</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <svg class="icon" viewBox="0 0 19.5 19.5" width="16px">
+              <style>.cls-1 {fill: var(--pw-produto300);}
+              </style>
+            <path class="cls-1" d="m15.75,3h-4c-.41,0-.75.34-.75.75s.34.75.75.75h1.25v2.25c0,.41.34.75.75.75s.75-.34.75-.75v-2.25h1.25c.41,0,.75-.34.75-.75s-.34-.75-.75-.75Z"/>
+            <path class="cls-1" d="m16.75,0h-6c-1.52,0-2.75,1.23-2.75,2.75v5c0,1.52,1.23,2.75,2.75,2.75h6c1.52,0,2.75-1.23,2.75-2.75V2.75c0-1.52-1.23-2.75-2.75-2.75Zm1.25,7.75c0,.69-.56,1.25-1.25,1.25h-6c-.69,0-1.25-.56-1.25-1.25V2.75c0-.69.56-1.25,1.25-1.25h6c.69,0,1.25.56,1.25,1.25v5Z"/>
+            <path class="cls-1" d="m3.75,0h-1C1.23,0,0,1.23,0,2.75v14c0,1.52,1.23,2.75,2.75,2.75h1c1.52,0,2.75-1.23,2.75-2.75V2.75c0-1.52-1.23-2.75-2.75-2.75Zm1.25,16.75c0,.69-.56,1.25-1.25,1.25h-1c-.69,0-1.25-.56-1.25-1.25V2.75c0-.69.56-1.25,1.25-1.25h1c.69,0,1.25.56,1.25,1.25v14Z"/>
+            <path class="cls-1" d="m16.75,12h-6c-1.52,0-2.75,1.23-2.75,2.75v2c0,1.52,1.23,2.75,2.75,2.75h6c1.52,0,2.75-1.23,2.75-2.75v-2c0-1.52-1.23-2.75-2.75-2.75Zm1.25,4.75c0,.69-.56,1.25-1.25,1.25h-6c-.69,0-1.25-.56-1.25-1.25v-2c0-.69.56-1.25,1.25-1.25h6c.69,0,1.25.56,1.25,1.25v2Z"/>
+          </svg>
+            <span class="link_name">Componentes</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <span class="link_name">Componentes</span>
+          <li><a href="avatar.html">Avatares</a></li>
+          <li><a href="card.html">Cards</a></li>
+          <li><a href="botoes.html">Botões</a></li>
+          <li><a href="formulario.html">Formulário</a></li>
+          <li><a href="#" class="disabled">Navegação</a></li>
+          <li><a href="#" class="disabled">Menus</a></li>
+          <li><a href="#" class="disabled">Paginação</a></li>
+        </ul>
+      </li>
+      
+      <li>
+  </li>
+</ul>
   </div>
-    </aside>
+  <section class="home-section">
+    <header class="navbar navbar-expand-lg navbar-light sticky-top">
+      <nav class="container-xxl flex-wrap flex-lg-nowrap " aria-label="Main navigation">
+        
+        
+      <div id="pesquisa-topo" class="col d-flex justify-content-center">
+        <form class="d-flex" role="search">
+          <input class="form-control pesquisa-menu me-2" type="search" placeholder="Pesquisa" aria-label="Pesquisa">
+          <button class="btn btn-pesquisa-menu" type="submit">
+            <svg class="pesquisa-claro" data-name="Camada 1" width="20px" viewBox="0 0 32 32.01">
+            <path class="pesquisa-claro" d="M0,13.54c0,3.59,1.43,7.03,3.97,9.57,2.54,2.54,5.98,3.97,9.57,3.97,3.17,0,6.23-1.11,8.66-3.13l7.7,7.7c.11,.12,.25,.21,.4,.27,.15,.06,.31,.09,.47,.09s.32-.03,.47-.09,.28-.15,.4-.27c.23-.24,.36-.55,.36-.88s-.13-.64-.36-.87l-7.7-7.75c2.02-2.43,3.13-5.5,3.13-8.66-.02-3.58-1.45-7.01-3.99-9.54C20.55,1.43,17.12,0,13.54,0S6.51,1.43,3.97,3.97C1.43,6.51,0,9.95,0,13.54Zm2.46,0c0-2.94,1.17-5.75,3.25-7.83s4.89-3.24,7.83-3.25c2.94,0,5.75,1.17,7.83,3.25s3.24,4.89,3.25,7.83c0,2.94-1.17,5.75-3.25,7.83s-4.89,3.24-7.83,3.25c-2.94,0-5.75-1.17-7.83-3.25-2.08-2.08-3.24-4.9-3.25-7.83Z"/>
+          </svg>
+        </button>
+        </form>
+      </div>
+      <svg class="sol-mc" data-name="sol" viewBox="0 0 31.8 31.8" width="18px" style="margin-right:10px"><defs>
+        <style>.sol-mc {fill: #353230;}</style></defs>
+      <path class="sol-mc" d="m15.9,6.6c-1.8,0-3.6.5-5.2,1.6s-2.7,2.5-3.4,4.2c-.7,1.6-.9,3.5-.6,5.3.4,1.8,1.2,3.5,2.6,4.8,1.3,1.3,3,2.2,4.8,2.6s3.7.2,5.4-.5,3.2-1.9,4.2-3.4c1-1.5,1.6-3.3,1.6-5.2,0-2.5-1-4.8-2.7-6.6-1.9-1.8-4.2-2.8-6.7-2.8Zm0,16.2c-1.4,0-2.7-.4-3.8-1.2-1.1-.8-2-1.8-2.5-3.1-.5-1.3-.7-2.6-.4-4,.3-1.3.9-2.6,1.9-3.5,1-1,2.2-1.6,3.5-1.9,1.3-.3,2.7-.1,4,.4,1.3.5,2.3,1.4,3.1,2.5.8,1.1,1.2,2.5,1.2,3.8,0,1.8-.7,3.6-2,4.9-1.4,1.4-3.2,2.1-5,2.1Zm0-17c.3,0,.6-.1.9-.4.2-.2.4-.5.4-.9V1.3c0-.3-.1-.6-.4-.9-.2-.2-.5-.4-.9-.4-.3,0-.6.1-.9.4-.2.3-.3.6-.3.9v3.2c0,.3.1.6.4.9.2.2.5.4.8.4Zm0,20.2c-.3,0-.6.1-.9.4-.2.2-.3.5-.3.9v3.2c0,.3.1.6.4.9.2.2.5.4.9.4.3,0,.6-.1.9-.4.2-.2.4-.5.4-.9v-3.2c0-.3-.1-.6-.4-.9s-.7-.4-1-.4Zm14.6-11.3h-3.2c-.3,0-.6.1-.9.4-.2.2-.4.5-.4.9,0,.3.1.6.4.9.2.2.5.4.9.4h3.2c.3,0,.6-.1.9-.4.2-.2.4-.5.4-.9,0-.3-.1-.6-.4-.9-.3-.3-.6-.4-.9-.4Zm-24.8,1.2c0-.3-.1-.6-.4-.9-.2-.2-.5-.4-.9-.4H1.3c-.3,0-.6.1-.9.4-.2.2-.4.5-.4.9,0,.3.1.6.4.9.2.2.5.4.9.4h3.2c.3,0,.6-.1.9-.4.2-.3.3-.6.3-.9Zm-.4-7.3c.2.3.5.4.8.4s.7-.1.9-.4c.2-.2.4-.5.4-.9s-.2-.5-.4-.8l-2.3-2.3c-.2-.2-.5-.3-.8-.3s-.6.1-.8.4c-.3.2-.4.5-.4.8s.1.6.3.9l2.3,2.2Zm20.3.4c.2,0,.3,0,.5-.1s.3-.2.4-.3l2.3-2.3c.2-.2.3-.5.3-.9,0-.3-.1-.6-.4-.8s-.5-.4-.8-.4-.6.1-.9.3l-2.2,2.4c-.2.2-.4.5-.4.9s.1.6.4.9c.1.1.2.2.3.2.2.1.4.1.5.1ZM5.3,23.2l-2.3,2.3c-.1.1-.2.2-.3.4-.1.1-.1.3-.1.5s0,.3.1.5c.1.1.2.3.3.4s.2.2.4.3c.1.1.3.1.5.1s.3,0,.5-.1c.1-.1.3-.2.4-.3l2.2-2.4c.2-.2.3-.5.3-.9,0-.3-.1-.6-.4-.8-.2-.2-.5-.4-.8-.4-.3,0-.6.1-.8.4Zm21.2,0c-.2-.2-.5-.3-.9-.3-.3,0-.6.1-.8.4-.2.2-.4.5-.4.8s.1.6.3.9l2.3,2.3c.1.1.2.2.4.3.1.1.3.1.5.1s.3,0,.5-.1c.1-.1.3-.2.4-.3.1-.1.2-.2.3-.4.1-.1.1-.3.1-.5s0-.3-.1-.5c-.1-.1-.2-.3-.3-.4l-2.3-2.3Z"/>
+    </svg>
+      <div class="form-check form-switch">
+        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+        </div>
+        <svg data-name="lua" viewBox="0 0 30.41 32.01" width="16px"><defs>
+          <style>.lua-mc {fill: #353230;}</style></defs>
+          <path class="lua-mc" d="m.3,21.7c.2-.2.4-.3.6-.4s.5-.1.7,0c2.4.8,5,.8,7.5,0,2.4-.8,4.5-2.4,6-4.5,1.5-2.3,2.1-5,1.9-7.6-.3-2.7-1.5-5.2-3.4-7.1-.2-.2-.3-.4-.3-.6s0-.5.1-.7.3-.4.5-.6c0-.1.3-.2.5-.2,2.9,0,5.7.8,8.1,2.2,2.5,1.4,4.5,3.5,5.9,6s2.1,5.3,2,8.2-.9,5.6-2.4,8.1c-1.5,2.4-3.6,4.4-6.2,5.7-2.5,1.3-5.4,1.9-8.2,1.8-2.9-.1-5.6-1.1-8-2.6-2.4-1.6-4.3-3.8-5.5-6.4-.1-.2-.1-.5-.1-.7,0-.2.1-.4.3-.6Zm14.1,7.8c3.3,0,6.6-1.2,9-3.5,2.5-2.2,4-5.3,4.4-8.6.4-3.4-.5-6.7-2.5-9.4s-4.8-4.6-8.1-5.3c1.5,2.3,2.3,5,2.3,7.8s-.9,5.5-2.4,7.8c-1.5,2.1-3.5,3.8-5.8,4.9s-4.9,1.5-7.5,1.2c1.3,1.6,2.9,2.9,4.7,3.8,1.8.8,3.9,1.3,5.9,1.3Z"/>
+        </svg>
+      </nav>
+  </header>
+
   <div class="container-fluid">
     <div class="row hero">
       <div class="col py-3">
-      <h1 class="pt-5 black" style="color: var(--pw-brand300); font-size: 40px; ">Glossário</h1>
+      <h1 class="pt-5 black" style="color: var(--pw-produto300); font-size: 40px; ">Glossário</h1>
       <p>Um guia rápido para ajudar a todos a falarem a mesma língua. 
       </p>   
     </div>
@@ -119,7 +167,7 @@
 </div>
 
 <div class="row px-2">
-  <h3 class="pt-5 black" style="color: var(--pw-brand300);">Termos internos</h3>
+  <h3 class="pt-5 black" style="color: var(--pw-produto300);">Termos internos</h3>
   <div class="table-responsive table-radius mt-2">
     <table class="table table-striped table-hover">
       <thead>
@@ -154,7 +202,7 @@
     </table>
   </div>
 
-  <h3 class="pt-5 black" style="color: var(--pw-brand300);">Termos de negócio</h3>
+  <h3 class="pt-5 black" style="color: var(--pw-produto300);">Termos de negócio</h3>
   <div class="table-responsive table-radius mt-2">
   <table class="table table-striped table-hover">
     <thead>
@@ -222,33 +270,43 @@
   </div>
   </div>
 </div>
-
-
-          
-</div>
-</div>
-
-<script src="https://getbootstrap.com/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  
+  </section>
+  <script src="https://getbootstrap.com/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 <script src="https://getbootstrap.com/docs/5.2/assets/js/docs.min.js"></script>
 
-<script>
-  function toggle_light_mode() {
-      var app = document.getElementsByTagName("BODY")[0];
-      if (localStorage.lightMode == "dark") {
-    localStorage.lightMode = "light";
-    app.setAttribute("light-mode", "light");
-      } else {
-    localStorage.lightMode = "dark";
-    app.setAttribute("light-mode", "dark");
-      }		
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
   }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".toggle");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
   </script>
-  
- </body>
- <footer>
+  <script>
+    function toggle_light_mode() {
+        var app = document.getElementsByTagName("BODY")[0];
+        if (localStorage.lightMode == "dark") {
+      localStorage.lightMode = "light";
+      app.setAttribute("light-mode", "light");
+        } else {
+      localStorage.lightMode = "dark";
+      app.setAttribute("light-mode", "dark");
+        }		
+    }
+    </script>
+</body>
+<!-- <footer>
   <div class="col d-flex justify-content-center">
     <p class="pt-2 bold" style="font-size: 12px; color: var(--pw-neutro500);">desenvolvido com</p> <img src="src\img\empatia.svg" width="120px" style="margin-left: 10px;">
   </div>
- </footer>
-  </html>
+ </footer> -->
+</html>
