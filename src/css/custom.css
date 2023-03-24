@@ -84,11 +84,11 @@
   --pw-info200: #007ABC;
   --pw-info100: #008BD6;
   --pw-neutro0: #ffffff;
-  --pw-neutro90-a: rgba(180, 186, 196, 0.9);
-  --pw-neutro70-a: rgba(180, 186, 196, 0.7);
-  --pw-neutro50-a: rgba(180, 186, 196, 0.5);
-  --pw-neutro30-a: rgba(220, 223, 228, 0.3);
-  --pw-neutro10-a: rgba(220, 223, 228, 0.1);
+  --pw-neutro500a: rgba(75, 84, 99, 0.50);
+  --pw-neutro400a: rgba(75, 84, 99, 0.32);
+  --pw-neutro300a: rgba(75, 84, 99, 0.16);
+  --pw-neutro200a: rgba(75, 84, 99, 0.08);
+  --pw-neutro100a: rgba(75, 84, 99, 0.02);
   --pw-neutro100: #F7F8F9;
   --pw-neutro200: #EDEEF0;
   --pw-neutro300: #DCDFE4;
@@ -292,13 +292,14 @@ h6{font-size: 20px;}
   font-weight: 700;
   line-height: 1.3em;
   color: var(--pw-neutro900);
+  margin-top: 12px;
 }
 .dados-dash {
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 700;
   color: var(--pw-neutro900);
 }
-.horas, .minutos {color: var(--pw-produto100); font-size: 2rem;}
+.horas, .minutos {color: var(--pw-produto400); font-size: 32px;}
 
 .progress {
   --bs-progress-height: .5rem;
