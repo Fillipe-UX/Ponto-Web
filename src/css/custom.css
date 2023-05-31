@@ -471,7 +471,7 @@ body[light-mode="dark"] .dados-dash-p {
 .bg-brand200 {background-color: var(--pw-produto200); color: var(--pw-neutro900);}
 .bg-brand300 {background-color: var(--pw-produto300); color: var(--pw-neutro900);}
 .bg-brand400 {background-color: var(--pw-produto400); color: var(--pw-neutro900);}
-.bg-brand500 {background-color: var(--pw-produto500); color: var(--pw-neutro0);}
+.bg-brand500 {background-color: var(--pw-produto500); color: var(--pw-neutro900);}
 .bg-brand600 {background-color: var(--pw-produto600); color: var(--pw-neutro0);}
 .bg-brand700 {background-color: var(--pw-produto700); color: var(--pw-neutro0);}
 .bg-brand800 {background-color: var(--pw-produto800); color: var(--pw-neutro0);}
@@ -489,7 +489,7 @@ body[light-mode="dark"] .dados-dash-p {
 .bg-sucesso300 {background-color: var( --pw-sucesso300); color: var(--pw-neutro900);}
 .bg-sucesso400 {background-color: var( --pw-sucesso400); color: var(--pw-neutro900);}
 .bg-sucesso500 {background-color: var( --pw-sucesso500); color: var(--pw-neutro900);}
-.bg-sucesso600 {background-color: var( --pw-sucesso600); color: var(--pw-neutro0);}
+.bg-sucesso600 {background-color: var( --pw-sucesso600); color: var(--pw-neutro900);}
 .bg-sucesso700 {background-color: var( --pw-sucesso700); color: var(--pw-neutro0);}
 .bg-sucesso800 {background-color: var( --pw-sucesso800); color: var(--pw-neutro0);}
 .bg-sucesso900 {background-color: var( --pw-sucesso900); color: var(--pw-neutro0);}
@@ -499,7 +499,7 @@ body[light-mode="dark"] .dados-dash-p {
 .bg-perigo200 {background-color: var(--pw-perigo200); color: var(--pw-neutro900);}
 .bg-perigo300 {background-color: var(--pw-perigo300); color: var(--pw-neutro900);}
 .bg-perigo400 {background-color: var(--pw-perigo400); color: var(--pw-neutro900);}
-.bg-perigo500 {background-color: var(--pw-perigo500); color: var(--pw-neutro0);}
+.bg-perigo500 {background-color: var(--pw-perigo500); color: var(--pw-neutro900);}
 .bg-perigo600 {background-color: var(--pw-perigo600); color: var(--pw-neutro0);}
 .bg-perigo700 {background-color: var(--pw-perigo700); color: var(--pw-neutro0);}
 .bg-perigo800 {background-color: var(--pw-perigo800); color: var(--pw-neutro0);}
@@ -533,7 +533,7 @@ body[light-mode="dark"] .dados-dash-p {
 .bg-neutro200 {background-color: var(--pw-neutro200); color: var(--pw-neutro900);}
 .bg-neutro300 {background-color: var(--pw-neutro300); color: var(--pw-neutro900);}
 .bg-neutro400 {background-color: var(--pw-neutro400); color: var(--pw-neutro900);}
-.bg-neutro500 {background-color: var(--pw-neutro500); color: var(--pw-neutro0);}
+.bg-neutro500 {background-color: var(--pw-neutro500); color: var(--pw-neutro900);}
 .bg-neutro600 {background-color: var(--pw-neutro600); color: var(--pw-neutro0);}
 .bg-neutro700 {background-color: var(--pw-neutro700); color: var(--pw-neutro0);}
 .bg-neutro800 {background-color: var(--pw-neutro800); color: var(--pw-neutro0);}
@@ -545,7 +545,7 @@ body[light-mode="dark"] .dados-dash-p {
 .bg-neutrod300 {background-color: var(--pw-neutrod300); color: var(--pw-neutro0);}
 .bg-neutrod400 {background-color: var(--pw-neutrod400); color: var(--pw-neutro0);}
 .bg-neutrod500 {background-color: var(--pw-neutrod500); color: var(--pw-neutro0);}
-.bg-neutrod600 {background-color: var(--pw-neutrod600); color: var(--pw-neutro0);}
+.bg-neutrod600 {background-color: var(--pw-neutrod600); color: var(--pw-neutro900);}
 .bg-neutrod700 {background-color: var(--pw-neutrod700); color: var(--pw-neutro900);}
 .bg-neutrod800 {background-color: var(--pw-neutrod800); color: var(--pw-neutro900);}
 .bg-neutrod900 {background-color: var(--pw-neutrod900); color: var(--pw-neutro900);}
