@@ -473,10 +473,10 @@ body[light-mode="dark"] .dados-dash-p {
 .bg-brand400 {background-color: var(--pw-produto400); color: var(--pw-neutro900);}
 .bg-brand500 {background-color: var(--pw-produto500); color: var(--pw-neutro0);}
 .bg-brand600 {background-color: var(--pw-produto600); color: var(--pw-neutro0);}
-.bg-brand700 {background-color: var(--pw-produto700); color: var(--pw-neutro900);}
-.bg-brand800 {background-color: var(--pw-produto800); color: var(--pw-neutro900);}
-.bg-brand900 {background-color: var(--pw-produto900); color: var(--pw-neutro900);}
-.bg-brand1000 {background-color: var(--pw-produto1000); color: var(--pw-neutro900);}
+.bg-brand700 {background-color: var(--pw-produto700); color: var(--pw-neutro0);}
+.bg-brand800 {background-color: var(--pw-produto800); color: var(--pw-neutro0);}
+.bg-brand900 {background-color: var(--pw-produto900); color: var(--pw-neutro0);}
+.bg-brand1000 {background-color: var(--pw-produto1000); color: var(--pw-neutro0);}
 
 .bg-brand10-a {background-color: var(--pw-produto10-a)}
 .bg-brand30-a {background-color: var(--pw-produto20-a);}
