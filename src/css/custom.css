@@ -546,7 +546,7 @@ body[light-mode="dark"] .dados-dash-p {
 .bg-neutrod400 {background-color: var(--pw-neutrod400); color: var(--pw-neutro0);}
 .bg-neutrod500 {background-color: var(--pw-neutrod500); color: var(--pw-neutro0);}
 .bg-neutrod600 {background-color: var(--pw-neutrod600); color: var(--pw-neutro0);}
-.bg-neutrod700 {background-color: var(--pw-neutrod700); color: var(--pw-neutro0);}
+.bg-neutrod700 {background-color: var(--pw-neutrod700); color: var(--pw-neutro900);}
 .bg-neutrod800 {background-color: var(--pw-neutrod800); color: var(--pw-neutro900);}
 .bg-neutrod900 {background-color: var(--pw-neutrod900); color: var(--pw-neutro900);}
 
